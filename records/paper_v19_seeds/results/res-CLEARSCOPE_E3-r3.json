@@ -1,0 +1,59 @@
+{
+ "set": "CLEARSCOPE_E3",
+ "bundle": "/data/paper19s/CLEARSCOPE_E3/r3/b07",
+ "fleet": [
+  "CADETS_E3",
+  "THEIA_E3",
+  "CLEARSCOPE_E3",
+  "FIVEDIRECTIONS_E3",
+  "TRACE_E3-trace"
+ ],
+ "n_attacks": 1,
+ "gt_nodes": 41,
+ "days": 2,
+ "attacks_all": [
+  "clearscope_e3_firefox_0411"
+ ],
+ "V10": {
+  "TP": 0,
+  "FP": 0,
+  "recall": 0.0,
+  "attacks": 0,
+  "FP/day": 0.0,
+  "by_layer": {},
+  "by_layer_tp": {},
+  "attacks_found": [],
+  "attacks_det": [],
+  "rows": 0,
+  "ADP_stable": 0.2,
+  "precision": 0.0
+ },
+ "V19": {
+  "TP": 0,
+  "FP": 0,
+  "recall": 0.0,
+  "attacks": 0,
+  "FP/day": 0.0,
+  "by_layer": {},
+  "by_layer_tp": {},
+  "attacks_found": [],
+  "attacks_det": [],
+  "rows": 0,
+  "ADP_stable": 0.2,
+  "precision": 0.0
+ },
+ "V19id": {
+  "TP": 0,
+  "FP": 0,
+  "recall": 0.0,
+  "attacks": 0,
+  "FP/day": 0.0,
+  "by_layer": {},
+  "by_layer_tp": {},
+  "attacks_found": [],
+  "attacks_det": [],
+  "rows": 0,
+  "ADP_stable": 0.2,
+  "precision": 0.0
+ }
+}

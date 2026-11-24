@@ -1,0 +1,2343 @@
+{
+ "dev16": {
+  "P0": {
+   "attacks": 26,
+   "of": 30,
+   "TP": 337,
+   "FP": 1189,
+   "host_days": 71,
+   "FP_per_day": 16.7,
+   "precision": 0.221,
+   "by_layer": {
+    "novelty": 644,
+    "corroborated": 346,
+    "rules": 536
+   },
+   "by_layer_tp": {
+    "novelty": 88,
+    "corroborated": 46,
+    "rules": 203
+   },
+   "novelty_attacks": 20,
+   "novelty_rules_attacks": 21,
+   "incidents": 354,
+   "false_incidents": 284,
+   "false_incidents_per_day": 4.0,
+   "buried_attacks": 1,
+   "rows_where_recorded_gt_differs_from_public_gt": 0,
+   "per_set": {
+    "ATLASV2_EDR-h1": {
+     "attacks": 8,
+     "TP": 12,
+     "FP": 49,
+     "incidents": 11,
+     "false_incidents": 6,
+     "buried": []
+    },
+    "ATLASV2_EDR-h2": {
+     "attacks": 0,
+     "TP": 0,
+     "FP": 26,
+     "incidents": 6,
+     "false_incidents": 6,
+     "buried": []
+    },
+    "CADETS_E3": {
+     "attacks": 3,
+     "TP": 31,
+     "FP": 16,
+     "incidents": 17,
+     "false_incidents": 14,
+     "buried": []
+    },
+    "CARBANAKV2_EDR-h1": {
+     "attacks": 1,
+     "TP": 5,
+     "FP": 123,
+     "incidents": 60,
+     "false_incidents": 56,
+     "buried": []
+    },
+    "CARBANAKV2_EDR-h2": {
+     "attacks": 1,
+     "TP": 40,
+     "FP": 164,
+     "incidents": 73,
+     "false_incidents": 43,
+     "buried": []
+    },
+    "CARBANAKV2_EDR-h3": {
+     "attacks": 1,
+     "TP": 2,
+     "FP": 86,
+     "incidents": 15,
+     "false_incidents": 14,
+     "buried": [
+      "carbanakv2_edr"
+     ]
+    },
+    "CARBANAKV2_EDR-h4": {
+     "attacks": 1,
+     "TP": 3,
+     "FP": 27,
+     "incidents": 13,
+     "false_incidents": 12,
+     "buried": []
+    },
+    "CARBANAKV2_EDR-h5": {
+     "attacks": 1,
+     "TP": 17,
+     "FP": 130,
+     "incidents": 22,
+     "false_incidents": 18,
+     "buried": []
+    },
+    "CLEARSCOPE_E3": {
+     "attacks": 0,
+     "TP": 0,
+     "FP": 0,
+     "incidents": 0,
+     "false_incidents": 0,
+     "buried": []
+    },
+    "FIVEDIRECTIONS_E3": {
+     "attacks": 2,
+     "TP": 11,
+     "FP": 166,
+     "incidents": 11,
+     "false_incidents": 6,
+     "buried": []
+    },
+    "OPTC_H051": {
+     "attacks": 1,
+     "TP": 75,
+     "FP": 53,
+     "incidents": 8,
+     "false_incidents": 5,
+     "buried": []
+    },
+    "OPTC_H201": {
+     "attacks": 1,
+     "TP": 6,
+     "FP": 19,
+     "incidents": 12,
+     "false_incidents": 11,
+     "buried": []
+    },
+    "OPTC_H501": {
+     "attacks": 1,
+     "TP": 17,
+     "FP": 77,
+     "incidents": 13,
+     "false_incidents": 10,
+     "buried": []
+    },
+    "THEIA_E3": {
+     "attacks": 2,
+     "TP": 109,
+     "FP": 86,
+     "incidents": 24,
+     "false_incidents": 19,
+     "buried": []
+    },
+    "THEIA_E5-theia": {
+     "attacks": 0,
+     "TP": 0,
+     "FP": 97,
+     "incidents": 39,
+     "false_incidents": 39,
+     "buried": []
+    },
+    "TRACE_E3-trace": {
+     "attacks": 3,
+     "TP": 9,
+     "FP": 70,
+     "incidents": 30,
+     "false_incidents": 25,
+     "buried": []
+    }
+   }
+  },
+  "P2": {
+   "attacks": 26,
+   "of": 30,
+   "TP": 333,
+   "FP": 1051,
+   "host_days": 71,
+   "FP_per_day": 14.8,
+   "precision": 0.241,
+   "by_layer": {
+    "novelty": 544,
+    "corroborated": 304,
+    "rules": 536
+   },
+   "by_layer_tp": {
+    "novelty": 87,
+    "corroborated": 43,
+    "rules": 203
+   },
+   "novelty_attacks": 20,
+   "novelty_rules_attacks": 21,
+   "incidents": 220,
+   "false_incidents": 178,
+   "false_incidents_per_day": 2.51,
+   "buried_attacks": 1,
+   "rows_where_recorded_gt_differs_from_public_gt": 0,
+   "per_set": {
+    "ATLASV2_EDR-h1": {
+     "attacks": 8,
+     "TP": 12,
+     "FP": 49,
+     "incidents": 5,
+     "false_incidents": 3,
+     "buried": []
+    },
+    "ATLASV2_EDR-h2": {
+     "attacks": 0,
+     "TP": 0,
+     "FP": 26,
+     "incidents": 2,
+     "false_incidents": 2,
+     "buried": []
+    },
+    "CADETS_E3": {
+     "attacks": 3,
+     "TP": 31,
+     "FP": 16,
+     "incidents": 13,
+     "false_incidents": 10,
+     "buried": []
+    },
+    "CARBANAKV2_EDR-h1": {
+     "attacks": 1,
+     "TP": 5,
+     "FP": 83,
+     "incidents": 28,
+     "false_incidents": 24,
+     "buried": []
+    },
+    "CARBANAKV2_EDR-h2": {
+     "attacks": 1,
+     "TP": 39,
+     "FP": 131,
+     "incidents": 28,
+     "false_incidents": 19,
+     "buried": []
+    },
+    "CARBANAKV2_EDR-h3": {
+     "attacks": 1,
+     "TP": 2,
+     "FP": 72,
+     "incidents": 9,
+     "false_incidents": 8,
+     "buried": [
+      "carbanakv2_edr"
+     ]
+    },
+    "CARBANAKV2_EDR-h4": {
+     "attacks": 1,
+     "TP": 3,
+     "FP": 24,
+     "incidents": 11,
+     "false_incidents": 10,
+     "buried": []
+    },
+    "CARBANAKV2_EDR-h5": {
+     "attacks": 1,
+     "TP": 14,
+     "FP": 89,
+     "incidents": 18,
+     "false_incidents": 14,
+     "buried": []
+    },
+    "CLEARSCOPE_E3": {
+     "attacks": 0,
+     "TP": 0,
+     "FP": 0,
+     "incidents": 0,
+     "false_incidents": 0,
+     "buried": []
+    },
+    "FIVEDIRECTIONS_E3": {
+     "attacks": 2,
+     "TP": 11,
+     "FP": 166,
+     "incidents": 10,
+     "false_incidents": 6,
+     "buried": []
+    },
+    "OPTC_H051": {
+     "attacks": 1,
+     "TP": 75,
+     "FP": 53,
+     "incidents": 6,
+     "false_incidents": 3,
+     "buried": []
+    },
+    "OPTC_H201": {
+     "attacks": 1,
+     "TP": 6,
+     "FP": 19,
+     "incidents": 11,
+     "false_incidents": 10,
+     "buried": []
+    },
+    "OPTC_H501": {
+     "attacks": 1,
+     "TP": 17,
+     "FP": 70,
+     "incidents": 12,
+     "false_incidents": 10,
+     "buried": []
+    },
+    "THEIA_E3": {
+     "attacks": 2,
+     "TP": 109,
+     "FP": 86,
+     "incidents": 9,
+     "false_incidents": 6,
+     "buried": []
+    },
+    "THEIA_E5-theia": {
+     "attacks": 0,
+     "TP": 0,
+     "FP": 97,
+     "incidents": 28,
+     "false_incidents": 28,
+     "buried": []
+    },
+    "TRACE_E3-trace": {
+     "attacks": 3,
+     "TP": 9,
+     "FP": 70,
+     "incidents": 30,
+     "false_incidents": 25,
+     "buried": []
+    }
+   }
+  }
+ },
+ "evidence": {
+  "missed": 4,
+  "rule_anchor": 6,
+  "novelty_gt": 10,
+  "rule_gt": 9,
+  "novelty_anchor": 1,
+  "only_corroboration_on_gt": 5
+ },
+ "adp": {
+  "CADETS_E3": {
+   "triage_random": 0.9998858075619047,
+   "triage_node_id_order": 0.9998858260131156,
+   "learned_random": 0.7269293727490861,
+   "nodes": 281585,
+   "gt_nodes": 68,
+   "alerted": 47,
+   "alerted_gt": 31
+  },
+  "THEIA_E3": {
+   "triage_random": 0.9999158227541082,
+   "triage_node_id_order": 0.9999158227541085,
+   "learned_random": 0.9858696245079102,
+   "nodes": 700902,
+   "gt_nodes": 118,
+   "alerted": 195,
+   "alerted_gt": 109
+  },
+  "CLEARSCOPE_E3": {
+   "triage_random": 0.18297364254769977,
+   "triage_node_id_order": 0.19997364189883762,
+   "learned_random": 0.1830403092088086,
+   "nodes": 111403,
+   "gt_nodes": 41,
+   "alerted": 0,
+   "alerted_gt": 0
+  },
+  "THEIA_E5-theia": {
+   "triage_random": 0.0002247473835016051,
+   "triage_node_id_order": 0.00046942112235040246,
+   "learned_random": 0.00022505042999350567,
+   "nodes": 749962,
+   "gt_nodes": 66,
+   "alerted": 97,
+   "alerted_gt": 0
+  },
+  "CLEARSCOPE_E5-clearscope-3att": {
+   "triage_random": 0.6679008880260233,
+   "triage_node_id_order": 0.6678937008908459,
+   "learned_random": 0.1324687056044741,
+   "nodes": 150964,
+   "gt_nodes": 51,
+   "alerted": 19,
+   "alerted_gt": 4
+  },
+  "OPTC_H051": {
+   "triage_random": 0.8479865472224155,
+   "triage_node_id_order": 0.7088219902603903,
+   "learned_random": 0.7984056752111639,
+   "nodes": 1470238,
+   "gt_nodes": 114,
+   "alerted": 128,
+   "alerted_gt": 75
+  },
+  "OPTC_H201": {
+   "triage_random": 0.7489894668002448,
+   "triage_node_id_order": 0.7489894668002449,
+   "learned_random": 0.9989894668002447,
+   "nodes": 1437360,
+   "gt_nodes": 2905,
+   "alerted": 25,
+   "alerted_gt": 6
+  },
+  "OPTC_H501": {
+   "triage_random": 0.9049030033956377,
+   "triage_node_id_order": 0.9998030033956379,
+   "learned_random": 0.2886839557765901,
+   "nodes": 1488735,
+   "gt_nodes": 749,
+   "alerted": 87,
+   "alerted_gt": 17
+  },
+  "mean": {
+   "triage_random": 0.669097490711442,
+   "learned_random": 0.5143265200360339,
+   "triage_node_id_order": 0.6657191091419414
+  },
+  "CLEARSCOPE_E5-clearscope": {
+   "triage_random": 0.9998906441091122
+  },
+  "FIVEDIRECTIONS_E3": {
+   "triage_random": 0.18341202251861521
+  }
+ },
+ "five_runs": {
+  "per_run": {
+   "1": {
+    "mean_triage_ADP_node_id_order": 0.6657500000000001,
+    "mean_learned_ADP_node_id_order": 0.47624999999999995,
+    "mean_d1_ADP": 0.3175,
+    "mean_d2_ADP": 0.3395,
+    "d2_attacks_CADETS": 3
+   },
+   "2": {
+    "mean_triage_ADP_node_id_order": 0.665875,
+    "mean_learned_ADP_node_id_order": 0.465125,
+    "mean_d1_ADP": 0.27375,
+    "mean_d2_ADP": 0.257625,
+    "d2_attacks_CADETS": 1
+   },
+   "3": {
+    "mean_triage_ADP_node_id_order": 0.669125,
+    "mean_learned_ADP_node_id_order": 0.554,
+    "mean_d1_ADP": 0.309125,
+    "mean_d2_ADP": 0.252,
+    "d2_attacks_CADETS": 0
+   },
+   "4": {
+    "mean_triage_ADP_node_id_order": 0.666375,
+    "mean_learned_ADP_node_id_order": 0.44325000000000003,
+    "mean_d1_ADP": 0.30799999999999994,
+    "mean_d2_ADP": 0.3085,
+    "d2_attacks_CADETS": 0
+   },
+   "5": {
+    "mean_triage_ADP_node_id_order": 0.665875,
+    "mean_learned_ADP_node_id_order": 0.565,
+    "mean_d1_ADP": 0.33225,
+    "mean_d2_ADP": 0.524125,
+    "d2_attacks_CADETS": 3
+   }
+  },
+  "per_host": {
+   "CADETS_E3": {
+    "runs": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "attack_sets_from_rows": [
+     [
+      "Nginx_Backdoor_06",
+      "Nginx_Backdoor_12",
+      "Nginx_Backdoor_13"
+     ]
+    ],
+    "TP_FP_from_rows": [
+     [
+      31,
+      16
+     ],
+     [
+      29,
+      15
+     ],
+     [
+      29,
+      15
+     ],
+     [
+      29,
+      15
+     ],
+     [
+      32,
+      16
+     ]
+    ],
+    "triage_ADP_node_id_order": [
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   },
+   "THEIA_E3": {
+    "runs": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "attack_sets_from_rows": [
+     [
+      "Browser_Extension_Drakon_Dropper",
+      "Firefox_Backdoor_Drakon_In_Memory"
+     ]
+    ],
+    "TP_FP_from_rows": [
+     [
+      109,
+      86
+     ],
+     [
+      109,
+      88
+     ],
+     [
+      109,
+      86
+     ],
+     [
+      109,
+      95
+     ],
+     [
+      109,
+      86
+     ]
+    ],
+    "triage_ADP_node_id_order": [
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   },
+   "CLEARSCOPE_E3": {
+    "runs": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "attack_sets_from_rows": [
+     []
+    ],
+    "TP_FP_from_rows": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ],
+    "triage_ADP_node_id_order": [
+     0.2,
+     0.2,
+     0.2,
+     0.2,
+     0.2
+    ]
+   },
+   "THEIA_E5-theia": {
+    "runs": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "attack_sets_from_rows": [
+     []
+    ],
+    "TP_FP_from_rows": [
+     [
+      0,
+      97
+     ],
+     [
+      0,
+      95
+     ],
+     [
+      0,
+      114
+     ],
+     [
+      0,
+      109
+     ],
+     [
+      0,
+      100
+     ]
+    ],
+    "triage_ADP_node_id_order": [
+     0.0,
+     0.001,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "CLEARSCOPE_E5-clearscope": {
+    "runs": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "attack_sets_from_rows": [
+     [
+      "node_clearscope_e5_appstarter_0515",
+      "node_clearscope_e5_tester_0517"
+     ]
+    ],
+    "TP_FP_from_rows": [
+     [
+      4,
+      15
+     ],
+     [
+      4,
+      15
+     ],
+     [
+      4,
+      13
+     ],
+     [
+      4,
+      13
+     ],
+     [
+      4,
+      13
+     ]
+    ],
+    "triage_ADP_node_id_order": [
+     0.668,
+     0.668,
+     0.695,
+     0.673,
+     0.669
+    ]
+   },
+   "OPTC_H051": {
+    "runs": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "attack_sets_from_rows": [
+     [
+      "h051_0925"
+     ]
+    ],
+    "TP_FP_from_rows": [
+     [
+      75,
+      53
+     ],
+     [
+      75,
+      53
+     ],
+     [
+      75,
+      53
+     ],
+     [
+      75,
+      53
+     ],
+     [
+      75,
+      53
+     ]
+    ],
+    "triage_ADP_node_id_order": [
+     0.709,
+     0.709,
+     0.709,
+     0.709,
+     0.709
+    ]
+   },
+   "OPTC_H201": {
+    "runs": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "attack_sets_from_rows": [
+     [
+      "h201_0923"
+     ]
+    ],
+    "TP_FP_from_rows": [
+     [
+      6,
+      19
+     ],
+     [
+      6,
+      19
+     ],
+     [
+      6,
+      19
+     ],
+     [
+      6,
+      19
+     ],
+     [
+      6,
+      19
+     ]
+    ],
+    "triage_ADP_node_id_order": [
+     0.749,
+     0.749,
+     0.749,
+     0.749,
+     0.749
+    ]
+   },
+   "OPTC_H501": {
+    "runs": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "attack_sets_from_rows": [
+     [
+      "h501_0924"
+     ]
+    ],
+    "TP_FP_from_rows": [
+     [
+      17,
+      70
+     ],
+     [
+      17,
+      70
+     ],
+     [
+      17,
+      70
+     ],
+     [
+      17,
+      70
+     ],
+     [
+      17,
+      70
+     ]
+    ],
+    "triage_ADP_node_id_order": [
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   }
+  },
+  "dev16_per_run_from_rows": {
+   "1": {
+    "attacks": 26,
+    "TP": 333,
+    "FP": 1051,
+    "incidents": 220,
+    "false_incidents": 178
+   },
+   "2": {
+    "attacks": 26,
+    "TP": 331,
+    "FP": 1112,
+    "incidents": 220,
+    "false_incidents": 177
+   },
+   "3": {
+    "attacks": 26,
+    "TP": 331,
+    "FP": 1061,
+    "incidents": 216,
+    "false_incidents": 173
+   },
+   "4": {
+    "attacks": 26,
+    "TP": 331,
+    "FP": 1136,
+    "incidents": 221,
+    "false_incidents": 178
+   },
+   "5": {
+    "attacks": 26,
+    "TP": 334,
+    "FP": 1089,
+    "incidents": 219,
+    "false_incidents": 176
+   }
+  }
+ },
+ "heldout_E5_ClearScope": {
+  "A": {
+   "attacks": 2,
+   "TP": 9,
+   "FP": 49,
+   "G0": {
+    "incidents": 28,
+    "false_incidents": 23,
+    "buried": []
+   },
+   "G2": {
+    "incidents": 18,
+    "false_incidents": 14,
+    "buried": []
+   }
+  },
+  "N": {
+   "attacks": 2,
+   "TP": 4,
+   "FP": 15,
+   "G0": {
+    "incidents": 11,
+    "false_incidents": 9,
+    "buried": []
+   },
+   "G2": {
+    "incidents": 8,
+    "false_incidents": 6,
+    "buried": []
+   }
+  }
+ },
+ "v07_v081_from_per_host_results": {
+  "0.7 released": {
+   "attacks_TP_FP": [
+    26,
+    347,
+    5670
+   ],
+   "by_layer": {
+    "learned": 775,
+    "novelty": 644,
+    "corroborated": 4062,
+    "rules": 536
+   },
+   "by_layer_tp": {
+    "corroborated": 52,
+    "novelty": 88,
+    "learned": 4,
+    "rules": 203
+   }
+  },
+  "0.8.1": {
+   "attacks_TP_FP": [
+    26,
+    344,
+    2034
+   ],
+   "by_layer": {
+    "learned": 779,
+    "novelty": 644,
+    "corroborated": 419,
+    "rules": 536
+   },
+   "by_layer_tp": {
+    "corroborated": 48,
+    "novelty": 88,
+    "learned": 5,
+    "rules": 203
+   }
+  }
+ },
+ "bootstrap": {
+  "host": {
+   "detection_rate": [
+    0.75,
+    1.0
+   ],
+   "fp_per_host_day": [
+    10.242785714285713,
+    22.167045454545452
+   ],
+   "false_incidents_per_host_day": [
+    1.7236842105263157,
+    3.7414054336468126
+   ]
+  },
+  "family": {
+   "detection_rate": [
+    0.7272727272727273,
+    0.9629629629629629
+   ],
+   "fp_per_host_day": [
+    10.51086956521739,
+    28.58823529411765
+   ],
+   "false_incidents_per_host_day": [
+    1.8865979381443299,
+    5.235294117647059
+   ]
+  }
+ },
+ "lotl": {
+  "none": {
+   "attacks": 26,
+   "TP": 333,
+   "FP": 1051,
+   "false_incidents": 178,
+   "false_incidents_per_day": 2.51,
+   "per_set": {
+    "ATLASV2_EDR-h1": {
+     "attacks": 8,
+     "TP": 12,
+     "FP": 49
+    },
+    "ATLASV2_EDR-h2": {
+     "attacks": 0,
+     "TP": 0,
+     "FP": 26
+    },
+    "CADETS_E3": {
+     "attacks": 3,
+     "TP": 31,
+     "FP": 16
+    },
+    "CARBANAKV2_EDR-h1": {
+     "attacks": 1,
+     "TP": 5,
+     "FP": 83
+    },
+    "CARBANAKV2_EDR-h2": {
+     "attacks": 1,
+     "TP": 39,
+     "FP": 131
+    },
+    "CARBANAKV2_EDR-h3": {
+     "attacks": 1,
+     "TP": 2,
+     "FP": 72
+    },
+    "CARBANAKV2_EDR-h4": {
+     "attacks": 1,
+     "TP": 3,
+     "FP": 24
+    },
+    "CARBANAKV2_EDR-h5": {
+     "attacks": 1,
+     "TP": 14,
+     "FP": 89
+    },
+    "CLEARSCOPE_E3": {
+     "attacks": 0,
+     "TP": 0,
+     "FP": 0
+    },
+    "FIVEDIRECTIONS_E3": {
+     "attacks": 2,
+     "TP": 11,
+     "FP": 166
+    },
+    "OPTC_H051": {
+     "attacks": 1,
+     "TP": 75,
+     "FP": 53
+    },
+    "OPTC_H201": {
+     "attacks": 1,
+     "TP": 6,
+     "FP": 19
+    },
+    "OPTC_H501": {
+     "attacks": 1,
+     "TP": 17,
+     "FP": 70
+    },
+    "THEIA_E3": {
+     "attacks": 2,
+     "TP": 109,
+     "FP": 86
+    },
+    "THEIA_E5-theia": {
+     "attacks": 0,
+     "TP": 0,
+     "FP": 97
+    },
+    "TRACE_E3-trace": {
+     "attacks": 3,
+     "TP": 9,
+     "FP": 70
+    }
+   }
+  },
+  "lotl": {
+   "attacks": 18,
+   "TP": 273,
+   "FP": 1010,
+   "false_incidents": 190,
+   "false_incidents_per_day": 2.68,
+   "per_set": {
+    "ATLASV2_EDR-h1": {
+     "attacks": 5,
+     "TP": 5,
+     "FP": 47
+    },
+    "ATLASV2_EDR-h2": {
+     "attacks": 0,
+     "TP": 0,
+     "FP": 26
+    },
+    "CADETS_E3": {
+     "attacks": 3,
+     "TP": 32,
+     "FP": 16
+    },
+    "CARBANAKV2_EDR-h1": {
+     "attacks": 0,
+     "TP": 0,
+     "FP": 83
+    },
+    "CARBANAKV2_EDR-h2": {
+     "attacks": 1,
+     "TP": 27,
+     "FP": 129
+    },
+    "CARBANAKV2_EDR-h3": {
+     "attacks": 1,
+     "TP": 1,
+     "FP": 72
+    },
+    "CARBANAKV2_EDR-h4": {
+     "attacks": 0,
+     "TP": 0,
+     "FP": 24
+    },
+    "CARBANAKV2_EDR-h5": {
+     "attacks": 1,
+     "TP": 2,
+     "FP": 48
+    },
+    "CLEARSCOPE_E3": {
+     "attacks": 0,
+     "TP": 0,
+     "FP": 0
+    },
+    "FIVEDIRECTIONS_E3": {
+     "attacks": 2,
+     "TP": 7,
+     "FP": 154
+    },
+    "OPTC_H051": {
+     "attacks": 1,
+     "TP": 75,
+     "FP": 63
+    },
+    "OPTC_H201": {
+     "attacks": 1,
+     "TP": 6,
+     "FP": 19
+    },
+    "OPTC_H501": {
+     "attacks": 1,
+     "TP": 10,
+     "FP": 65
+    },
+    "THEIA_E3": {
+     "attacks": 2,
+     "TP": 108,
+     "FP": 97
+    },
+    "THEIA_E5-theia": {
+     "attacks": 0,
+     "TP": 0,
+     "FP": 97
+    },
+    "TRACE_E3-trace": {
+     "attacks": 0,
+     "TP": 0,
+     "FP": 70
+    }
+   }
+  },
+  "launder": {
+   "attacks": 17,
+   "TP": 212,
+   "FP": 986,
+   "false_incidents": 189,
+   "false_incidents_per_day": 2.66,
+   "per_set": {
+    "ATLASV2_EDR-h1": {
+     "attacks": 5,
+     "TP": 5,
+     "FP": 47
+    },
+    "ATLASV2_EDR-h2": {
+     "attacks": 0,
+     "TP": 0,
+     "FP": 26
+    },
+    "CADETS_E3": {
+     "attacks": 2,
+     "TP": 3,
+     "FP": 16
+    },
+    "CARBANAKV2_EDR-h1": {
+     "attacks": 0,
+     "TP": 0,
+     "FP": 83
+    },
+    "CARBANAKV2_EDR-h2": {
+     "attacks": 1,
+     "TP": 27,
+     "FP": 129
+    },
+    "CARBANAKV2_EDR-h3": {
+     "attacks": 1,
+     "TP": 1,
+     "FP": 72
+    },
+    "CARBANAKV2_EDR-h4": {
+     "attacks": 0,
+     "TP": 0,
+     "FP": 24
+    },
+    "CARBANAKV2_EDR-h5": {
+     "attacks": 1,
+     "TP": 2,
+     "FP": 48
+    },
+    "CLEARSCOPE_E3": {
+     "attacks": 0,
+     "TP": 0,
+     "FP": 0
+    },
+    "FIVEDIRECTIONS_E3": {
+     "attacks": 2,
+     "TP": 7,
+     "FP": 154
+    },
+    "OPTC_H051": {
+     "attacks": 1,
+     "TP": 75,
+     "FP": 63
+    },
+    "OPTC_H201": {
+     "attacks": 1,
+     "TP": 6,
+     "FP": 19
+    },
+    "OPTC_H501": {
+     "attacks": 1,
+     "TP": 10,
+     "FP": 65
+    },
+    "THEIA_E3": {
+     "attacks": 2,
+     "TP": 76,
+     "FP": 73
+    },
+    "THEIA_E5-theia": {
+     "attacks": 0,
+     "TP": 0,
+     "FP": 97
+    },
+    "TRACE_E3-trace": {
+     "attacks": 0,
+     "TP": 0,
+     "FP": 70
+    }
+   }
+  },
+  "lotlall": {
+   "attacks": 10,
+   "TP": 254,
+   "FP": 286,
+   "false_incidents": 24,
+   "false_incidents_per_day": 0.34,
+   "per_set": {
+    "ATLASV2_EDR-h1": {
+     "attacks": 1,
+     "TP": 1,
+     "FP": 2
+    },
+    "ATLASV2_EDR-h2": {
+     "attacks": 0,
+     "TP": 0,
+     "FP": 0
+    },
+    "CADETS_E3": {
+     "attacks": 3,
+     "TP": 32,
+     "FP": 3
+    },
+    "CARBANAKV2_EDR-h1": {
+     "attacks": 0,
+     "TP": 0,
+     "FP": 21
+    },
+    "CARBANAKV2_EDR-h2": {
+     "attacks": 1,
+     "TP": 27,
+     "FP": 51
+    },
+    "CARBANAKV2_EDR-h3": {
+     "attacks": 0,
+     "TP": 0,
+     "FP": 13
+    },
+    "CARBANAKV2_EDR-h4": {
+     "attacks": 0,
+     "TP": 0,
+     "FP": 2
+    },
+    "CARBANAKV2_EDR-h5": {
+     "attacks": 0,
+     "TP": 0,
+     "FP": 0
+    },
+    "CLEARSCOPE_E3": {
+     "attacks": 0,
+     "TP": 0,
+     "FP": 0
+    },
+    "FIVEDIRECTIONS_E3": {
+     "attacks": 0,
+     "TP": 0,
+     "FP": 0
+    },
+    "OPTC_H051": {
+     "attacks": 1,
+     "TP": 75,
+     "FP": 47
+    },
+    "OPTC_H201": {
+     "attacks": 1,
+     "TP": 6,
+     "FP": 4
+    },
+    "OPTC_H501": {
+     "attacks": 1,
+     "TP": 5,
+     "FP": 9
+    },
+    "THEIA_E3": {
+     "attacks": 2,
+     "TP": 108,
+     "FP": 94
+    },
+    "THEIA_E5-theia": {
+     "attacks": 0,
+     "TP": 0,
+     "FP": 40
+    },
+    "TRACE_E3-trace": {
+     "attacks": 0,
+     "TP": 0,
+     "FP": 0
+    }
+   }
+  }
+ },
+ "orig_strata": {
+  "TRACE_E3-trace": {
+   "ADP_random": 0.1318342880586076,
+   "found": 3,
+   "FP_per_day": 17.5
+  },
+  "FIVEDIRECTIONS_E3": {
+   "ADP_random": 0.1857359719041969,
+   "found": 2,
+   "FP_per_day": 55.3
+  },
+  "ATLASV2_EDR-h1": {
+   "ADP_random": 0.21470979874240523,
+   "found": 8,
+   "FP_per_day": 49.0
+  },
+  "CARBANAKV2_EDR-h1": {
+   "ADP_random": 0.06091788604412771,
+   "found": 1,
+   "FP_per_day": 10.4
+  },
+  "CARBANAKV2_EDR-h2": {
+   "ADP_random": 0.48265384932405736,
+   "found": 1,
+   "FP_per_day": 14.6
+  },
+  "CARBANAKV2_EDR-h3": {
+   "ADP_random": 0.04346385080805791,
+   "found": 1,
+   "FP_per_day": 10.3
+  },
+  "CARBANAKV2_EDR-h4": {
+   "ADP_random": 0.1332936139413273,
+   "found": 1,
+   "FP_per_day": 3.4
+  },
+  "CARBANAKV2_EDR-h5": {
+   "ADP_random": 0.9997427164244934,
+   "found": 1,
+   "FP_per_day": 8.1
+  }
+ },
+ "checks": [
+  {
+   "check": "tab:lab 0.10 attacks",
+   "recomputed": 26,
+   "paper": 26,
+   "match": true
+  },
+  {
+   "check": "attacks denominator",
+   "recomputed": 30,
+   "paper": 30,
+   "match": true
+  },
+  {
+   "check": "tab:lab 0.10 TP",
+   "recomputed": 333,
+   "paper": 333,
+   "match": true
+  },
+  {
+   "check": "tab:lab 0.10 FP",
+   "recomputed": 1051,
+   "paper": 1051,
+   "match": true
+  },
+  {
+   "check": "host-days",
+   "recomputed": 71,
+   "paper": 71,
+   "match": true
+  },
+  {
+   "check": "tab:lab 0.10 FP/day",
+   "recomputed": 14.8,
+   "paper": 14.8,
+   "match": true
+  },
+  {
+   "check": "tab:lab 0.10 incidents (G2)",
+   "recomputed": 220,
+   "paper": 220,
+   "match": true
+  },
+  {
+   "check": "tab:lab 0.10 false incidents (G2)",
+   "recomputed": 178,
+   "paper": 178,
+   "match": true
+  },
+  {
+   "check": "tab:lab 0.10 false incidents per host-day",
+   "recomputed": 2.51,
+   "paper": 2.51,
+   "match": true
+  },
+  {
+   "check": "Sec. RQ2 precision 0.10",
+   "recomputed": 0.241,
+   "paper": 0.241,
+   "match": true
+  },
+  {
+   "check": "tab:lab 0.9 attacks",
+   "recomputed": 26,
+   "paper": 26,
+   "match": true
+  },
+  {
+   "check": "tab:lab 0.9 TP",
+   "recomputed": 337,
+   "paper": 337,
+   "match": true
+  },
+  {
+   "check": "tab:lab 0.9 FP",
+   "recomputed": 1189,
+   "paper": 1189,
+   "match": true
+  },
+  {
+   "check": "tab:lab 0.9 FP/day",
+   "recomputed": 16.7,
+   "paper": 16.7,
+   "match": true
+  },
+  {
+   "check": "tab:lab 0.9 incidents (G0)",
+   "recomputed": 354,
+   "paper": 354,
+   "match": true
+  },
+  {
+   "check": "tab:lab 0.9 false incidents (G0)",
+   "recomputed": 284,
+   "paper": 284,
+   "match": true
+  },
+  {
+   "check": "tab:lab 0.9 false incidents per host-day",
+   "recomputed": 4.0,
+   "paper": 4.0,
+   "match": true
+  },
+  {
+   "check": "tab:layers 0.9 novelty",
+   "recomputed": "644 (88)",
+   "paper": "644 (88)",
+   "match": true
+  },
+  {
+   "check": "tab:layers 0.9 rules",
+   "recomputed": "536 (203)",
+   "paper": "536 (203)",
+   "match": true
+  },
+  {
+   "check": "tab:layers 0.9 corroborated",
+   "recomputed": "346 (46)",
+   "paper": "346 (46)",
+   "match": true
+  },
+  {
+   "check": "tab:layers 0.10 novelty",
+   "recomputed": "544 (87)",
+   "paper": "544 (87)",
+   "match": true
+  },
+  {
+   "check": "tab:layers 0.10 rules",
+   "recomputed": "536 (203)",
+   "paper": "536 (203)",
+   "match": true
+  },
+  {
+   "check": "tab:layers 0.10 corroborated",
+   "recomputed": "304 (43)",
+   "paper": "304 (43)",
+   "match": true
+  },
+  {
+   "check": "tab:ablation layer 1 (0.9 rows, novelty-attributed) attacks",
+   "recomputed": 20,
+   "paper": 20,
+   "match": true
+  },
+  {
+   "check": "tab:ablation layer 1 TP / FP",
+   "recomputed": [
+    88,
+    556
+   ],
+   "paper": [
+    88,
+    556
+   ],
+   "match": true
+  },
+  {
+   "check": "tab:ablation + fleet prevalence (0.10 rows) attacks",
+   "recomputed": 20,
+   "paper": 20,
+   "match": true
+  },
+  {
+   "check": "tab:ablation + fleet prevalence TP / FP",
+   "recomputed": [
+    87,
+    457
+   ],
+   "paper": [
+    87,
+    457
+   ],
+   "match": true
+  },
+  {
+   "check": "tab:ablation 0.10 attacks / TP / FP",
+   "recomputed": [
+    26,
+    333,
+    1051
+   ],
+   "paper": [
+    26,
+    333,
+    1051
+   ],
+   "match": true
+  },
+  {
+   "check": "tab:evidence rule_gt",
+   "recomputed": 9,
+   "paper": 9,
+   "match": true
+  },
+  {
+   "check": "tab:evidence rule_anchor",
+   "recomputed": 6,
+   "paper": 6,
+   "match": true
+  },
+  {
+   "check": "tab:evidence novelty_gt",
+   "recomputed": 10,
+   "paper": 10,
+   "match": true
+  },
+  {
+   "check": "tab:evidence novelty_anchor",
+   "recomputed": 1,
+   "paper": 1,
+   "match": true
+  },
+  {
+   "check": "tab:evidence missed",
+   "recomputed": 4,
+   "paper": 4,
+   "match": true
+  },
+  {
+   "check": "tab:evidence detected, only corroboration on a labelled node",
+   "recomputed": 5,
+   "paper": 5,
+   "match": true
+  },
+  {
+   "check": "tab:adp E3 CADETS triage (paper rounded to 2 dp)",
+   "recomputed": 0.9999,
+   "paper": 1.0,
+   "match": true
+  },
+  {
+   "check": "tab:adp E3 CADETS learned (paper rounded to 2 dp)",
+   "recomputed": 0.7269,
+   "paper": 0.73,
+   "match": true
+  },
+  {
+   "check": "tab:adp E3 THEIA triage (paper rounded to 2 dp)",
+   "recomputed": 0.9999,
+   "paper": 1.0,
+   "match": true
+  },
+  {
+   "check": "tab:adp E3 THEIA learned (paper rounded to 2 dp)",
+   "recomputed": 0.9859,
+   "paper": 0.99,
+   "match": true
+  },
+  {
+   "check": "tab:adp E3 ClearScope triage (paper rounded to 2 dp)",
+   "recomputed": 0.183,
+   "paper": 0.18,
+   "match": true
+  },
+  {
+   "check": "tab:adp E3 ClearScope learned (paper rounded to 2 dp)",
+   "recomputed": 0.183,
+   "paper": 0.18,
+   "match": true
+  },
+  {
+   "check": "tab:adp E5 THEIA triage (paper rounded to 2 dp)",
+   "recomputed": 0.0002,
+   "paper": 0.0,
+   "match": true
+  },
+  {
+   "check": "tab:adp E5 THEIA learned (paper rounded to 2 dp)",
+   "recomputed": 0.0002,
+   "paper": 0.0,
+   "match": true
+  },
+  {
+   "check": "tab:adp E5 ClearScope (3 attacks) triage (paper rounded to 2 dp)",
+   "recomputed": 0.6679,
+   "paper": 0.67,
+   "match": true
+  },
+  {
+   "check": "tab:adp E5 ClearScope (3 attacks) learned (paper rounded to 2 dp)",
+   "recomputed": 0.1325,
+   "paper": 0.13,
+   "match": true
+  },
+  {
+   "check": "tab:adp OpTC H051 triage (paper rounded to 2 dp)",
+   "recomputed": 0.848,
+   "paper": 0.85,
+   "match": true
+  },
+  {
+   "check": "tab:adp OpTC H051 learned (paper rounded to 2 dp)",
+   "recomputed": 0.7984,
+   "paper": 0.81,
+   "match": false
+  },
+  {
+   "check": "tab:adp OpTC H201 triage (paper rounded to 2 dp)",
+   "recomputed": 0.749,
+   "paper": 0.75,
+   "match": true
+  },
+  {
+   "check": "tab:adp OpTC H201 learned (paper rounded to 2 dp)",
+   "recomputed": 0.999,
+   "paper": 1.0,
+   "match": true
+  },
+  {
+   "check": "tab:adp OpTC H501 triage (paper rounded to 2 dp)",
+   "recomputed": 0.9049,
+   "paper": 0.91,
+   "match": false
+  },
+  {
+   "check": "tab:adp OpTC H501 learned (paper rounded to 2 dp)",
+   "recomputed": 0.2887,
+   "paper": 0.29,
+   "match": true
+  },
+  {
+   "check": "tab:adp eight-host mean triage ADP (random ties; paper rounded to 2 dp)",
+   "recomputed": 0.6691,
+   "paper": 0.67,
+   "match": true
+  },
+  {
+   "check": "tab:adp eight-host mean learned ADP (random ties; paper rounded to 2 dp)",
+   "recomputed": 0.5143,
+   "paper": 0.52,
+   "match": false
+  },
+  {
+   "check": "eight-host mean triage ADP, node-id tie order (Sec. Metrics: 'mean unchanged')",
+   "recomputed": 0.6657,
+   "paper": 0.67,
+   "match": true
+  },
+  {
+   "check": "E5 ClearScope, PIDSMaker's 2 attacks (footnote) triage ADP (paper rounded to 2 dp)",
+   "recomputed": 0.9999,
+   "paper": 1.0,
+   "match": true
+  },
+  {
+   "check": "FiveDirections (Sec. Metrics) triage ADP (paper rounded to 2 dp)",
+   "recomputed": 0.1834,
+   "paper": 0.2,
+   "match": false
+  },
+  {
+   "check": "  nodes-CADETS_E3: alerted = rows' alerted nodes",
+   "recomputed": 47,
+   "paper": 47,
+   "match": true
+  },
+  {
+   "check": "  nodes-CADETS_E3: alerted GT = TP from public GT",
+   "recomputed": 31,
+   "paper": 31,
+   "match": true
+  },
+  {
+   "check": "  nodes-THEIA_E3: alerted = rows' alerted nodes",
+   "recomputed": 195,
+   "paper": 195,
+   "match": true
+  },
+  {
+   "check": "  nodes-THEIA_E3: alerted GT = TP from public GT",
+   "recomputed": 109,
+   "paper": 109,
+   "match": true
+  },
+  {
+   "check": "  nodes-CLEARSCOPE_E3: alerted = rows' alerted nodes",
+   "recomputed": 0,
+   "paper": 0,
+   "match": true
+  },
+  {
+   "check": "  nodes-CLEARSCOPE_E3: alerted GT = TP from public GT",
+   "recomputed": 0,
+   "paper": 0,
+   "match": true
+  },
+  {
+   "check": "  nodes-THEIA_E5-theia: alerted = rows' alerted nodes",
+   "recomputed": 97,
+   "paper": 97,
+   "match": true
+  },
+  {
+   "check": "  nodes-THEIA_E5-theia: alerted GT = TP from public GT",
+   "recomputed": 0,
+   "paper": 0,
+   "match": true
+  },
+  {
+   "check": "  nodes-OPTC_H051: alerted = rows' alerted nodes",
+   "recomputed": 128,
+   "paper": 128,
+   "match": true
+  },
+  {
+   "check": "  nodes-OPTC_H051: alerted GT = TP from public GT",
+   "recomputed": 75,
+   "paper": 75,
+   "match": true
+  },
+  {
+   "check": "  nodes-OPTC_H201: alerted = rows' alerted nodes",
+   "recomputed": 25,
+   "paper": 25,
+   "match": true
+  },
+  {
+   "check": "  nodes-OPTC_H201: alerted GT = TP from public GT",
+   "recomputed": 6,
+   "paper": 6,
+   "match": true
+  },
+  {
+   "check": "  nodes-OPTC_H501: alerted = rows' alerted nodes",
+   "recomputed": 87,
+   "paper": 87,
+   "match": true
+  },
+  {
+   "check": "  nodes-OPTC_H501: alerted GT = TP from public GT",
+   "recomputed": 17,
+   "paper": 17,
+   "match": true
+  },
+  {
+   "check": "five runs: eight-host mean triage ADP range (node-id order)",
+   "recomputed": "0.666-0.669",
+   "paper": "0.666-0.669",
+   "match": true
+  },
+  {
+   "check": "five runs: mean_learned_ADP_node_id_order min (paper rounded to 2 dp)",
+   "recomputed": 0.4433,
+   "paper": 0.44,
+   "match": true
+  },
+  {
+   "check": "five runs: mean_learned_ADP_node_id_order max (paper rounded to 2 dp)",
+   "recomputed": 0.565,
+   "paper": 0.57,
+   "match": true
+  },
+  {
+   "check": "five runs: mean_d1_ADP min (paper rounded to 2 dp)",
+   "recomputed": 0.2737,
+   "paper": 0.27,
+   "match": true
+  },
+  {
+   "check": "five runs: mean_d1_ADP max (paper rounded to 2 dp)",
+   "recomputed": 0.3322,
+   "paper": 0.33,
+   "match": true
+  },
+  {
+   "check": "five runs: mean_d2_ADP min (paper rounded to 2 dp)",
+   "recomputed": 0.252,
+   "paper": 0.25,
+   "match": true
+  },
+  {
+   "check": "five runs: mean_d2_ADP max (paper rounded to 2 dp)",
+   "recomputed": 0.5241,
+   "paper": 0.52,
+   "match": true
+  },
+  {
+   "check": "five runs: detector-2 attacks found on E3 CADETS per run",
+   "recomputed": [
+    3,
+    1,
+    0,
+    0,
+    3
+   ],
+   "paper": [
+    3,
+    1,
+    0,
+    0,
+    3
+   ],
+   "match": true
+  },
+  {
+   "check": "five runs: same attacks detected at the operating point in every run (8 hosts, from rows)",
+   "recomputed": true,
+   "paper": true,
+   "match": true
+  },
+  {
+   "check": "five runs: hosts whose triage ADP (2 decimals) varies across runs",
+   "recomputed": [
+    "CLEARSCOPE_E5-clearscope"
+   ],
+   "paper": [
+    "CLEARSCOPE_E5-clearscope"
+   ],
+   "match": true
+  },
+  {
+   "check": "five runs: E5 ClearScope triage ADP range",
+   "recomputed": "0.67-0.69",
+   "paper": "0.67-0.69",
+   "match": true
+  },
+  {
+   "check": "five runs: THEIA_E3 FP range (from rows)",
+   "recomputed": "86-95",
+   "paper": "86-95",
+   "match": true
+  },
+  {
+   "check": "five runs: THEIA_E5-theia FP range (from rows)",
+   "recomputed": "95-114",
+   "paper": "95-114",
+   "match": true
+  },
+  {
+   "check": "five runs, 16 sets: attacks detected per run",
+   "recomputed": [
+    26,
+    26,
+    26,
+    26,
+    26
+   ],
+   "paper": [
+    26,
+    26,
+    26,
+    26,
+    26
+   ],
+   "match": true
+  },
+  {
+   "check": "five runs, 16 sets: FP range",
+   "recomputed": "1051-1136",
+   "paper": "1051-1136",
+   "match": true
+  },
+  {
+   "check": "five runs, 16 sets: false incidents range (incident re-implementation)",
+   "recomputed": "173-178",
+   "paper": "173-178",
+   "match": true
+  },
+  {
+   "check": "five runs, 16 sets: run 1 (reported) has the fewest FP",
+   "recomputed": true,
+   "paper": true,
+   "match": true
+  },
+  {
+   "check": "tab:ablation layers 1-2 (separate configuration; per-host results res5-*-r1, not rows)",
+   "recomputed": [
+    21,
+    290,
+    791
+   ],
+   "paper": [
+    21,
+    290,
+    791
+   ],
+   "match": true
+  },
+  {
+   "check": "0.8.1 (A): attacks, TP / FP",
+   "recomputed": [
+    2,
+    9,
+    49
+   ],
+   "paper": [
+    2,
+    9,
+    49
+   ],
+   "match": true
+  },
+  {
+   "check": "0.10 (N): attacks, TP / FP",
+   "recomputed": [
+    2,
+    4,
+    15
+   ],
+   "paper": [
+    2,
+    4,
+    15
+   ],
+   "match": true
+  },
+  {
+   "check": "false incidents 0.8.1 -> 0.10 (G2)",
+   "recomputed": [
+    14,
+    6
+   ],
+   "paper": [
+    14,
+    6
+   ],
+   "match": true
+  },
+  {
+   "check": "false incidents 0.9 grouping -> 0.10 grouping (N)",
+   "recomputed": [
+    9,
+    6
+   ],
+   "paper": [
+    9,
+    6
+   ],
+   "match": true
+  },
+  {
+   "check": "tab:lab 0.7 released attacks / TP / FP",
+   "recomputed": [
+    26,
+    347,
+    5670
+   ],
+   "paper": [
+    26,
+    347,
+    5670
+   ],
+   "match": true
+  },
+  {
+   "check": "tab:layers 0.7 released novelty",
+   "recomputed": "644 (88)",
+   "paper": "644 (88)",
+   "match": true
+  },
+  {
+   "check": "tab:layers 0.7 released rules",
+   "recomputed": "536 (203)",
+   "paper": "536 (203)",
+   "match": true
+  },
+  {
+   "check": "tab:layers 0.7 released corroborated",
+   "recomputed": "4062 (52)",
+   "paper": "4062 (52)",
+   "match": true
+  },
+  {
+   "check": "tab:layers 0.7 released learned",
+   "recomputed": "775 (4)",
+   "paper": "775 (4)",
+   "match": true
+  },
+  {
+   "check": "tab:lab 0.8.1 attacks / TP / FP",
+   "recomputed": [
+    26,
+    344,
+    2034
+   ],
+   "paper": [
+    26,
+    344,
+    2034
+   ],
+   "match": true
+  },
+  {
+   "check": "tab:layers 0.8.1 novelty",
+   "recomputed": "644 (88)",
+   "paper": "644 (88)",
+   "match": true
+  },
+  {
+   "check": "tab:layers 0.8.1 rules",
+   "recomputed": "536 (203)",
+   "paper": "536 (203)",
+   "match": true
+  },
+  {
+   "check": "tab:layers 0.8.1 corroborated",
+   "recomputed": "419 (48)",
+   "paper": "419 (48)",
+   "match": true
+  },
+  {
+   "check": "tab:layers 0.8.1 learned",
+   "recomputed": "779 (5)",
+   "paper": "779 (5)",
+   "match": true
+  },
+  {
+   "check": "bootstrap detection rate interval (host)",
+   "recomputed": "[0.75, 1.00]",
+   "paper": "[0.75, 1.00]",
+   "match": true
+  },
+  {
+   "check": "bootstrap FP per host-day interval (host)",
+   "recomputed": "[10.2, 22.2]",
+   "paper": "[10.2, 22.2]",
+   "match": true
+  },
+  {
+   "check": "bootstrap false incidents per host-day interval (host)",
+   "recomputed": "[1.7, 3.7]",
+   "paper": "[1.7, 3.7]",
+   "match": true
+  },
+  {
+   "check": "bootstrap false incidents per host-day interval (family)",
+   "recomputed": "[1.9, 5.2]",
+   "paper": "[1.9, 5.2]",
+   "match": true
+  },
+  {
+   "check": "LotL: attacks without transformation",
+   "recomputed": 26,
+   "paper": 26,
+   "match": true
+  },
+  {
+   "check": "LotL: attacks after renaming new programs",
+   "recomputed": 18,
+   "paper": 18,
+   "match": true
+  },
+  {
+   "check": "LotL: CADETS TP renaming -> renaming + laundering",
+   "recomputed": [
+    32,
+    3
+   ],
+   "paper": [
+    32,
+    3
+   ],
+   "match": true
+  },
+  {
+   "check": "LotL: CADETS attacks after laundering (one of three lost)",
+   "recomputed": 2,
+   "paper": 2,
+   "match": true
+  },
+  {
+   "check": "LotL post-hoc bound: attacks when every new program is renamed",
+   "recomputed": 10,
+   "paper": 10,
+   "match": true
+  },
+  {
+   "check": "LotL post-hoc bound: false incidents per host-day",
+   "recomputed": 0.3,
+   "paper": 0.3,
+   "match": true
+  },
+  {
+   "check": "tab:orig TRACE_E3-trace ADP (paper rounded to 2 dp)",
+   "recomputed": 0.1318,
+   "paper": 0.13,
+   "match": true
+  },
+  {
+   "check": "tab:orig TRACE_E3-trace found / FP per day",
+   "recomputed": [
+    3,
+    17.5
+   ],
+   "paper": [
+    3,
+    17.5
+   ],
+   "match": true
+  },
+  {
+   "check": "tab:orig FIVEDIRECTIONS_E3 ADP (paper rounded to 2 dp)",
+   "recomputed": 0.1857,
+   "paper": 0.2,
+   "match": false
+  },
+  {
+   "check": "tab:orig FIVEDIRECTIONS_E3 found / FP per day",
+   "recomputed": [
+    2,
+    55.3
+   ],
+   "paper": [
+    2,
+    55.3
+   ],
+   "match": true
+  },
+  {
+   "check": "tab:orig ATLASV2_EDR-h1 ADP (paper rounded to 2 dp)",
+   "recomputed": 0.2147,
+   "paper": 0.21,
+   "match": true
+  },
+  {
+   "check": "tab:orig ATLASV2_EDR-h1 found / FP per day",
+   "recomputed": [
+    8,
+    49.0
+   ],
+   "paper": [
+    8,
+    49.0
+   ],
+   "match": true
+  },
+  {
+   "check": "tab:orig CARBANAKV2_EDR-h1 ADP (paper rounded to 2 dp)",
+   "recomputed": 0.0609,
+   "paper": 0.06,
+   "match": true
+  },
+  {
+   "check": "tab:orig CARBANAKV2_EDR-h1 found / FP per day",
+   "recomputed": [
+    1,
+    10.4
+   ],
+   "paper": [
+    1,
+    10.4
+   ],
+   "match": true
+  },
+  {
+   "check": "tab:orig CARBANAKV2_EDR-h2 ADP (paper rounded to 2 dp)",
+   "recomputed": 0.4827,
+   "paper": 0.48,
+   "match": true
+  },
+  {
+   "check": "tab:orig CARBANAKV2_EDR-h2 found / FP per day",
+   "recomputed": [
+    1,
+    14.6
+   ],
+   "paper": [
+    1,
+    14.6
+   ],
+   "match": true
+  },
+  {
+   "check": "tab:orig CARBANAKV2_EDR-h3 ADP (paper rounded to 2 dp)",
+   "recomputed": 0.0435,
+   "paper": 0.04,
+   "match": true
+  },
+  {
+   "check": "tab:orig CARBANAKV2_EDR-h3 found / FP per day",
+   "recomputed": [
+    1,
+    10.3
+   ],
+   "paper": [
+    1,
+    10.3
+   ],
+   "match": true
+  },
+  {
+   "check": "tab:orig CARBANAKV2_EDR-h4 ADP (paper rounded to 2 dp)",
+   "recomputed": 0.1333,
+   "paper": 0.13,
+   "match": true
+  },
+  {
+   "check": "tab:orig CARBANAKV2_EDR-h4 found / FP per day",
+   "recomputed": [
+    1,
+    3.4
+   ],
+   "paper": [
+    1,
+    3.4
+   ],
+   "match": true
+  },
+  {
+   "check": "tab:orig CARBANAKV2_EDR-h5 ADP (paper rounded to 2 dp)",
+   "recomputed": 0.9997,
+   "paper": 1.0,
+   "match": true
+  },
+  {
+   "check": "tab:orig CARBANAKV2_EDR-h5 found / FP per day",
+   "recomputed": [
+    1,
+    8.1
+   ],
+   "paper": [
+    1,
+    8.1
+   ],
+   "match": true
+  },
+  {
+   "check": "Sec. RQ1 mean ADP over these eight hosts (paper rounded to 2 dp)",
+   "recomputed": 0.2815,
+   "paper": 0.28,
+   "match": true
+  },
+  {
+   "check": "tab:orig STRATA pooled precision (TP / FP)",
+   "recomputed": [
+    "12.2%",
+    95,
+    684
+   ],
+   "paper": [
+    "12.2%",
+    95,
+    684
+   ],
+   "match": true
+  },
+  {
+   "check": "tab:replay 9 raw: lab att/TP/FP, replay att/TP/FP",
+   "recomputed": [
+    18,
+    261,
+    485,
+    18,
+    261,
+    543
+   ],
+   "paper": [
+    18,
+    261,
+    485,
+    18,
+    261,
+    543
+   ],
+   "match": true
+  },
+  {
+   "check": "tab:replay 7 stored: lab att/TP/FP, replay att/TP/FP",
+   "recomputed": [
+    8,
+    72,
+    566,
+    8,
+    72,
+    612
+   ],
+   "paper": [
+    8,
+    72,
+    566,
+    8,
+    72,
+    612
+   ],
+   "match": true
+  },
+  {
+   "check": "tab:replay incidents (false), lab console vs replay",
+   "recomputed": [
+    220,
+    178,
+    222,
+    180
+   ],
+   "paper": [
+    220,
+    178,
+    222,
+    180
+   ],
+   "match": true
+  },
+  {
+   "check": "tab:replay lab side equals the rows recomputation (TP, FP)",
+   "recomputed": [
+    333,
+    1051
+   ],
+   "paper": [
+    333,
+    1051
+   ],
+   "match": true
+  }
+ ]
+}

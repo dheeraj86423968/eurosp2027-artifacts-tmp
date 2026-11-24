@@ -1,0 +1,44 @@
+{
+ "OPTC_H201": {
+  "days": 3,
+  "V10/G0": {
+   "incidents": 11,
+   "fp_incidents": 10,
+   "tp_incidents": 1,
+   "fp_inc_per_day": 3.33,
+   "attacks": 1,
+   "attacks_found": [
+    "h201_0923"
+   ],
+   "buried": [],
+   "max_alerts": 10,
+   "alerts": 25
+  },
+  "V19/G0": {
+   "incidents": 11,
+   "fp_incidents": 10,
+   "tp_incidents": 1,
+   "fp_inc_per_day": 3.33,
+   "attacks": 1,
+   "attacks_found": [
+    "h201_0923"
+   ],
+   "buried": [],
+   "max_alerts": 10,
+   "alerts": 25
+  },
+  "V19id/G0": {
+   "incidents": 12,
+   "fp_incidents": 11,
+   "tp_incidents": 1,
+   "fp_inc_per_day": 3.67,
+   "attacks": 1,
+   "attacks_found": [
+    "h201_0923"
+   ],
+   "buried": [],
+   "max_alerts": 7,
+   "alerts": 23
+  }
+ }
+}

@@ -1,0 +1,349 @@
+{
+ "dataset": "TRACE_E3",
+ "host": "trace",
+ "platform": "linux",
+ "database": "not restored (disk): streamed from <DATA>/darpa/new/trace_e3.dump with pdp_server.tools.heldout_stream; verified identical to PostgresReplay + ingest_day on a 5M-row sample (trace_e3_sample)",
+ "source": "heldout_stream (PostgresReplay-equivalent)",
+ "train_days": [
+  "2018-04-02",
+  "2018-04-03",
+  "2018-04-04",
+  "2018-04-05",
+  "2018-04-06",
+  "2018-04-07",
+  "2018-04-08"
+ ],
+ "val_day": "2018-04-09",
+ "test_days": [
+  "2018-04-10",
+  "2018-04-11",
+  "2018-04-12",
+  "2018-04-13"
+ ],
+ "split_rule": "PIDSMaker lists are chronological (train 04-02..04-08 < val 04-09 < test 04-10..04-13) -> used as is (same as the 0.6 protocol). 04-02 has only 68,841 events (data starts late in the day).",
+ "flags": [],
+ "day_boundaries": "US/Eastern calendar days, timestamp_rec strictly inside (PostgresReplay / PIDSMaker graph construction)",
+ "window": "15 min fused windows (WindowBuilder, chunks of 1024)",
+ "entity_uuid": "framework index_id (orthrus ground truth column 3); label formats 'subject <exe> <cmdline>', 'file <path>', 'netflow <ip> <port>'",
+ "eval_test_registry": "starts as a copy of the baseline registry (dense ids agree), extended by the test days",
+ "ground_truth_dir": "<PIDSMAKER>/Ground_Truth/orthrus (= /data/gt/orthrus in the pdp containers)",
+ "ground_truth": {
+  "node_trace_e3_firefox_0410": {
+   "csv": "E3-TRACE/node_trace_e3_firefox_0410.csv",
+   "gt_nodes": 11,
+   "found_in_eval_test_registry": 11,
+   "not_found": 0,
+   "found_by_type": {
+    "subject": 7,
+    "file": 4
+   }
+  },
+  "node_trace_e3_phishing_executable_0413": {
+   "csv": "E3-TRACE/node_trace_e3_phishing_executable_0413.csv",
+   "gt_nodes": 11,
+   "found_in_eval_test_registry": 11,
+   "not_found": 0,
+   "found_by_type": {
+    "file": 3,
+    "subject": 8
+   }
+  },
+  "node_trace_e3_pine_0413": {
+   "csv": "E3-TRACE/node_trace_e3_pine_0413.csv",
+   "gt_nodes": 14,
+   "found_in_eval_test_registry": 14,
+   "not_found": 0,
+   "found_by_type": {
+    "subject": 12,
+    "file": 2
+   }
+  }
+ },
+ "days": {
+  "2018-04-02": {
+   "events": 68841,
+   "dropped_unknown_entity": 0,
+   "windows": 23,
+   "fused_edges": 64909,
+   "new_entities": 61989,
+   "registry_size": 61989,
+   "events_by_type": {
+    "SENDMSG": 416,
+    "RECVMSG": 62675,
+    "CONNECT": 49,
+    "WRITE": 56,
+    "OPEN": 1718,
+    "READ": 3845,
+    "EXECUTE": 80,
+    "CLONE": 2
+   },
+   "rows": 68841
+  },
+  "2018-04-03": {
+   "events": 4227685,
+   "dropped_unknown_entity": 0,
+   "windows": 86,
+   "fused_edges": 2391604,
+   "new_entities": 672430,
+   "registry_size": 734419,
+   "events_by_type": {
+    "SENDMSG": 87177,
+    "RECVMSG": 781075,
+    "CONNECT": 44193,
+    "WRITE": 482749,
+    "OPEN": 1331250,
+    "READ": 1469456,
+    "EXECUTE": 15219,
+    "CLONE": 16566
+   },
+   "rows": 4227685
+  },
+  "2018-04-04": {
+   "events": 3177312,
+   "dropped_unknown_entity": 0,
+   "windows": 85,
+   "fused_edges": 1558095,
+   "new_entities": 545518,
+   "registry_size": 1279937,
+   "events_by_type": {
+    "SENDMSG": 77336,
+    "RECVMSG": 1127952,
+    "CONNECT": 42206,
+    "WRITE": 300139,
+    "OPEN": 716463,
+    "READ": 891030,
+    "EXECUTE": 17172,
+    "CLONE": 5014
+   },
+   "rows": 3177312
+  },
+  "2018-04-05": {
+   "events": 4270830,
+   "dropped_unknown_entity": 0,
+   "windows": 87,
+   "fused_edges": 1836022,
+   "new_entities": 575896,
+   "registry_size": 1855833,
+   "events_by_type": {
+    "SENDMSG": 64028,
+    "RECVMSG": 1748238,
+    "CONNECT": 33319,
+    "WRITE": 401476,
+    "OPEN": 941031,
+    "READ": 1057011,
+    "EXECUTE": 12042,
+    "CLONE": 13685
+   },
+   "rows": 4270830
+  },
+  "2018-04-06": {
+   "events": 3594280,
+   "dropped_unknown_entity": 0,
+   "windows": 90,
+   "fused_edges": 1905708,
+   "new_entities": 713707,
+   "registry_size": 2569540,
+   "events_by_type": {
+    "SENDMSG": 87780,
+    "RECVMSG": 1182989,
+    "CONNECT": 66212,
+    "WRITE": 357306,
+    "OPEN": 857272,
+    "READ": 1020602,
+    "EXECUTE": 12384,
+    "CLONE": 9735
+   },
+   "rows": 3594280
+  },
+  "2018-04-07": {
+   "events": 2461120,
+   "dropped_unknown_entity": 0,
+   "windows": 90,
+   "fused_edges": 1428879,
+   "new_entities": 671758,
+   "registry_size": 3241298,
+   "events_by_type": {
+    "SENDMSG": 70976,
+    "RECVMSG": 855901,
+    "CONNECT": 58664,
+    "WRITE": 226329,
+    "OPEN": 535899,
+    "READ": 700152,
+    "EXECUTE": 9933,
+    "CLONE": 3266
+   },
+   "rows": 2461120
+  },
+  "2018-04-08": {
+   "events": 2920709,
+   "dropped_unknown_entity": 0,
+   "windows": 89,
+   "fused_edges": 1682106,
+   "new_entities": 721503,
+   "registry_size": 3962801,
+   "events_by_type": {
+    "SENDMSG": 73527,
+    "RECVMSG": 952125,
+    "CONNECT": 55921,
+    "WRITE": 282643,
+    "OPEN": 787287,
+    "READ": 753817,
+    "EXECUTE": 12118,
+    "CLONE": 3271
+   },
+   "rows": 2920709
+  },
+  "2018-04-09": {
+   "events": 4695262,
+   "dropped_unknown_entity": 0,
+   "windows": 90,
+   "fused_edges": 2446983,
+   "new_entities": 812174,
+   "registry_size": 4774975,
+   "events_by_type": {
+    "SENDMSG": 109576,
+    "RECVMSG": 1404038,
+    "CONNECT": 69536,
+    "WRITE": 547699,
+    "OPEN": 1191126,
+    "READ": 1343623,
+    "EXECUTE": 17992,
+    "CLONE": 11672
+   },
+   "rows": 4695262
+  },
+  "2018-04-10": {
+   "events": 11068457,
+   "dropped_unknown_entity": 0,
+   "windows": 87,
+   "fused_edges": 995448,
+   "new_entities": 434803,
+   "registry_size": 5209778,
+   "events_by_type": {
+    "SENDMSG": 26351,
+    "RECVMSG": 9951827,
+    "CONNECT": 11532,
+    "WRITE": 187987,
+    "OPEN": 397726,
+    "READ": 481770,
+    "EXECUTE": 4802,
+    "CLONE": 6462
+   },
+   "rows": 11068457
+  },
+  "2018-04-11": {
+   "events": 3532894,
+   "dropped_unknown_entity": 0,
+   "windows": 88,
+   "fused_edges": 1796738,
+   "new_entities": 665615,
+   "registry_size": 5875393,
+   "events_by_type": {
+    "SENDMSG": 59764,
+    "RECVMSG": 1183865,
+    "CONNECT": 43702,
+    "WRITE": 424684,
+    "OPEN": 861175,
+    "READ": 939579,
+    "EXECUTE": 9572,
+    "CLONE": 10553
+   },
+   "rows": 3532894
+  },
+  "2018-04-12": {
+   "events": 131004769,
+   "dropped_unknown_entity": 0,
+   "windows": 89,
+   "fused_edges": 301916,
+   "new_entities": 253040,
+   "registry_size": 6128433,
+   "events_by_type": {
+    "SENDMSG": 3871,
+    "RECVMSG": 130816388,
+    "CONNECT": 892,
+    "WRITE": 9049,
+    "OPEN": 31523,
+    "READ": 141410,
+    "EXECUTE": 1464,
+    "CLONE": 172
+   },
+   "rows": 131004769
+  },
+  "2018-04-13": {
+   "events": 112600434,
+   "dropped_unknown_entity": 0,
+   "windows": 64,
+   "fused_edges": 1388604,
+   "new_entities": 223157,
+   "registry_size": 6351590,
+   "events_by_type": {
+    "SENDMSG": 54930,
+    "RECVMSG": 110365035,
+    "CONNECT": 96910,
+    "WRITE": 318071,
+    "OPEN": 685342,
+    "READ": 1058500,
+    "EXECUTE": 9041,
+    "CLONE": 12605
+   },
+   "rows": 112600434
+  }
+ },
+ "entities": {
+  "baseline_registry": 4774975,
+  "eval_test_registry": 6351590
+ },
+ "stream_checks": {
+  "rows": 283622593,
+  "ops": {
+   "EVENT_SENDMSG": 715732,
+   "EVENT_RECVMSG": 260432108,
+   "EVENT_CONNECT": 523136,
+   "EVENT_WRITE": 3538188,
+   "EVENT_OPEN": 8337812,
+   "EVENT_READ": 9860795,
+   "EVENT_EXECUTE": 121819,
+   "EVENT_CLONE": 93003
+  },
+  "outside_days_or_null_ts": 0,
+  "exactly_midnight": 0,
+  "bad_uuid": 0,
+  "noncanonical_index_ids": 0
+ },
+ "format_notes": {
+  "entities": {
+   "subject": 1545141,
+   "file": 755197,
+   "netflow": 4051252
+  },
+  "process_exe_present": 0.995,
+  "process_exe_absolute_path": 0.995,
+  "process_cmdline_present": 0.9934,
+  "file_path_present": 1.0,
+  "file_registry_key_share": 0.0,
+  "netflow_remote_addr_present": 0.9375,
+  "edge_types_after_mapping": {
+   "SENDMSG": 715732,
+   "RECVMSG": 260432108,
+   "CONNECT": 523136,
+   "WRITE": 3538188,
+   "OPEN": 8337812,
+   "READ": 9860795,
+   "EXECUTE": 121819,
+   "CLONE": 93003
+  },
+  "exec_events_present": true,
+  "process_creation_events_present": true,
+  "notes": [
+   "DARPA TC E3 TRACE (Linux, TRACE recorder): all 283.6M event rows use the 8 strict TC types (none dropped by the op map)",
+   "RECVMSG dominates (260M rows",
+   " 04-12 and 04-13 floods of 131M/113M events fuse to 0.3M/1.4M edges)",
+   "EXECUTE and CLONE present",
+   "netflow nodes carry remote address/port",
+   "database not restored (39.3M subject rows, ~28 GB COPY text, ~100 GB restored)",
+   " only the 6.35M nodes referenced by events of the prepared days are in the registries"
+  ]
+ },
+ "created": "2026-11-07T07:05:28+0000",
+ "tool": "pdp_server.tools.heldout_stream"
+}

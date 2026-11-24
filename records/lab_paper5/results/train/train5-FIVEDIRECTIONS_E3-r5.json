@@ -1,0 +1,30 @@
+{
+ "set": "FIVEDIRECTIONS_E3",
+ "run": 5,
+ "seeds": {
+  "word2vec": 400,
+  "detector-1": [
+   400,
+   401,
+   402
+  ],
+  "detector-2": [
+   400,
+   401,
+   402,
+   403,
+   404
+  ]
+ },
+ "overrides": {},
+ "train_s": 2139,
+ "resumed_from_b06": false,
+ "layers_equal_run1": true,
+ "train_days": [
+  "2018-04-04",
+  "2018-04-05",
+  "2018-04-06",
+  "2018-04-07"
+ ],
+ "val_day": "2018-04-08"
+}

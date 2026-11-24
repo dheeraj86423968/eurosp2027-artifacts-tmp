@@ -1,0 +1,214 @@
+{
+ "dataset": "CADETS_E3",
+ "note": "level rows as printed by the evaluation tool in its log; the JSON file itself could not be written on this first run (output directory not writable)",
+ "levels": [
+  {
+   "level": "1h",
+   "baseline_hours": 1.0,
+   "product": {
+    "TP": 37,
+    "FP": 924,
+    "FN": 31,
+    "TN": 280593,
+    "precision": 0.039,
+    "recall": 0.544,
+    "MCC": 0.144,
+    "attacks_detected": "3/3"
+   },
+   "rules_only": {
+    "TP": 24,
+    "FP": 1,
+    "FN": 44,
+    "TN": 281516,
+    "precision": 0.96,
+    "recall": 0.353,
+    "MCC": 0.582,
+    "attacks_detected": "3/3"
+   },
+   "by_layer": {
+    "novelty": {
+     "alerts": 227,
+     "TP": 8
+    },
+    "rules": {
+     "alerts": 25,
+     "TP": 24
+    },
+    "corroborated": {
+     "alerts": 718,
+     "TP": 14
+    },
+    "learned": {
+     "alerts": 0,
+     "TP": 0
+    }
+   },
+   "deterministic_only": {
+    "TP": 25,
+    "FP": 220,
+    "FN": 43,
+    "TN": 281297,
+    "precision": 0.102,
+    "recall": 0.368,
+    "MCC": 0.193,
+    "attacks_detected": "3/3"
+   }
+  },
+  {
+   "level": "6h",
+   "baseline_hours": 6.0,
+   "product": {
+    "TP": 25,
+    "FP": 126,
+    "FN": 43,
+    "TN": 281391,
+    "precision": 0.166,
+    "recall": 0.368,
+    "MCC": 0.246,
+    "attacks_detected": "3/3"
+   },
+   "rules_only": {
+    "TP": 24,
+    "FP": 1,
+    "FN": 44,
+    "TN": 281516,
+    "precision": 0.96,
+    "recall": 0.353,
+    "MCC": 0.582,
+    "attacks_detected": "3/3"
+   },
+   "by_layer": {
+    "novelty": {
+     "alerts": 131,
+     "TP": 8
+    },
+    "rules": {
+     "alerts": 25,
+     "TP": 24
+    },
+    "corroborated": {
+     "alerts": 2,
+     "TP": 0
+    },
+    "learned": {
+     "alerts": 0,
+     "TP": 0
+    }
+   },
+   "deterministic_only": {
+    "TP": 25,
+    "FP": 124,
+    "FN": 43,
+    "TN": 281393,
+    "precision": 0.168,
+    "recall": 0.368,
+    "MCC": 0.248,
+    "attacks_detected": "3/3"
+   }
+  },
+  {
+   "level": "1d",
+   "baseline_hours": 24.0,
+   "product": {
+    "TP": 28,
+    "FP": 93,
+    "FN": 40,
+    "TN": 281424,
+    "precision": 0.231,
+    "recall": 0.412,
+    "MCC": 0.308,
+    "attacks_detected": "3/3"
+   },
+   "rules_only": {
+    "TP": 24,
+    "FP": 1,
+    "FN": 44,
+    "TN": 281516,
+    "precision": 0.96,
+    "recall": 0.353,
+    "MCC": 0.582,
+    "attacks_detected": "3/3"
+   },
+   "by_layer": {
+    "novelty": {
+     "alerts": 58,
+     "TP": 8
+    },
+    "rules": {
+     "alerts": 25,
+     "TP": 24
+    },
+    "corroborated": {
+     "alerts": 45,
+     "TP": 3
+    },
+    "learned": {
+     "alerts": 0,
+     "TP": 0
+    }
+   },
+   "deterministic_only": {
+    "TP": 25,
+    "FP": 51,
+    "FN": 43,
+    "TN": 281466,
+    "precision": 0.329,
+    "recall": 0.368,
+    "MCC": 0.348,
+    "attacks_detected": "3/3"
+   }
+  },
+  {
+   "level": "3d",
+   "baseline_hours": 72.0,
+   "product": {
+    "TP": 27,
+    "FP": 27,
+    "FN": 41,
+    "TN": 281490,
+    "precision": 0.5,
+    "recall": 0.397,
+    "MCC": 0.445,
+    "attacks_detected": "3/3"
+   },
+   "rules_only": {
+    "TP": 24,
+    "FP": 1,
+    "FN": 44,
+    "TN": 281516,
+    "precision": 0.96,
+    "recall": 0.353,
+    "MCC": 0.582,
+    "attacks_detected": "3/3"
+   },
+   "by_layer": {
+    "novelty": {
+     "alerts": 33,
+     "TP": 7
+    },
+    "rules": {
+     "alerts": 25,
+     "TP": 24
+    },
+    "corroborated": {
+     "alerts": 3,
+     "TP": 3
+    },
+    "learned": {
+     "alerts": 0,
+     "TP": 0
+    }
+   },
+   "deterministic_only": {
+    "TP": 24,
+    "FP": 27,
+    "FN": 44,
+    "TN": 281490,
+    "precision": 0.471,
+    "recall": 0.353,
+    "MCC": 0.407,
+    "attacks_detected": "3/3"
+   }
+  }
+ ]
+}

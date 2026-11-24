@@ -1,0 +1,67 @@
+{
+ "set": "THEIA_E5-theia",
+ "bundle": "/data/paper19s/THEIA_E5-theia/r5/b07",
+ "fleet": [
+  "THEIA_E5-theia"
+ ],
+ "n_attacks": 1,
+ "gt_nodes": 66,
+ "days": 2,
+ "attacks_all": [
+  "node_THEIA_1_Firefox_Drakon_APT_BinFmt_Elevate_Inject"
+ ],
+ "V10": {
+  "TP": 0,
+  "FP": 98,
+  "recall": 0.0,
+  "attacks": 0,
+  "FP/day": 49.0,
+  "by_layer": {
+   "novelty": 54,
+   "corroborated": 11,
+   "rules": 33
+  },
+  "by_layer_tp": {},
+  "attacks_found": [],
+  "attacks_det": [],
+  "rows": 98,
+  "ADP_stable": 0.0,
+  "precision": 0.0
+ },
+ "V19": {
+  "TP": 0,
+  "FP": 74,
+  "recall": 0.0,
+  "attacks": 0,
+  "FP/day": 37.0,
+  "by_layer": {
+   "novelty": 54,
+   "corroborated": 5,
+   "rules": 15
+  },
+  "by_layer_tp": {},
+  "attacks_found": [],
+  "attacks_det": [],
+  "rows": 74,
+  "ADP_stable": 0.0,
+  "precision": 0.0
+ },
+ "V19id": {
+  "TP": 0,
+  "FP": 74,
+  "recall": 0.0,
+  "attacks": 0,
+  "FP/day": 37.0,
+  "by_layer": {
+   "novelty": 54,
+   "corroborated": 5,
+   "rules": 15
+  },
+  "by_layer_tp": {},
+  "attacks_found": [],
+  "attacks_det": [],
+  "rows": 74,
+  "ADP_stable": 0.0,
+  "precision": 0.0
+ }
+}

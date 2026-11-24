@@ -1,0 +1,139 @@
+{
+ "1h": {
+  "product": {
+   "attacks": "8/11",
+   "FP": 357,
+   "TP": 204,
+   "hosts_with_attack_missed": [
+    "CLEARSCOPE_E3",
+    "FIVEDIRECTIONS_E3"
+   ]
+  },
+  "all_layers": {
+   "attacks": "10/11",
+   "FP": 4730,
+   "TP": 272,
+   "hosts_with_attack_missed": [
+    "CLEARSCOPE_E3"
+   ]
+  },
+  "rules_only": {
+   "attacks": "8/11",
+   "FP": 357,
+   "TP": 204,
+   "hosts_with_attack_missed": [
+    "CLEARSCOPE_E3",
+    "FIVEDIRECTIONS_E3"
+   ]
+  }
+ },
+ "6h": {
+  "product": {
+   "attacks": "8/11",
+   "FP": 229,
+   "TP": 202,
+   "hosts_with_attack_missed": [
+    "CLEARSCOPE_E3",
+    "FIVEDIRECTIONS_E3"
+   ]
+  },
+  "all_layers": {
+   "attacks": "10/11",
+   "FP": 1304,
+   "TP": 239,
+   "hosts_with_attack_missed": [
+    "CLEARSCOPE_E3"
+   ]
+  },
+  "rules_only": {
+   "attacks": "8/11",
+   "FP": 229,
+   "TP": 202,
+   "hosts_with_attack_missed": [
+    "CLEARSCOPE_E3",
+    "FIVEDIRECTIONS_E3"
+   ]
+  }
+ },
+ "1d": {
+  "product": {
+   "attacks": "10/11",
+   "FP": 858,
+   "TP": 248,
+   "hosts_with_attack_missed": [
+    "CLEARSCOPE_E3"
+   ]
+  },
+  "all_layers": {
+   "attacks": "10/11",
+   "FP": 858,
+   "TP": 248,
+   "hosts_with_attack_missed": [
+    "CLEARSCOPE_E3"
+   ]
+  },
+  "rules_only": {
+   "attacks": "8/11",
+   "FP": 183,
+   "TP": 200,
+   "hosts_with_attack_missed": [
+    "CLEARSCOPE_E3",
+    "FIVEDIRECTIONS_E3"
+   ]
+  }
+ },
+ "3d": {
+  "product": {
+   "attacks": "10/11",
+   "FP": 425,
+   "TP": 238,
+   "hosts_with_attack_missed": [
+    "CLEARSCOPE_E3"
+   ]
+  },
+  "all_layers": {
+   "attacks": "10/11",
+   "FP": 425,
+   "TP": 238,
+   "hosts_with_attack_missed": [
+    "CLEARSCOPE_E3"
+   ]
+  },
+  "rules_only": {
+   "attacks": "8/11",
+   "FP": 123,
+   "TP": 200,
+   "hosts_with_attack_missed": [
+    "CLEARSCOPE_E3",
+    "FIVEDIRECTIONS_E3"
+   ]
+  }
+ },
+ "full": {
+  "product": {
+   "attacks": "10/11",
+   "FP": 420,
+   "TP": 247,
+   "hosts_with_attack_missed": [
+    "CLEARSCOPE_E3"
+   ]
+  },
+  "all_layers": {
+   "attacks": "10/11",
+   "FP": 420,
+   "TP": 247,
+   "hosts_with_attack_missed": [
+    "CLEARSCOPE_E3"
+   ]
+  },
+  "rules_only": {
+   "attacks": "8/11",
+   "FP": 125,
+   "TP": 204,
+   "hosts_with_attack_missed": [
+    "CLEARSCOPE_E3",
+    "FIVEDIRECTIONS_E3"
+   ]
+  }
+ }
+}

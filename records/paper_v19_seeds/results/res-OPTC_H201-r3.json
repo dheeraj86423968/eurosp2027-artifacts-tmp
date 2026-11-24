@@ -1,0 +1,87 @@
+{
+ "set": "OPTC_H201",
+ "bundle": "/data/paper19s/OPTC_H201/r3/b07",
+ "fleet": [
+  "OPTC_H201",
+  "OPTC_H501",
+  "OPTC_H051"
+ ],
+ "n_attacks": 1,
+ "gt_nodes": 2905,
+ "days": 3,
+ "attacks_all": [
+  "h201_0923"
+ ],
+ "V10": {
+  "TP": 6,
+  "FP": 19,
+  "recall": 0.002,
+  "attacks": 1,
+  "FP/day": 6.3,
+  "by_layer": {
+   "rules": 10,
+   "novelty": 14,
+   "corroborated": 1
+  },
+  "by_layer_tp": {
+   "rules": 6
+  },
+  "attacks_found": [
+   "h201_0923"
+  ],
+  "attacks_det": [
+   "h201_0923"
+  ],
+  "rows": 25,
+  "ADP_stable": 0.749,
+  "precision": 0.24
+ },
+ "V19": {
+  "TP": 6,
+  "FP": 19,
+  "recall": 0.002,
+  "attacks": 1,
+  "FP/day": 6.3,
+  "by_layer": {
+   "rules": 10,
+   "novelty": 14,
+   "corroborated": 1
+  },
+  "by_layer_tp": {
+   "rules": 6
+  },
+  "attacks_found": [
+   "h201_0923"
+  ],
+  "attacks_det": [
+   "h201_0923"
+  ],
+  "rows": 25,
+  "ADP_stable": 0.749,
+  "precision": 0.24
+ },
+ "V19id": {
+  "TP": 4,
+  "FP": 19,
+  "recall": 0.001,
+  "attacks": 1,
+  "FP/day": 6.3,
+  "by_layer": {
+   "novelty": 14,
+   "rules": 8,
+   "corroborated": 1
+  },
+  "by_layer_tp": {
+   "rules": 4
+  },
+  "attacks_found": [
+   "h201_0923"
+  ],
+  "attacks_det": [
+   "h201_0923"
+  ],
+  "rows": 23,
+  "ADP_stable": 0.666,
+  "precision": 0.174
+ }
+}

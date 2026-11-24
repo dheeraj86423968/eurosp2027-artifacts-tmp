@@ -1,0 +1,13 @@
+07:34:57 validation replay 183s: ensemble thresholds {'detector-1': 1.0, 'detector-2': 0.9507477045059205} (867247 nodes)
+07:37:18 fleet ['CADETS_E3', 'THEIA_E3', 'CLEARSCOPE_E3', 'FIVEDIRECTIONS_E3', 'TRACE_E3-trace']: 380 program keys from 4 other endpoints
+07:39:18 scored 445s
+07:39:26 P0: attacks 3 TP 9 FP 70 rows 79 ADP 0.126 (learned only 0.003)
+07:39:29 P1: attacks 3 TP 9 FP 70 rows 79 ADP 0.126 (learned only 0.003)
+07:39:33 P1e: attacks 3 TP 9 FP 70 rows 79 ADP 0.126 (learned only 0.003)
+07:39:37 P2: attacks 3 TP 9 FP 70 rows 79 ADP 0.126 (learned only 0.003)
+07:39:40 P2e: attacks 3 TP 9 FP 70 rows 79 ADP 0.126 (learned only 0.003)
+07:43:53 amendment 2: P2 triage ADP ties {'random_mean': 0.132, 'random_sd': 0.008, 'random_min': 0.122, 'random_max': 0.157, 'worst': 0.123}; learned {'random_mean': 0.003, 'random_sd': 0.0, 'random_min': 0.003, 'random_max': 0.003, 'worst': 0.003}
+07:43:57 amendment 1: triage ADP time tie-break {'mean': 0.424, 'min': 0.422, 'max': 0.434, 'seeds': 20}; layers 1-2 only {'TP': 9, 'FP': 69, 'recall': 0.257, 'attacks': 3, 'precision': 0.115, 'attacks_found': ['node_trace_e3_firefox_0410', 'node_trace_e3_phishing_executable_0413', 'node_trace_e3_pine_0413'], 'ADP_time_tiebreak': {'mean': 0.425, 'min': 0.423, 'max': 0.434, 'seeds': 20}}
+07:44:40 detector-1 alone: attacks 0 TP 0 FP 0 ADP 0.003
+07:45:22 detector-2 alone: attacks 0 TP 0 FP 4 ADP 0.004
+TRACE_E3-trace       P2/G2: alerts    79 incidents   30 (FP   25, 6.25/day) attacks 3 buried 0

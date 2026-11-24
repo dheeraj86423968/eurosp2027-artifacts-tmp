@@ -1,0 +1,67 @@
+{
+ "dataset": "CLEARSCOPE_E3",
+ "baseline_days": [
+  "2018-04-03",
+  "2018-04-04",
+  "2018-04-05",
+  "2018-04-07",
+  "2018-04-08",
+  "2018-04-09",
+  "2018-04-10"
+ ],
+ "baseline_windows": 490,
+ "levels": [
+  {
+   "level": "full",
+   "baseline_hours": 122.5,
+   "product": {
+    "TP": 0,
+    "FP": 0,
+    "FN": 41,
+    "TN": 111362,
+    "precision": 0.0,
+    "recall": 0.0,
+    "MCC": 0.0,
+    "attacks_detected": "0/1"
+   },
+   "rules_only": {
+    "TP": 0,
+    "FP": 0,
+    "FN": 41,
+    "TN": 111362,
+    "precision": 0.0,
+    "recall": 0.0,
+    "MCC": 0.0,
+    "attacks_detected": "0/1"
+   },
+   "by_layer": {
+    "novelty": {
+     "alerts": 0,
+     "TP": 0
+    },
+    "rules": {
+     "alerts": 0,
+     "TP": 0
+    },
+    "corroborated": {
+     "alerts": 0,
+     "TP": 0
+    },
+    "learned": {
+     "alerts": 0,
+     "TP": 0
+    }
+   },
+   "deterministic_only": {
+    "TP": 0,
+    "FP": 0,
+    "FN": 41,
+    "TN": 111362,
+    "precision": 0.0,
+    "recall": 0.0,
+    "MCC": 0.0,
+    "attacks_detected": "0/1"
+   }
+  }
+ ]
+}

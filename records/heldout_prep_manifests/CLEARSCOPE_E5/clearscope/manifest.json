@@ -1,0 +1,315 @@
+{
+ "dataset": "CLEARSCOPE_E5",
+ "host": "clearscope",
+ "platform": "android",
+ "database": "not restored (disk): streamed from <DATA>/darpa/clearscope_e5/clearscope_e5.dump with pdp_server.tools.heldout_stream; verified identical to PostgresReplay + ingest_day (heldout_prep build) on a 4,969,855-row stride sample of this dump (every 40th event_table row, all days, + the 163,888 node rows it references; database clearscope_e5_sample; registries and every window array identical, same train/val/test days)",
+ "source": "heldout_stream (PostgresReplay-equivalent)",
+ "train_days": [
+  "2019-05-08",
+  "2019-05-09",
+  "2019-05-10",
+  "2019-05-11",
+  "2019-05-12"
+ ],
+ "val_day": "2019-05-13",
+ "test_days": [
+  "2019-05-14",
+  "2019-05-15",
+  "2019-05-17"
+ ],
+ "split_rule": "PIDSMaker lists are chronological (train 05-08,05-09,05-10,05-11,05-12 < val 05-13 < test 05-14,05-15,05-17) -> used as is (rule fixed before the survey; TRACE_E3 / THEIA_E5 precedent). PIDSMaker 'unused' day 05-16, the day before its start_date (05-07) and 05-18 are in neither store.",
+ "flags": [
+  "train days 05-11 and 05-12 (Sat/Sun) are small: 512,119 / 502,322 kept events (05-08 25.9M, 05-09 35.4M)",
+  " split not changed (fixed before the survey)",
+  "05-16 (27.8M kept events, PIDSMaker-unused) is skipped between test days 05-15 and 05-17",
+  "2019-05-07 has 36.0M kept events but is before PIDSMaker's start_date 05-08 and is not used",
+  "lockwatch_0517 attack (PIDSMaker GT list comments it out",
+  " attack window 05-17 15:48-16:01) has all 17 of its GT nodes on the test days: they are attack activity but are NOT in the evaluation GT (see ground_truth_not_in_pidsmaker_list)",
+  "firefox_0517 csv holds 1 node (no trailing newline, so wc -l says 0)",
+  " PIDSMaker leaves it out",
+  "almost no process-lifecycle events: EVENT_CLONE 644, EVENT_EXECUTE 28 in the whole dump"
+ ],
+ "day_boundaries": "US/Eastern calendar days, timestamp_rec strictly inside (PostgresReplay / PIDSMaker graph construction)",
+ "window": "15 min fused windows (WindowBuilder, chunks of 1024)",
+ "entity_uuid": "framework index_id (orthrus ground truth column 3); label formats 'subject <exe> <cmdline>', 'file <path>', 'netflow <ip> <port>'",
+ "eval_test_registry": "starts as a copy of the baseline registry (dense ids agree), extended by the test days",
+ "ground_truth_dir": "<PIDSMAKER>/Ground_Truth/orthrus (= /data/gt/orthrus in the pdp containers)",
+ "ground_truth": {
+  "node_clearscope_e5_appstarter_0515": {
+   "csv": "E5-CLEARSCOPE/node_clearscope_e5_appstarter_0515.csv",
+   "gt_nodes": 26,
+   "found_in_eval_test_registry": 26,
+   "not_found": 0,
+   "found_by_type": {
+    "file": 15,
+    "subject": 11
+   }
+  },
+  "node_clearscope_e5_tester_0517": {
+   "csv": "E5-CLEARSCOPE/node_clearscope_e5_tester_0517.csv",
+   "gt_nodes": 8,
+   "found_in_eval_test_registry": 8,
+   "not_found": 0,
+   "found_by_type": {
+    "subject": 7,
+    "file": 1
+   }
+  }
+ },
+ "days": {
+  "2019-05-08": {
+   "events": 25872679,
+   "dropped_unknown_entity": 0,
+   "windows": 96,
+   "fused_edges": 7686531,
+   "new_entities": 80140,
+   "registry_size": 80140,
+   "events_by_type": {
+    "READ": 16377833,
+    "OPEN": 5067986,
+    "WRITE": 4384891,
+    "CONNECT": 5473,
+    "RECVFROM": 14932,
+    "SENDMSG": 8140,
+    "RECVMSG": 8056,
+    "SENDTO": 5338,
+    "CLONE": 28,
+    "EXECUTE": 2
+   },
+   "rows": 25872679
+  },
+  "2019-05-09": {
+   "events": 35376236,
+   "dropped_unknown_entity": 0,
+   "windows": 96,
+   "fused_edges": 9789259,
+   "new_entities": 91860,
+   "registry_size": 172000,
+   "events_by_type": {
+    "READ": 22022165,
+    "OPEN": 6503492,
+    "WRITE": 6829945,
+    "CONNECT": 2923,
+    "RECVFROM": 743,
+    "SENDMSG": 8396,
+    "RECVMSG": 8233,
+    "SENDTO": 219,
+    "CLONE": 112,
+    "EXECUTE": 8
+   },
+   "rows": 35376236
+  },
+  "2019-05-10": {
+   "events": 4330822,
+   "dropped_unknown_entity": 0,
+   "windows": 92,
+   "fused_edges": 1399201,
+   "new_entities": 23570,
+   "registry_size": 195570,
+   "events_by_type": {
+    "READ": 2572737,
+    "OPEN": 909100,
+    "WRITE": 821254,
+    "CONNECT": 3214,
+    "RECVFROM": 73,
+    "SENDMSG": 12396,
+    "RECVMSG": 12027,
+    "CLONE": 21
+   },
+   "rows": 4330822
+  },
+  "2019-05-11": {
+   "events": 512119,
+   "dropped_unknown_entity": 0,
+   "windows": 84,
+   "fused_edges": 92460,
+   "new_entities": 3804,
+   "registry_size": 199374,
+   "events_by_type": {
+    "READ": 457706,
+    "OPEN": 47584,
+    "WRITE": 96,
+    "CONNECT": 763,
+    "SENDMSG": 3052,
+    "RECVMSG": 2918
+   },
+   "rows": 512119
+  },
+  "2019-05-12": {
+   "events": 502322,
+   "dropped_unknown_entity": 0,
+   "windows": 82,
+   "fused_edges": 87970,
+   "new_entities": 0,
+   "registry_size": 199374,
+   "events_by_type": {
+    "READ": 456168,
+    "OPEN": 46058,
+    "WRITE": 96
+   },
+   "rows": 502322
+  },
+  "2019-05-13": {
+   "events": 10692100,
+   "dropped_unknown_entity": 0,
+   "windows": 91,
+   "fused_edges": 3026319,
+   "new_entities": 27064,
+   "registry_size": 226438,
+   "events_by_type": {
+    "READ": 6464552,
+    "OPEN": 2020811,
+    "WRITE": 2197218,
+    "CONNECT": 1211,
+    "RECVFROM": 75,
+    "SENDMSG": 4132,
+    "RECVMSG": 4045,
+    "CLONE": 56
+   },
+   "rows": 10692100
+  },
+  "2019-05-14": {
+   "events": 11110686,
+   "dropped_unknown_entity": 0,
+   "windows": 95,
+   "fused_edges": 3338545,
+   "new_entities": 29619,
+   "registry_size": 256057,
+   "events_by_type": {
+    "READ": 6889636,
+    "OPEN": 2194751,
+    "WRITE": 2008123,
+    "CONNECT": 2437,
+    "RECVFROM": 1381,
+    "SENDMSG": 7008,
+    "RECVMSG": 6820,
+    "SENDTO": 515,
+    "CLONE": 14,
+    "EXECUTE": 1
+   },
+   "rows": 11110686
+  },
+  "2019-05-15": {
+   "events": 20117731,
+   "dropped_unknown_entity": 0,
+   "windows": 96,
+   "fused_edges": 5787700,
+   "new_entities": 47485,
+   "registry_size": 303542,
+   "events_by_type": {
+    "READ": 11737117,
+    "OPEN": 3908266,
+    "WRITE": 4436980,
+    "CONNECT": 5476,
+    "RECVFROM": 13261,
+    "SENDMSG": 5337,
+    "RECVMSG": 5242,
+    "SENDTO": 5944,
+    "CLONE": 98,
+    "EXECUTE": 10
+   },
+   "rows": 20117731
+  },
+  "2019-05-17": {
+   "events": 17325168,
+   "dropped_unknown_entity": 0,
+   "windows": 96,
+   "fused_edges": 5359204,
+   "new_entities": 31913,
+   "registry_size": 335455,
+   "events_by_type": {
+    "READ": 10657634,
+    "OPEN": 3577178,
+    "WRITE": 3071948,
+    "CONNECT": 3413,
+    "RECVFROM": 7228,
+    "SENDMSG": 2483,
+    "RECVMSG": 2473,
+    "SENDTO": 2752,
+    "CLONE": 56,
+    "EXECUTE": 3
+   },
+   "rows": 17325168
+  }
+ },
+ "entities": {
+  "baseline_registry": 226438,
+  "eval_test_registry": 335455
+ },
+ "stream_checks": {
+  "rows": 198794211,
+  "ops": {
+   "EVENT_READ": 120957956,
+   "EVENT_OPEN": 38836671,
+   "EVENT_WRITE": 38700519,
+   "EVENT_CONNECT": 44071,
+   "EVENT_RECVFROM": 92692,
+   "EVENT_SENDMSG": 64053,
+   "EVENT_RECVMSG": 62842,
+   "EVENT_SENDTO": 34735,
+   "EVENT_CLONE": 644,
+   "EVENT_EXECUTE": 28
+  },
+  "outside_days_or_null_ts": 5271926,
+  "exactly_midnight": 0,
+  "bad_uuid": 0,
+  "noncanonical_index_ids": 0
+ },
+ "format_notes": {
+  "entities": {
+   "subject": 48885,
+   "file": 219882,
+   "netflow": 66688
+  },
+  "process_exe_present": 0.0,
+  "process_exe_absolute_path": 0.0,
+  "process_cmdline_present": 1.0,
+  "file_path_present": 1.0,
+  "file_registry_key_share": 0.0,
+  "netflow_remote_addr_present": 0.0,
+  "edge_types_after_mapping": {
+   "READ": 77635548,
+   "OPEN": 24275226,
+   "WRITE": 23750551,
+   "CONNECT": 24910,
+   "RECVFROM": 37693,
+   "SENDMSG": 50944,
+   "RECVMSG": 49814,
+   "SENDTO": 14768,
+   "CLONE": 385,
+   "EXECUTE": 24
+  },
+  "exec_events_present": true,
+  "process_creation_events_present": true,
+  "notes": [
+   "DARPA TC E5 CLEARSCOPE (Android, ClearScope recorder): 198,794,211 event rows, 5,271,926 outside 05-07..05-18 US/Eastern or NULL timestamp, all event uuids canonical",
+   "strict TC map drops no operation (only READ/OPEN/WRITE/CONNECT/RECVFROM/SENDMSG/RECVMSG/SENDTO/CLONE/EXECUTE present)",
+   "subject_node_table.path is NULL for Android processes (the executable is in cmd), so subject labels read 'None <cmd>' exactly as PostgresReplay and the orthrus GT do",
+   "database not restored (stream)",
+   " only the nodes referenced by kept events of the prepared days are in the registries"
+  ]
+ },
+ "created": "2026-11-09T11:04:11+0000",
+ "tool": "pdp_server.tools.heldout_stream",
+ "ground_truth_not_in_pidsmaker_list": {
+  "node_clearscope_e5_firefox_0517": {
+   "csv": "E5-CLEARSCOPE/node_clearscope_e5_firefox_0517.csv",
+   "gt_nodes": 1,
+   "found_in_eval_test_registry": 1,
+   "not_found": 0,
+   "found_by_type": {
+    "file": 1
+   }
+  },
+  "node_clearscope_e5_lockwatch_0517": {
+   "csv": "E5-CLEARSCOPE/node_clearscope_e5_lockwatch_0517.csv",
+   "gt_nodes": 17,
+   "found_in_eval_test_registry": 17,
+   "not_found": 0,
+   "found_by_type": {
+    "subject": 13,
+    "file": 4
+   }
+  }
+ }
+}

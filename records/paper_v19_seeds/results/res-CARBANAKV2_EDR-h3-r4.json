@@ -1,0 +1,92 @@
+{
+ "set": "CARBANAKV2_EDR-h3",
+ "bundle": "/data/paper19s/CARBANAKV2_EDR-h3/r4/b07",
+ "fleet": [
+  "CARBANAKV2_EDR-h1",
+  "CARBANAKV2_EDR-h2",
+  "CARBANAKV2_EDR-h3",
+  "CARBANAKV2_EDR-h4",
+  "CARBANAKV2_EDR-h5"
+ ],
+ "n_attacks": 1,
+ "gt_nodes": 26,
+ "days": 7,
+ "attacks_all": [
+  "carbanakv2_edr"
+ ],
+ "V10": {
+  "TP": 2,
+  "FP": 141,
+  "recall": 0.077,
+  "attacks": 1,
+  "FP/day": 20.1,
+  "by_layer": {
+   "novelty": 45,
+   "corroborated": 84,
+   "rules": 14
+  },
+  "by_layer_tp": {
+   "novelty": 1,
+   "corroborated": 1
+  },
+  "attacks_found": [
+   "carbanakv2_edr"
+  ],
+  "attacks_det": [
+   "carbanakv2_edr"
+  ],
+  "rows": 143,
+  "ADP_stable": 0.016,
+  "precision": 0.014
+ },
+ "V19": {
+  "TP": 2,
+  "FP": 140,
+  "recall": 0.077,
+  "attacks": 1,
+  "FP/day": 20.0,
+  "by_layer": {
+   "novelty": 45,
+   "corroborated": 84,
+   "rules": 13
+  },
+  "by_layer_tp": {
+   "novelty": 1,
+   "corroborated": 1
+  },
+  "attacks_found": [
+   "carbanakv2_edr"
+  ],
+  "attacks_det": [
+   "carbanakv2_edr"
+  ],
+  "rows": 142,
+  "ADP_stable": 0.016,
+  "precision": 0.014
+ },
+ "V19id": {
+  "TP": 2,
+  "FP": 200,
+  "recall": 0.077,
+  "attacks": 1,
+  "FP/day": 28.6,
+  "by_layer": {
+   "novelty": 45,
+   "corroborated": 88,
+   "rules": 69
+  },
+  "by_layer_tp": {
+   "novelty": 1,
+   "corroborated": 1
+  },
+  "attacks_found": [
+   "carbanakv2_edr"
+  ],
+  "attacks_det": [
+   "carbanakv2_edr"
+  ],
+  "rows": 205,
+  "ADP_stable": 0.011,
+  "precision": 0.01
+ }
+}

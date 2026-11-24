@@ -1,0 +1,13 @@
+11:48:12 validation replay 164s: ensemble thresholds {'detector-1': 0.5247678160667419, 'detector-2': 0.6709397792816163} (547944 nodes)
+11:51:18 fleet ['CARBANAKV2_EDR-h1', 'CARBANAKV2_EDR-h2', 'CARBANAKV2_EDR-h3', 'CARBANAKV2_EDR-h4', 'CARBANAKV2_EDR-h5']: 268 program keys from 4 other endpoints
+11:51:54 scored 387s
+11:51:56 P0: attacks 1 TP 40 FP 165 rows 208 ADP 0.437 (learned only 0.004)
+11:51:57 P1: attacks 1 TP 35 FP 118 rows 156 ADP 0.437 (learned only 0.004)
+11:51:57 P1e: attacks 1 TP 35 FP 118 rows 156 ADP 0.437 (learned only 0.004)
+11:51:58 P2: attacks 1 TP 39 FP 132 rows 174 ADP 0.437 (learned only 0.004)
+11:51:59 P2e: attacks 1 TP 39 FP 132 rows 174 ADP 0.437 (learned only 0.004)
+11:52:42 amendment 2: P2 triage ADP ties {'random_mean': 0.437, 'random_sd': 0.0, 'random_min': 0.437, 'random_max': 0.437, 'worst': 0.437}; learned {'random_mean': 0.004, 'random_sd': 0.0, 'random_min': 0.004, 'random_max': 0.004, 'worst': 0.004}
+11:52:43 amendment 1: triage ADP time tie-break {'mean': 0.316, 'min': 0.311, 'max': 0.333, 'seeds': 20}; layers 1-2 only {'TP': 39, 'FP': 131, 'recall': 0.481, 'attacks': 1, 'precision': 0.229, 'attacks_found': ['carbanakv2_edr'], 'ADP_time_tiebreak': {'mean': 0.316, 'min': 0.311, 'max': 0.333, 'seeds': 20}}
+11:52:51 detector-1 alone: attacks 0 TP 0 FP 66 ADP 0.005
+11:52:58 detector-2 alone: attacks 0 TP 0 FP 17 ADP 0.01
+CARBANAKV2_EDR-h2    P2/G2: alerts   174 incidents   27 (FP   18, 2.0/day) attacks 1 buried 0

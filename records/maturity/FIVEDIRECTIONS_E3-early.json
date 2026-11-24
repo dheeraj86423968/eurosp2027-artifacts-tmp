@@ -1,0 +1,221 @@
+{
+ "dataset": "FIVEDIRECTIONS_E3",
+ "baseline_days": [
+  "2018-04-04",
+  "2018-04-05",
+  "2018-04-06",
+  "2018-04-07",
+  "2018-04-08"
+ ],
+ "baseline_windows": 340,
+ "levels": [
+  {
+   "level": "1h",
+   "baseline_hours": 1.0,
+   "product": {
+    "TP": 14,
+    "FP": 718,
+    "FN": 94,
+    "TN": 281994,
+    "precision": 0.019,
+    "recall": 0.13,
+    "MCC": 0.049,
+    "attacks_detected": "2/2"
+   },
+   "rules_only": {
+    "TP": 0,
+    "FP": 0,
+    "FN": 108,
+    "TN": 282712,
+    "precision": 0.0,
+    "recall": 0.0,
+    "MCC": 0.0,
+    "attacks_detected": "0/2"
+   },
+   "by_layer": {
+    "novelty": {
+     "alerts": 154,
+     "TP": 1
+    },
+    "rules": {
+     "alerts": 0,
+     "TP": 0
+    },
+    "corroborated": {
+     "alerts": 578,
+     "TP": 13
+    },
+    "learned": {
+     "alerts": 0,
+     "TP": 0
+    }
+   },
+   "deterministic_only": {
+    "TP": 1,
+    "FP": 153,
+    "FN": 107,
+    "TN": 282559,
+    "precision": 0.006,
+    "recall": 0.009,
+    "MCC": 0.007,
+    "attacks_detected": "1/2"
+   }
+  },
+  {
+   "level": "6h",
+   "baseline_hours": 6.0,
+   "product": {
+    "TP": 9,
+    "FP": 437,
+    "FN": 99,
+    "TN": 282275,
+    "precision": 0.02,
+    "recall": 0.083,
+    "MCC": 0.04,
+    "attacks_detected": "2/2"
+   },
+   "rules_only": {
+    "TP": 0,
+    "FP": 0,
+    "FN": 108,
+    "TN": 282712,
+    "precision": 0.0,
+    "recall": 0.0,
+    "MCC": 0.0,
+    "attacks_detected": "0/2"
+   },
+   "by_layer": {
+    "novelty": {
+     "alerts": 142,
+     "TP": 1
+    },
+    "rules": {
+     "alerts": 0,
+     "TP": 0
+    },
+    "corroborated": {
+     "alerts": 304,
+     "TP": 8
+    },
+    "learned": {
+     "alerts": 0,
+     "TP": 0
+    }
+   },
+   "deterministic_only": {
+    "TP": 1,
+    "FP": 141,
+    "FN": 107,
+    "TN": 282571,
+    "precision": 0.007,
+    "recall": 0.009,
+    "MCC": 0.008,
+    "attacks_detected": "1/2"
+   }
+  },
+  {
+   "level": "1d",
+   "baseline_hours": 24.0,
+   "product": {
+    "TP": 2,
+    "FP": 87,
+    "FN": 106,
+    "TN": 282625,
+    "precision": 0.022,
+    "recall": 0.019,
+    "MCC": 0.02,
+    "attacks_detected": "2/2"
+   },
+   "rules_only": {
+    "TP": 0,
+    "FP": 0,
+    "FN": 108,
+    "TN": 282712,
+    "precision": 0.0,
+    "recall": 0.0,
+    "MCC": 0.0,
+    "attacks_detected": "0/2"
+   },
+   "by_layer": {
+    "novelty": {
+     "alerts": 81,
+     "TP": 1
+    },
+    "rules": {
+     "alerts": 0,
+     "TP": 0
+    },
+    "corroborated": {
+     "alerts": 8,
+     "TP": 1
+    },
+    "learned": {
+     "alerts": 0,
+     "TP": 0
+    }
+   },
+   "deterministic_only": {
+    "TP": 1,
+    "FP": 80,
+    "FN": 107,
+    "TN": 282632,
+    "precision": 0.012,
+    "recall": 0.009,
+    "MCC": 0.01,
+    "attacks_detected": "1/2"
+   }
+  },
+  {
+   "level": "3d",
+   "baseline_hours": 72.0,
+   "product": {
+    "TP": 11,
+    "FP": 164,
+    "FN": 97,
+    "TN": 282548,
+    "precision": 0.063,
+    "recall": 0.102,
+    "MCC": 0.08,
+    "attacks_detected": "2/2"
+   },
+   "rules_only": {
+    "TP": 0,
+    "FP": 0,
+    "FN": 108,
+    "TN": 282712,
+    "precision": 0.0,
+    "recall": 0.0,
+    "MCC": 0.0,
+    "attacks_detected": "0/2"
+   },
+   "by_layer": {
+    "novelty": {
+     "alerts": 48,
+     "TP": 1
+    },
+    "rules": {
+     "alerts": 0,
+     "TP": 0
+    },
+    "corroborated": {
+     "alerts": 127,
+     "TP": 10
+    },
+    "learned": {
+     "alerts": 0,
+     "TP": 0
+    }
+   },
+   "deterministic_only": {
+    "TP": 1,
+    "FP": 47,
+    "FN": 107,
+    "TN": 282665,
+    "precision": 0.021,
+    "recall": 0.009,
+    "MCC": 0.014,
+    "attacks_detected": "1/2"
+   }
+  }
+ ]
+}

@@ -1,0 +1,238 @@
+{
+ "dataset": "THEIA_E5",
+ "host": "theia",
+ "platform": "linux",
+ "database": "not restored (disk): streamed from <DATA>/darpa/theia_e5/theia_e5.dump with pdp_server.tools.heldout_stream; verified identical to PostgresReplay + ingest_day (heldout_prep build) on a 3,524,866-row stride sample of this dump (every 40th event_table row, all days, + the 695,313 node rows it references; database theia_e5_sample; registries and every window array identical, same train/val/test days)",
+ "source": "heldout_stream (PostgresReplay-equivalent)",
+ "train_days": [
+  "2019-05-08",
+  "2019-05-09",
+  "2019-05-10"
+ ],
+ "val_day": "2019-05-11",
+ "test_days": [
+  "2019-05-14",
+  "2019-05-15"
+ ],
+ "split_rule": "PIDSMaker lists are chronological (train 05-08,05-09,05-10 < val 05-11 < test 05-14,05-15) -> used as is (rule fixed before the survey; TRACE_E3 precedent). PIDSMaker 'unused' days 05-12, 05-13, 05-16, 05-17 and the day before its start_date (05-07) are in neither store.",
+ "flags": [
+  "only 3 training days (PIDSMaker list)",
+  "val day 05-11 is not directly before the first test day (05-12 and 05-13, 3.2M / 4.2M kept events, PIDSMaker-unused, are skipped)",
+  "2019-05-07 has 57.7M kept events but is before PIDSMaker's start_date 05-08 and is not used"
+ ],
+ "day_boundaries": "US/Eastern calendar days, timestamp_rec strictly inside (PostgresReplay / PIDSMaker graph construction)",
+ "window": "15 min fused windows (WindowBuilder, chunks of 1024)",
+ "entity_uuid": "framework index_id (orthrus ground truth column 3); label formats 'subject <exe> <cmdline>', 'file <path>', 'netflow <ip> <port>'",
+ "eval_test_registry": "starts as a copy of the baseline registry (dense ids agree), extended by the test days",
+ "ground_truth_dir": "<PIDSMAKER>/Ground_Truth/orthrus (= /data/gt/orthrus in the pdp containers)",
+ "ground_truth": {
+  "node_THEIA_1_Firefox_Drakon_APT_BinFmt_Elevate_Inject": {
+   "csv": "E5-THEIA/node_THEIA_1_Firefox_Drakon_APT_BinFmt_Elevate_Inject.csv",
+   "gt_nodes": 70,
+   "found_in_eval_test_registry": 68,
+   "not_found": 2,
+   "found_by_type": {
+    "subject": 64,
+    "netflow": 4
+   },
+   "not_found_breakdown": {
+    "no_kept_event_on_prepared_days_or_not_in_database": 2,
+    "referenced_but_entity_missing": 0
+   }
+  }
+ },
+ "days": {
+  "2019-05-08": {
+   "events": 9755176,
+   "dropped_unknown_entity": 0,
+   "windows": 88,
+   "fused_edges": 5561236,
+   "new_entities": 291841,
+   "registry_size": 291841,
+   "events_by_type": {
+    "WRITE": 1454700,
+    "READ": 2819860,
+    "RECVMSG": 7033,
+    "RECVFROM": 459425,
+    "SENDTO": 6766,
+    "OPEN": 4762268,
+    "CONNECT": 4133,
+    "EXECUTE": 106760,
+    "SENDMSG": 1688,
+    "CLONE": 132543
+   },
+   "rows": 9892730
+  },
+  "2019-05-09": {
+   "events": 7006586,
+   "dropped_unknown_entity": 0,
+   "windows": 87,
+   "fused_edges": 3558692,
+   "new_entities": 210474,
+   "registry_size": 502315,
+   "events_by_type": {
+    "WRITE": 1577493,
+    "READ": 2521422,
+    "RECVMSG": 6727,
+    "RECVFROM": 35369,
+    "SENDTO": 4376,
+    "OPEN": 2658470,
+    "CONNECT": 2806,
+    "EXECUTE": 89776,
+    "SENDMSG": 1739,
+    "CLONE": 108408
+   },
+   "rows": 7119117
+  },
+  "2019-05-10": {
+   "events": 6564340,
+   "dropped_unknown_entity": 0,
+   "windows": 76,
+   "fused_edges": 3285286,
+   "new_entities": 244362,
+   "registry_size": 746677,
+   "events_by_type": {
+    "WRITE": 1455330,
+    "READ": 2544012,
+    "RECVMSG": 44235,
+    "RECVFROM": 4386,
+    "SENDTO": 6127,
+    "OPEN": 2307356,
+    "CONNECT": 4366,
+    "EXECUTE": 88848,
+    "SENDMSG": 1986,
+    "CLONE": 107694
+   },
+   "rows": 6675936
+  },
+  "2019-05-11": {
+   "events": 6586717,
+   "dropped_unknown_entity": 0,
+   "windows": 92,
+   "fused_edges": 3971819,
+   "new_entities": 173815,
+   "registry_size": 920492,
+   "events_by_type": {
+    "WRITE": 773728,
+    "READ": 2288492,
+    "RECVMSG": 335928,
+    "RECVFROM": 17540,
+    "SENDTO": 23270,
+    "OPEN": 2944432,
+    "CONNECT": 17275,
+    "EXECUTE": 82798,
+    "SENDMSG": 4719,
+    "CLONE": 98535
+   },
+   "rows": 6690937
+  },
+  "2019-05-14": {
+   "events": 13771858,
+   "dropped_unknown_entity": 0,
+   "windows": 92,
+   "fused_edges": 8624024,
+   "new_entities": 373722,
+   "registry_size": 1294214,
+   "events_by_type": {
+    "WRITE": 2194248,
+    "READ": 3939077,
+    "RECVMSG": 171471,
+    "RECVFROM": 24147,
+    "SENDTO": 29383,
+    "OPEN": 7066797,
+    "CONNECT": 16116,
+    "EXECUTE": 146534,
+    "SENDMSG": 3764,
+    "CLONE": 180321
+   },
+   "rows": 13958501
+  },
+  "2019-05-15": {
+   "events": 12464260,
+   "dropped_unknown_entity": 0,
+   "windows": 85,
+   "fused_edges": 6028003,
+   "new_entities": 255981,
+   "registry_size": 1550195,
+   "events_by_type": {
+    "WRITE": 3261596,
+    "READ": 4147454,
+    "RECVMSG": 16252,
+    "RECVFROM": 20548,
+    "SENDTO": 21384,
+    "OPEN": 4707921,
+    "CONNECT": 7618,
+    "EXECUTE": 125937,
+    "SENDMSG": 1614,
+    "CLONE": 153936
+   },
+   "rows": 12623791
+  }
+ },
+ "entities": {
+  "baseline_registry": 920492,
+  "eval_test_registry": 1550195
+ },
+ "stream_checks": {
+  "rows": 140994662,
+  "ops": {
+   "EVENT_WRITE": 66155235,
+   "EVENT_READ": 29644315,
+   "EVENT_RECVMSG": 1531703,
+   "EVENT_RECVFROM": 1775374,
+   "EVENT_SENDTO": 165338,
+   "EVENT_OPEN": 38130199,
+   "EVENT_CONNECT": 104409,
+   "EVENT_EXECUTE": 996631,
+   "EVENT_EXIT": 1235348,
+   "EVENT_SENDMSG": 27702,
+   "EVENT_CLONE": 1205496,
+   "EVENT_BOOT": 6,
+   "EVENT_CHANGE_PRINCIPAL": 14589,
+   "EVENT_MODIFY_FILE_ATTRIBUTES": 2305,
+   "EVENT_UNLINK": 6011,
+   "EVENT_MPROTECT": 1
+  },
+  "outside_days_or_null_ts": 0,
+  "exactly_midnight": 0,
+  "bad_uuid": 0,
+  "noncanonical_index_ids": 0
+ },
+ "format_notes": {
+  "entities": {
+   "subject": 798664,
+   "file": 720677,
+   "netflow": 30854
+  },
+  "process_exe_present": 1.0,
+  "process_exe_absolute_path": 1.0,
+  "process_cmdline_present": 1.0,
+  "file_path_present": 1.0,
+  "file_registry_key_share": 0.0,
+  "netflow_remote_addr_present": 0.9999,
+  "edge_types_after_mapping": {
+   "WRITE": 10717095,
+   "READ": 18260317,
+   "RECVMSG": 581646,
+   "RECVFROM": 561415,
+   "SENDTO": 91306,
+   "OPEN": 24447244,
+   "CONNECT": 52314,
+   "EXECUTE": 640653,
+   "SENDMSG": 15510,
+   "CLONE": 781437
+  },
+  "exec_events_present": true,
+  "process_creation_events_present": true,
+  "notes": [
+   "DARPA TC E5 THEIA (Linux, THEIA recorder): 140,994,662 event rows, no NULL/out-of-range timestamps, all event uuids canonical",
+   "strict TC map drops EVENT_EXIT, EVENT_CHANGE_PRINCIPAL, EVENT_UNLINK, EVENT_MODIFY_FILE_ATTRIBUTES, EVENT_BOOT, EVENT_MPROTECT (1.26M rows)",
+   "EXECUTE and CLONE present",
+   " RECVFROM/SENDTO as well as RECVMSG/SENDMSG",
+   "database not restored (stream)",
+   " only the 1.55M nodes referenced by kept events of the prepared days are in the registries"
+  ]
+ },
+ "created": "2026-11-08T08:51:13+0000",
+ "tool": "pdp_server.tools.heldout_stream"
+}

@@ -1,0 +1,1 @@
+while pgrep -f "<WORK>/bl/trace_pf.sh" >/dev/null; do sleep 60; done; rm -f <WORK>/bl/pf/TRACE_E3/trace_e3_merged.pt; rm -rf <WORK>/bl/pf/TRACE_E3/artifacts; echo "$(date +%T) TRACE merged data deleted" >> <WORK>/bl/pf_trace.log

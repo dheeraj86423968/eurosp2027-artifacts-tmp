@@ -1,0 +1,44 @@
+{
+ "CARBANAKV2_EDR-h5": {
+  "days": 11,
+  "V10/G0": {
+   "incidents": 18,
+   "fp_incidents": 14,
+   "tp_incidents": 4,
+   "fp_inc_per_day": 1.27,
+   "attacks": 1,
+   "attacks_found": [
+    "carbanakv2_edr"
+   ],
+   "buried": [],
+   "max_alerts": 44,
+   "alerts": 109
+  },
+  "V19/G0": {
+   "incidents": 18,
+   "fp_incidents": 14,
+   "tp_incidents": 4,
+   "fp_inc_per_day": 1.27,
+   "attacks": 1,
+   "attacks_found": [
+    "carbanakv2_edr"
+   ],
+   "buried": [],
+   "max_alerts": 44,
+   "alerts": 109
+  },
+  "V19id/G0": {
+   "incidents": 9,
+   "fp_incidents": 5,
+   "tp_incidents": 4,
+   "fp_inc_per_day": 0.45,
+   "attacks": 1,
+   "attacks_found": [
+    "carbanakv2_edr"
+   ],
+   "buried": [],
+   "max_alerts": 44,
+   "alerts": 98
+  }
+ }
+}

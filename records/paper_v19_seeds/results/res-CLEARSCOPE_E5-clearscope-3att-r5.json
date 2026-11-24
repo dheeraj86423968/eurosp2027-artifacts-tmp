@@ -1,0 +1,93 @@
+{
+ "set": "CLEARSCOPE_E5-clearscope",
+ "bundle": "/data/paper19s/CLEARSCOPE_E5-clearscope/r5/b07",
+ "fleet": [
+  "CLEARSCOPE_E5-clearscope"
+ ],
+ "n_attacks": 3,
+ "gt_nodes": 51,
+ "days": 3,
+ "attacks_all": [
+  "clearscope_e5_lockwatch_0517",
+  "node_clearscope_e5_appstarter_0515",
+  "node_clearscope_e5_tester_0517"
+ ],
+ "V10": {
+  "TP": 4,
+  "FP": 13,
+  "recall": 0.078,
+  "attacks": 2,
+  "FP/day": 4.3,
+  "by_layer": {
+   "novelty": 15,
+   "corroborated": 2
+  },
+  "by_layer_tp": {
+   "novelty": 2,
+   "corroborated": 2
+  },
+  "attacks_found": [
+   "node_clearscope_e5_appstarter_0515",
+   "node_clearscope_e5_tester_0517"
+  ],
+  "attacks_det": [
+   "node_clearscope_e5_appstarter_0515",
+   "node_clearscope_e5_tester_0517"
+  ],
+  "rows": 17,
+  "ADP_stable": 0.692,
+  "precision": 0.235
+ },
+ "V19": {
+  "TP": 4,
+  "FP": 13,
+  "recall": 0.078,
+  "attacks": 2,
+  "FP/day": 4.3,
+  "by_layer": {
+   "novelty": 15,
+   "corroborated": 2
+  },
+  "by_layer_tp": {
+   "novelty": 2,
+   "corroborated": 2
+  },
+  "attacks_found": [
+   "node_clearscope_e5_appstarter_0515",
+   "node_clearscope_e5_tester_0517"
+  ],
+  "attacks_det": [
+   "node_clearscope_e5_appstarter_0515",
+   "node_clearscope_e5_tester_0517"
+  ],
+  "rows": 17,
+  "ADP_stable": 0.692,
+  "precision": 0.235
+ },
+ "V19id": {
+  "TP": 4,
+  "FP": 13,
+  "recall": 0.078,
+  "attacks": 2,
+  "FP/day": 4.3,
+  "by_layer": {
+   "novelty": 15,
+   "corroborated": 2
+  },
+  "by_layer_tp": {
+   "novelty": 2,
+   "corroborated": 2
+  },
+  "attacks_found": [
+   "node_clearscope_e5_appstarter_0515",
+   "node_clearscope_e5_tester_0517"
+  ],
+  "attacks_det": [
+   "node_clearscope_e5_appstarter_0515",
+   "node_clearscope_e5_tester_0517"
+  ],
+  "rows": 17,
+  "ADP_stable": 0.692,
+  "precision": 0.235
+ }
+}

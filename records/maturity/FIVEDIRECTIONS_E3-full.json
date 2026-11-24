@@ -1,0 +1,65 @@
+{
+ "dataset": "FIVEDIRECTIONS_E3",
+ "baseline_days": [
+  "2018-04-04",
+  "2018-04-05",
+  "2018-04-06",
+  "2018-04-07",
+  "2018-04-08"
+ ],
+ "baseline_windows": 340,
+ "levels": [
+  {
+   "level": "full",
+   "baseline_hours": 85.0,
+   "product": {
+    "TP": 11,
+    "FP": 169,
+    "FN": 97,
+    "TN": 282543,
+    "precision": 0.061,
+    "recall": 0.102,
+    "MCC": 0.078,
+    "attacks_detected": "2/2"
+   },
+   "rules_only": {
+    "TP": 0,
+    "FP": 0,
+    "FN": 108,
+    "TN": 282712,
+    "precision": 0.0,
+    "recall": 0.0,
+    "MCC": 0.0,
+    "attacks_detected": "0/2"
+   },
+   "by_layer": {
+    "novelty": {
+     "alerts": 48,
+     "TP": 1
+    },
+    "rules": {
+     "alerts": 0,
+     "TP": 0
+    },
+    "corroborated": {
+     "alerts": 132,
+     "TP": 10
+    },
+    "learned": {
+     "alerts": 0,
+     "TP": 0
+    }
+   },
+   "deterministic_only": {
+    "TP": 1,
+    "FP": 47,
+    "FN": 107,
+    "TN": 282665,
+    "precision": 0.021,
+    "recall": 0.009,
+    "MCC": 0.014,
+    "attacks_detected": "1/2"
+   }
+  }
+ ]
+}

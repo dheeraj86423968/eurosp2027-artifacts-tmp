@@ -1,0 +1,434 @@
+{
+ "_note": "Ground-truth CSV paths are relative to PIDSMaker's Ground_Truth/orthrus directory. A node is a ground-truth node of an attack if its id (alert row field node_uuid) equals column 3 (index_id) of a row of that attack's CSV. attacks_counted: denominator used in the paper (ATLASv2 h2 has no attack nodes; ATLASv2 h1 counts its 10 scenarios).",
+ "sets": {
+  "CADETS_E3": {
+   "family": "CADETS",
+   "test_days": [
+    "2018-04-06",
+    "2018-04-11",
+    "2018-04-12",
+    "2018-04-13"
+   ],
+   "ground_truth": {
+    "Nginx_Backdoor_06": "E3-CADETS/node_Nginx_Backdoor_06.csv",
+    "Nginx_Backdoor_12": "E3-CADETS/node_Nginx_Backdoor_12.csv",
+    "Nginx_Backdoor_13": "E3-CADETS/node_Nginx_Backdoor_13.csv"
+   },
+   "source": "PIDSMaker database (native)",
+   "attacks_counted": 3,
+   "development_set": true
+  },
+  "THEIA_E3": {
+   "family": "THEIA",
+   "test_days": [
+    "2018-04-10",
+    "2018-04-12",
+    "2018-04-13"
+   ],
+   "ground_truth": {
+    "Browser_Extension_Drakon_Dropper": "E3-THEIA/node_Browser_Extension_Drakon_Dropper.csv",
+    "Firefox_Backdoor_Drakon_In_Memory": "E3-THEIA/node_Firefox_Backdoor_Drakon_In_Memory.csv"
+   },
+   "source": "PIDSMaker database (native)",
+   "attacks_counted": 2,
+   "development_set": true
+  },
+  "OPTC_H201": {
+   "family": "OPTC",
+   "test_days": [
+    "2019-09-23",
+    "2019-09-24",
+    "2019-09-25"
+   ],
+   "ground_truth": {
+    "h201_0923": "h201/node_h201_0923.csv"
+   },
+   "source": "PIDSMaker database (native)",
+   "attacks_counted": 1,
+   "development_set": true
+  },
+  "OPTC_H501": {
+   "family": "OPTC",
+   "test_days": [
+    "2019-09-23",
+    "2019-09-24",
+    "2019-09-25"
+   ],
+   "ground_truth": {
+    "h501_0924": "h501/node_h501_0924.csv"
+   },
+   "source": "PIDSMaker database (native)",
+   "attacks_counted": 1,
+   "development_set": true
+  },
+  "OPTC_H051": {
+   "family": "OPTC",
+   "test_days": [
+    "2019-09-23",
+    "2019-09-24",
+    "2019-09-25"
+   ],
+   "ground_truth": {
+    "h051_0925": "h051/node_h051_0925.csv"
+   },
+   "source": "PIDSMaker database (native)",
+   "attacks_counted": 1,
+   "development_set": true
+  },
+  "CLEARSCOPE_E3": {
+   "family": "CLEARSCOPE",
+   "test_days": [
+    "2018-04-11",
+    "2018-04-12"
+   ],
+   "ground_truth": {
+    "clearscope_e3_firefox_0411": "E3-CLEARSCOPE/node_clearscope_e3_firefox_0411.csv"
+   },
+   "source": "PIDSMaker database (native)",
+   "attacks_counted": 1,
+   "development_set": true
+  },
+  "FIVEDIRECTIONS_E3": {
+   "family": "FIVEDIRECTIONS",
+   "test_days": [
+    "2018-04-09",
+    "2018-04-10",
+    "2018-04-11"
+   ],
+   "ground_truth": {
+    "fivedirections_e3_excel_0409": "E3-FIVEDIRECTIONS/node_fivedirections_e3_excel_0409.csv",
+    "fivedirections_e3_firefox_0411": "E3-FIVEDIRECTIONS/node_fivedirections_e3_firefox_0411.csv"
+   },
+   "source": "PIDSMaker database (native)",
+   "attacks_counted": 2,
+   "development_set": true
+  },
+  "ATLASV2_EDR-h1": {
+   "family": "ATLASV2",
+   "test_days": [
+    "2022-07-19"
+   ],
+   "train_days": [
+    "2022-07-15",
+    "2022-07-16",
+    "2022-07-17"
+   ],
+   "val_day": "2022-07-18",
+   "ground_truth": {
+    "atlasv2_edr_m1": "atlasv2_edr/atlasv2_edr_m1.csv",
+    "atlasv2_edr_m2": "atlasv2_edr/atlasv2_edr_m2.csv",
+    "atlasv2_edr_m3": "atlasv2_edr/atlasv2_edr_m3.csv",
+    "atlasv2_edr_m4": "atlasv2_edr/atlasv2_edr_m4.csv",
+    "atlasv2_edr_m5": "atlasv2_edr/atlasv2_edr_m5.csv",
+    "atlasv2_edr_m6": "atlasv2_edr/atlasv2_edr_m6.csv",
+    "atlasv2_edr_s1": "atlasv2_edr/atlasv2_edr_s1.csv",
+    "atlasv2_edr_s2": "atlasv2_edr/atlasv2_edr_s2.csv",
+    "atlasv2_edr_s3": "atlasv2_edr/atlasv2_edr_s3.csv",
+    "atlasv2_edr_s4": "atlasv2_edr/atlasv2_edr_s4.csv"
+   },
+   "ground_truth_nodes_on_this_host": {
+    "atlasv2_edr_m1": 1,
+    "atlasv2_edr_m2": 1,
+    "atlasv2_edr_m3": 1,
+    "atlasv2_edr_m4": 4,
+    "atlasv2_edr_m5": 13,
+    "atlasv2_edr_m6": 7,
+    "atlasv2_edr_s1": 1,
+    "atlasv2_edr_s2": 1,
+    "atlasv2_edr_s3": 6,
+    "atlasv2_edr_s4": 13
+   },
+   "host_partition_key": "192.168.223.128",
+   "source": "manifest: records/heldout_prep_manifests/ATLASV2_EDR/h1/manifest.json",
+   "attacks_counted": 10,
+   "development_set": true
+  },
+  "ATLASV2_EDR-h2": {
+   "family": "ATLASV2",
+   "test_days": [
+    "2022-07-19"
+   ],
+   "train_days": [
+    "2022-07-15",
+    "2022-07-16",
+    "2022-07-17"
+   ],
+   "val_day": "2022-07-18",
+   "ground_truth": {
+    "atlasv2_edr_m1": "atlasv2_edr/atlasv2_edr_m1.csv",
+    "atlasv2_edr_m2": "atlasv2_edr/atlasv2_edr_m2.csv",
+    "atlasv2_edr_m3": "atlasv2_edr/atlasv2_edr_m3.csv",
+    "atlasv2_edr_m4": "atlasv2_edr/atlasv2_edr_m4.csv",
+    "atlasv2_edr_m5": "atlasv2_edr/atlasv2_edr_m5.csv",
+    "atlasv2_edr_m6": "atlasv2_edr/atlasv2_edr_m6.csv",
+    "atlasv2_edr_s1": "atlasv2_edr/atlasv2_edr_s1.csv",
+    "atlasv2_edr_s2": "atlasv2_edr/atlasv2_edr_s2.csv",
+    "atlasv2_edr_s3": "atlasv2_edr/atlasv2_edr_s3.csv",
+    "atlasv2_edr_s4": "atlasv2_edr/atlasv2_edr_s4.csv"
+   },
+   "ground_truth_nodes_on_this_host": {
+    "atlasv2_edr_m1": 0,
+    "atlasv2_edr_m2": 0,
+    "atlasv2_edr_m3": 0,
+    "atlasv2_edr_m4": 0,
+    "atlasv2_edr_m5": 0,
+    "atlasv2_edr_m6": 0,
+    "atlasv2_edr_s1": 0,
+    "atlasv2_edr_s2": 0,
+    "atlasv2_edr_s3": 0,
+    "atlasv2_edr_s4": 0
+   },
+   "host_partition_key": "192.168.223.130",
+   "source": "manifest: records/heldout_prep_manifests/ATLASV2_EDR/h2/manifest.json",
+   "attacks_counted": 0,
+   "development_set": true
+  },
+  "CARBANAKV2_EDR-h1": {
+   "family": "CARBANAKV2",
+   "test_days": [
+    "2024-04-30",
+    "2024-05-01",
+    "2024-05-02",
+    "2024-05-03",
+    "2024-05-06",
+    "2024-05-07",
+    "2024-05-08",
+    "2024-05-09"
+   ],
+   "train_days": [
+    "2024-04-21",
+    "2024-04-22",
+    "2024-04-23",
+    "2024-04-24",
+    "2024-04-25",
+    "2024-04-26",
+    "2024-04-28"
+   ],
+   "val_day": "2024-04-29",
+   "ground_truth": {
+    "carbanakv2_edr": "carbanakv2_edr/carbanakv2_edr.csv"
+   },
+   "ground_truth_nodes_on_this_host": {
+    "carbanakv2_edr": 63
+   },
+   "host_partition_key": "10.195.75.103",
+   "source": "manifest: records/heldout_prep_manifests/CARBANAKV2_EDR/h1/manifest.json",
+   "attacks_counted": 1,
+   "development_set": true
+  },
+  "CARBANAKV2_EDR-h2": {
+   "family": "CARBANAKV2",
+   "test_days": [
+    "2024-04-30",
+    "2024-05-01",
+    "2024-05-02",
+    "2024-05-03",
+    "2024-05-06",
+    "2024-05-07",
+    "2024-05-08",
+    "2024-05-09",
+    "2024-05-10"
+   ],
+   "train_days": [
+    "2024-04-20",
+    "2024-04-23"
+   ],
+   "val_day": "2024-04-29",
+   "ground_truth": {
+    "carbanakv2_edr": "carbanakv2_edr/carbanakv2_edr.csv"
+   },
+   "ground_truth_nodes_on_this_host": {
+    "carbanakv2_edr": 81
+   },
+   "host_partition_key": "10.195.78.253",
+   "source": "manifest: records/heldout_prep_manifests/CARBANAKV2_EDR/h2/manifest.json",
+   "attacks_counted": 1,
+   "development_set": true
+  },
+  "CARBANAKV2_EDR-h3": {
+   "family": "CARBANAKV2",
+   "test_days": [
+    "2024-04-30",
+    "2024-05-01",
+    "2024-05-02",
+    "2024-05-06",
+    "2024-05-07",
+    "2024-05-08",
+    "2024-05-09"
+   ],
+   "train_days": [
+    "2024-04-19",
+    "2024-04-20",
+    "2024-04-22",
+    "2024-04-23",
+    "2024-04-24",
+    "2024-04-25",
+    "2024-04-26"
+   ],
+   "val_day": "2024-04-27",
+   "ground_truth": {
+    "carbanakv2_edr": "carbanakv2_edr/carbanakv2_edr.csv"
+   },
+   "ground_truth_nodes_on_this_host": {
+    "carbanakv2_edr": 26
+   },
+   "host_partition_key": "10.192.90.48",
+   "source": "manifest: records/heldout_prep_manifests/CARBANAKV2_EDR/h3/manifest.json",
+   "attacks_counted": 1,
+   "development_set": true
+  },
+  "CARBANAKV2_EDR-h4": {
+   "family": "CARBANAKV2",
+   "test_days": [
+    "2024-04-30",
+    "2024-05-01",
+    "2024-05-02",
+    "2024-05-07",
+    "2024-05-08",
+    "2024-05-09",
+    "2024-05-10"
+   ],
+   "train_days": [
+    "2024-04-18",
+    "2024-04-22",
+    "2024-04-24",
+    "2024-04-25",
+    "2024-04-26"
+   ],
+   "val_day": "2024-04-29",
+   "ground_truth": {
+    "carbanakv2_edr": "carbanakv2_edr/carbanakv2_edr.csv"
+   },
+   "ground_truth_nodes_on_this_host": {
+    "carbanakv2_edr": 21
+   },
+   "host_partition_key": "10.192.101.45",
+   "source": "manifest: records/heldout_prep_manifests/CARBANAKV2_EDR/h4/manifest.json",
+   "attacks_counted": 1,
+   "development_set": true
+  },
+  "CARBANAKV2_EDR-h5": {
+   "family": "CARBANAKV2",
+   "test_days": [
+    "2024-04-30",
+    "2024-05-01",
+    "2024-05-02",
+    "2024-05-03",
+    "2024-05-04",
+    "2024-05-05",
+    "2024-05-06",
+    "2024-05-07",
+    "2024-05-08",
+    "2024-05-09",
+    "2024-05-10"
+   ],
+   "train_days": [
+    "2024-04-22",
+    "2024-04-23",
+    "2024-04-24",
+    "2024-04-25",
+    "2024-04-26",
+    "2024-04-27",
+    "2024-04-28"
+   ],
+   "val_day": "2024-04-29",
+   "ground_truth": {
+    "carbanakv2_edr": "carbanakv2_edr/carbanakv2_edr.csv"
+   },
+   "ground_truth_nodes_on_this_host": {
+    "carbanakv2_edr": 21
+   },
+   "host_partition_key": "130.126.136.46",
+   "source": "manifest: records/heldout_prep_manifests/CARBANAKV2_EDR/h5/manifest.json",
+   "attacks_counted": 1,
+   "development_set": true
+  },
+  "CLEARSCOPE_E5-clearscope": {
+   "family": "CLEARSCOPE",
+   "test_days": [
+    "2019-05-14",
+    "2019-05-15",
+    "2019-05-17"
+   ],
+   "train_days": [
+    "2019-05-08",
+    "2019-05-09",
+    "2019-05-10",
+    "2019-05-11",
+    "2019-05-12"
+   ],
+   "val_day": "2019-05-13",
+   "ground_truth": {
+    "node_clearscope_e5_appstarter_0515": "E5-CLEARSCOPE/node_clearscope_e5_appstarter_0515.csv",
+    "node_clearscope_e5_tester_0517": "E5-CLEARSCOPE/node_clearscope_e5_tester_0517.csv"
+   },
+   "ground_truth_nodes_on_this_host": {
+    "node_clearscope_e5_appstarter_0515": 26,
+    "node_clearscope_e5_tester_0517": 8
+   },
+   "host_partition_key": null,
+   "source": "manifest: records/heldout_prep_manifests/CLEARSCOPE_E5/clearscope/manifest.json",
+   "attacks_counted": 2,
+   "development_set": false,
+   "extra_ground_truth_bilot": {
+    "clearscope_e5_lockwatch_0517": "E5-CLEARSCOPE/node_clearscope_e5_lockwatch_0517.csv"
+   }
+  },
+  "THEIA_E5-theia": {
+   "family": "THEIA",
+   "test_days": [
+    "2019-05-14",
+    "2019-05-15"
+   ],
+   "train_days": [
+    "2019-05-08",
+    "2019-05-09",
+    "2019-05-10"
+   ],
+   "val_day": "2019-05-11",
+   "ground_truth": {
+    "node_THEIA_1_Firefox_Drakon_APT_BinFmt_Elevate_Inject": "E5-THEIA/node_THEIA_1_Firefox_Drakon_APT_BinFmt_Elevate_Inject.csv"
+   },
+   "ground_truth_nodes_on_this_host": {
+    "node_THEIA_1_Firefox_Drakon_APT_BinFmt_Elevate_Inject": 68
+   },
+   "host_partition_key": null,
+   "source": "manifest: records/heldout_prep_manifests/THEIA_E5/theia/manifest.json",
+   "attacks_counted": 1,
+   "development_set": true
+  },
+  "TRACE_E3-trace": {
+   "family": "TRACE",
+   "test_days": [
+    "2018-04-10",
+    "2018-04-11",
+    "2018-04-12",
+    "2018-04-13"
+   ],
+   "train_days": [
+    "2018-04-02",
+    "2018-04-03",
+    "2018-04-04",
+    "2018-04-05",
+    "2018-04-06",
+    "2018-04-07",
+    "2018-04-08"
+   ],
+   "val_day": "2018-04-09",
+   "ground_truth": {
+    "node_trace_e3_firefox_0410": "E3-TRACE/node_trace_e3_firefox_0410.csv",
+    "node_trace_e3_phishing_executable_0413": "E3-TRACE/node_trace_e3_phishing_executable_0413.csv",
+    "node_trace_e3_pine_0413": "E3-TRACE/node_trace_e3_pine_0413.csv"
+   },
+   "ground_truth_nodes_on_this_host": {
+    "node_trace_e3_firefox_0410": 11,
+    "node_trace_e3_phishing_executable_0413": 11,
+    "node_trace_e3_pine_0413": 14
+   },
+   "host_partition_key": null,
+   "source": "manifest: records/heldout_prep_manifests/TRACE_E3/trace/manifest.json",
+   "attacks_counted": 3,
+   "development_set": true
+  }
+ }
+}

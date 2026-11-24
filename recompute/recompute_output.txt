@@ -1,0 +1,161 @@
+
+[1] 16 development sets, node level at the operating point (rows13 + public ground truth)
+ 0.10 (P2):
+  MATCH  tab:lab 0.10 attacks: recomputed 26  paper 26
+  MATCH  attacks denominator: recomputed 30  paper 30
+  MATCH  tab:lab 0.10 TP: recomputed 333  paper 333
+  MATCH  tab:lab 0.10 FP: recomputed 1051  paper 1051
+  MATCH  host-days: recomputed 71  paper 71
+  MATCH  tab:lab 0.10 FP/day: recomputed 14.8  paper 14.8
+  MATCH  tab:lab 0.10 incidents (G2): recomputed 220  paper 220
+  MATCH  tab:lab 0.10 false incidents (G2): recomputed 178  paper 178
+  MATCH  tab:lab 0.10 false incidents per host-day: recomputed 2.51  paper 2.51
+  MATCH  Sec. RQ2 precision 0.10: recomputed 0.241  paper 0.241
+ 0.9 (P0):
+  MATCH  tab:lab 0.9 attacks: recomputed 26  paper 26
+  MATCH  tab:lab 0.9 TP: recomputed 337  paper 337
+  MATCH  tab:lab 0.9 FP: recomputed 1189  paper 1189
+  MATCH  tab:lab 0.9 FP/day: recomputed 16.7  paper 16.7
+  MATCH  tab:lab 0.9 incidents (G0): recomputed 354  paper 354
+  MATCH  tab:lab 0.9 false incidents (G0): recomputed 284  paper 284
+  MATCH  tab:lab 0.9 false incidents per host-day: recomputed 4.0  paper 4.0
+ tab:layers (first-alert attribution), 0.9 and 0.10 columns:
+  MATCH  tab:layers 0.9 novelty: recomputed 644 (88)  paper 644 (88)
+  MATCH  tab:layers 0.9 rules: recomputed 536 (203)  paper 536 (203)
+  MATCH  tab:layers 0.9 corroborated: recomputed 346 (46)  paper 346 (46)
+  MATCH  tab:layers 0.10 novelty: recomputed 544 (87)  paper 544 (87)
+  MATCH  tab:layers 0.10 rules: recomputed 536 (203)  paper 536 (203)
+  MATCH  tab:layers 0.10 corroborated: recomputed 304 (43)  paper 304 (43)
+ tab:ablation (parts derivable from the 0.9 / 0.10 rows):
+  MATCH  tab:ablation layer 1 (0.9 rows, novelty-attributed) attacks: recomputed 20  paper 20
+  MATCH  tab:ablation layer 1 TP / FP: recomputed (88, 556)  paper (88, 556)
+  MATCH  tab:ablation + fleet prevalence (0.10 rows) attacks: recomputed 20  paper 20
+  MATCH  tab:ablation + fleet prevalence TP / FP: recomputed (87, 457)  paper (87, 457)
+  MATCH  tab:ablation 0.10 attacks / TP / FP: recomputed (26, 333, 1051)  paper (26, 333, 1051)
+  note: tab:ablation 'layers 1-2' (21 / 290 / 791) is a separately run configuration; see section [5] (per-host results).
+
+[3] tab:evidence (0.10 rows, one-hop context)
+  MATCH  tab:evidence rule_gt: recomputed 9  paper 9
+  MATCH  tab:evidence rule_anchor: recomputed 6  paper 6
+  MATCH  tab:evidence novelty_gt: recomputed 10  paper 10
+  MATCH  tab:evidence novelty_anchor: recomputed 1  paper 1
+  MATCH  tab:evidence missed: recomputed 4  paper 4
+  MATCH  tab:evidence detected, only corroboration on a labelled node: recomputed 5  paper 5
+
+[4] tab:adp, STRATA columns (data/v0.10_nodes, 500 random tie orders, seed 0)
+  MATCH  tab:adp E3 CADETS triage (paper rounded to 2 dp): recomputed 0.9999  paper 1.0
+  MATCH  tab:adp E3 CADETS learned (paper rounded to 2 dp): recomputed 0.7269  paper 0.73
+  MATCH  tab:adp E3 THEIA triage (paper rounded to 2 dp): recomputed 0.9999  paper 1.0
+  MATCH  tab:adp E3 THEIA learned (paper rounded to 2 dp): recomputed 0.9859  paper 0.99
+  MATCH  tab:adp E3 ClearScope triage (paper rounded to 2 dp): recomputed 0.183  paper 0.18
+  MATCH  tab:adp E3 ClearScope learned (paper rounded to 2 dp): recomputed 0.183  paper 0.18
+  MATCH  tab:adp E5 THEIA triage (paper rounded to 2 dp): recomputed 0.0002  paper 0.0
+  MATCH  tab:adp E5 THEIA learned (paper rounded to 2 dp): recomputed 0.0002  paper 0.0
+  MATCH  tab:adp E5 ClearScope (3 attacks) triage (paper rounded to 2 dp): recomputed 0.6679  paper 0.67
+  MATCH  tab:adp E5 ClearScope (3 attacks) learned (paper rounded to 2 dp): recomputed 0.1325  paper 0.13
+  MATCH  tab:adp OpTC H051 triage (paper rounded to 2 dp): recomputed 0.848  paper 0.85
+  DIFF   tab:adp OpTC H051 learned (paper rounded to 2 dp): recomputed 0.7984  paper 0.81
+  MATCH  tab:adp OpTC H201 triage (paper rounded to 2 dp): recomputed 0.749  paper 0.75
+  MATCH  tab:adp OpTC H201 learned (paper rounded to 2 dp): recomputed 0.999  paper 1.0
+  DIFF   tab:adp OpTC H501 triage (paper rounded to 2 dp): recomputed 0.9049  paper 0.91
+  MATCH  tab:adp OpTC H501 learned (paper rounded to 2 dp): recomputed 0.2887  paper 0.29
+  MATCH  tab:adp eight-host mean triage ADP (random ties; paper rounded to 2 dp): recomputed 0.6691  paper 0.67
+  DIFF   tab:adp eight-host mean learned ADP (random ties; paper rounded to 2 dp): recomputed 0.5143  paper 0.52
+  MATCH  eight-host mean triage ADP, node-id tie order (Sec. Metrics: 'mean unchanged'): recomputed 0.6657  paper 0.67
+  MATCH  E5 ClearScope, PIDSMaker's 2 attacks (footnote) triage ADP (paper rounded to 2 dp): recomputed 0.9999  paper 1.0
+  DIFF   FiveDirections (Sec. Metrics) triage ADP (paper rounded to 2 dp): recomputed 0.1834  paper 0.2
+  cross-check of the per-node arrays against the alert rows (alerted nodes / alerted ground-truth nodes):
+  MATCH    nodes-CADETS_E3: alerted = rows' alerted nodes: recomputed 47  paper 47
+  MATCH    nodes-CADETS_E3: alerted GT = TP from public GT: recomputed 31  paper 31
+  MATCH    nodes-THEIA_E3: alerted = rows' alerted nodes: recomputed 195  paper 195
+  MATCH    nodes-THEIA_E3: alerted GT = TP from public GT: recomputed 109  paper 109
+  MATCH    nodes-CLEARSCOPE_E3: alerted = rows' alerted nodes: recomputed 0  paper 0
+  MATCH    nodes-CLEARSCOPE_E3: alerted GT = TP from public GT: recomputed 0  paper 0
+  MATCH    nodes-THEIA_E5-theia: alerted = rows' alerted nodes: recomputed 97  paper 97
+  MATCH    nodes-THEIA_E5-theia: alerted GT = TP from public GT: recomputed 0  paper 0
+  MATCH    nodes-OPTC_H051: alerted = rows' alerted nodes: recomputed 128  paper 128
+  MATCH    nodes-OPTC_H051: alerted GT = TP from public GT: recomputed 75  paper 75
+  MATCH    nodes-OPTC_H201: alerted = rows' alerted nodes: recomputed 25  paper 25
+  MATCH    nodes-OPTC_H201: alerted GT = TP from public GT: recomputed 6  paper 6
+  MATCH    nodes-OPTC_H501: alerted = rows' alerted nodes: recomputed 87  paper 87
+  MATCH    nodes-OPTC_H501: alerted GT = TP from public GT: recomputed 17  paper 17
+
+[5] Five training runs (records/lab_paper5, committed snapshot)
+  MATCH  five runs: eight-host mean triage ADP range (node-id order): recomputed 0.666-0.669  paper 0.666-0.669
+  MATCH  five runs: mean_learned_ADP_node_id_order min (paper rounded to 2 dp): recomputed 0.4433  paper 0.44
+  MATCH  five runs: mean_learned_ADP_node_id_order max (paper rounded to 2 dp): recomputed 0.565  paper 0.57
+  MATCH  five runs: mean_d1_ADP min (paper rounded to 2 dp): recomputed 0.2737  paper 0.27
+  MATCH  five runs: mean_d1_ADP max (paper rounded to 2 dp): recomputed 0.3322  paper 0.33
+  MATCH  five runs: mean_d2_ADP min (paper rounded to 2 dp): recomputed 0.252  paper 0.25
+  MATCH  five runs: mean_d2_ADP max (paper rounded to 2 dp): recomputed 0.5241  paper 0.52
+  MATCH  five runs: detector-2 attacks found on E3 CADETS per run: recomputed [3, 1, 0, 0, 3]  paper [3, 1, 0, 0, 3]
+  MATCH  five runs: same attacks detected at the operating point in every run (8 hosts, from rows): recomputed True  paper True
+  MATCH  five runs: hosts whose triage ADP (2 decimals) varies across runs: recomputed ['CLEARSCOPE_E5-clearscope']  paper ['CLEARSCOPE_E5-clearscope']
+  MATCH  five runs: E5 ClearScope triage ADP range: recomputed 0.67-0.69  paper 0.67-0.69
+  MATCH  five runs: THEIA_E3 FP range (from rows): recomputed 86-95  paper 86-95
+  MATCH  five runs: THEIA_E5-theia FP range (from rows): recomputed 95-114  paper 95-114
+  MATCH  five runs, 16 sets: attacks detected per run: recomputed [26, 26, 26, 26, 26]  paper [26, 26, 26, 26, 26]
+  MATCH  five runs, 16 sets: FP range: recomputed 1051-1136  paper 1051-1136
+  MATCH  five runs, 16 sets: false incidents range (incident re-implementation): recomputed 173-178  paper 173-178
+  MATCH  five runs, 16 sets: run 1 (reported) has the fewest FP: recomputed True  paper True
+  MATCH  tab:ablation layers 1-2 (separate configuration; per-host results res5-*-r1, not rows): recomputed (21, 290, 791)  paper (21, 290, 791)
+
+[6] tab:heldout, 0.10 on held-out E5 ClearScope (ho10rows + public ground truth)
+  MATCH  0.8.1 (A): attacks, TP / FP: recomputed (2, 9, 49)  paper (2, 9, 49)
+  MATCH  0.10 (N): attacks, TP / FP: recomputed (2, 4, 15)  paper (2, 4, 15)
+  MATCH  false incidents 0.8.1 -> 0.10 (G2): recomputed (14, 6)  paper (14, 6)
+  MATCH  false incidents 0.9 grouping -> 0.10 grouping (N): recomputed (9, 6)  paper (9, 6)
+
+[7] tab:lab / tab:layers, 0.7 released and 0.8.1 (per-host results; no alert rows exist for these versions)
+  MATCH  tab:lab 0.7 released attacks / TP / FP: recomputed (26, 347, 5670)  paper (26, 347, 5670)
+  MATCH  tab:layers 0.7 released novelty: recomputed 644 (88)  paper 644 (88)
+  MATCH  tab:layers 0.7 released rules: recomputed 536 (203)  paper 536 (203)
+  MATCH  tab:layers 0.7 released corroborated: recomputed 4062 (52)  paper 4062 (52)
+  MATCH  tab:layers 0.7 released learned: recomputed 775 (4)  paper 775 (4)
+  MATCH  tab:lab 0.8.1 attacks / TP / FP: recomputed (26, 344, 2034)  paper (26, 344, 2034)
+  MATCH  tab:layers 0.8.1 novelty: recomputed 644 (88)  paper 644 (88)
+  MATCH  tab:layers 0.8.1 rules: recomputed 536 (203)  paper 536 (203)
+  MATCH  tab:layers 0.8.1 corroborated: recomputed 419 (48)  paper 419 (48)
+  MATCH  tab:layers 0.8.1 learned: recomputed 779 (5)  paper 779 (5)
+
+[8] Sec. RQ2 bootstrap (16 development sets, 10,000 resamples; same procedure and seed as records/lotl_paper/scripts/bootstrap.py)
+  MATCH  bootstrap detection rate interval (host): recomputed [0.75, 1.00]  paper [0.75, 1.00]
+  MATCH  bootstrap FP per host-day interval (host): recomputed [10.2, 22.2]  paper [10.2, 22.2]
+  MATCH  bootstrap false incidents per host-day interval (host): recomputed [1.7, 3.7]  paper [1.7, 3.7]
+  MATCH  bootstrap false incidents per host-day interval (family): recomputed [1.9, 5.2]  paper [1.9, 5.2]
+
+[9] Sec. RQ4 living-off-the-land counterfactual (records/lotl_paper/results/rows, variant P2, + public ground truth)
+  MATCH  LotL: attacks without transformation: recomputed 26  paper 26
+  MATCH  LotL: attacks after renaming new programs: recomputed 18  paper 18
+  MATCH  LotL: CADETS TP renaming -> renaming + laundering: recomputed (32, 3)  paper (32, 3)
+  MATCH  LotL: CADETS attacks after laundering (one of three lost): recomputed 2  paper 2
+  MATCH  LotL post-hoc bound: attacks when every new program is renamed: recomputed 10  paper 10
+  MATCH  LotL post-hoc bound: false incidents per host-day: recomputed 0.3  paper 0.3
+
+[10] tab:orig, STRATA 0.10 columns (rows13 + public ground truth; ADP from data/v0.10_nodes)
+  MATCH  tab:orig TRACE_E3-trace ADP (paper rounded to 2 dp): recomputed 0.1318  paper 0.13
+  MATCH  tab:orig TRACE_E3-trace found / FP per day: recomputed (3, 17.5)  paper (3, 17.5)
+  DIFF   tab:orig FIVEDIRECTIONS_E3 ADP (paper rounded to 2 dp): recomputed 0.1857  paper 0.2
+  MATCH  tab:orig FIVEDIRECTIONS_E3 found / FP per day: recomputed (2, 55.3)  paper (2, 55.3)
+  MATCH  tab:orig ATLASV2_EDR-h1 ADP (paper rounded to 2 dp): recomputed 0.2147  paper 0.21
+  MATCH  tab:orig ATLASV2_EDR-h1 found / FP per day: recomputed (8, 49.0)  paper (8, 49.0)
+  MATCH  tab:orig CARBANAKV2_EDR-h1 ADP (paper rounded to 2 dp): recomputed 0.0609  paper 0.06
+  MATCH  tab:orig CARBANAKV2_EDR-h1 found / FP per day: recomputed (1, 10.4)  paper (1, 10.4)
+  MATCH  tab:orig CARBANAKV2_EDR-h2 ADP (paper rounded to 2 dp): recomputed 0.4827  paper 0.48
+  MATCH  tab:orig CARBANAKV2_EDR-h2 found / FP per day: recomputed (1, 14.6)  paper (1, 14.6)
+  MATCH  tab:orig CARBANAKV2_EDR-h3 ADP (paper rounded to 2 dp): recomputed 0.0435  paper 0.04
+  MATCH  tab:orig CARBANAKV2_EDR-h3 found / FP per day: recomputed (1, 10.3)  paper (1, 10.3)
+  MATCH  tab:orig CARBANAKV2_EDR-h4 ADP (paper rounded to 2 dp): recomputed 0.1333  paper 0.13
+  MATCH  tab:orig CARBANAKV2_EDR-h4 found / FP per day: recomputed (1, 3.4)  paper (1, 3.4)
+  MATCH  tab:orig CARBANAKV2_EDR-h5 ADP (paper rounded to 2 dp): recomputed 0.9997  paper 1.0
+  MATCH  tab:orig CARBANAKV2_EDR-h5 found / FP per day: recomputed (1, 8.1)  paper (1, 8.1)
+  MATCH  Sec. RQ1 mean ADP over these eight hosts (paper rounded to 2 dp): recomputed 0.2815  paper 0.28
+  MATCH  tab:orig STRATA pooled precision (TP / FP): recomputed ('12.2%', 95, 684)  paper ('12.2%', 95, 684)
+
+[11] tab:replay (per-host results only: records/lab_v10/results/replay/compare10.json; replay alert rows not released)
+  MATCH  tab:replay 9 raw: lab att/TP/FP, replay att/TP/FP: recomputed (18, 261, 485, 18, 261, 543)  paper (18, 261, 485, 18, 261, 543)
+  MATCH  tab:replay 7 stored: lab att/TP/FP, replay att/TP/FP: recomputed (8, 72, 566, 8, 72, 612)  paper (8, 72, 566, 8, 72, 612)
+  MATCH  tab:replay incidents (false), lab console vs replay: recomputed (220, 178, 222, 180)  paper (220, 178, 222, 180)
+  MATCH  tab:replay lab side equals the rows recomputation (TP, FP): recomputed (333, 1051)  paper (333, 1051)
+
+128 of 133 checks match the paper exactly; details in recompute/recomputed.json

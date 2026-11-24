@@ -1,0 +1,263 @@
+{
+ "set": "CARBANAKV2_EDR-h2",
+ "run": 3,
+ "bundle": "/data/paper5/CARBANAKV2_EDR-h2/r3/b07",
+ "detector_thresholds": {
+  "detector-1": 0.6183080077171326,
+  "detector-2": 0.5875599086284637
+ },
+ "validation_nodes": 547944,
+ "fleet": [
+  "CARBANAKV2_EDR-h1",
+  "CARBANAKV2_EDR-h2",
+  "CARBANAKV2_EDR-h3",
+  "CARBANAKV2_EDR-h4",
+  "CARBANAKV2_EDR-h5"
+ ],
+ "n_attacks": 1,
+ "gt_nodes": 81,
+ "days": 9,
+ "variants": {
+  "P0": [
+   0,
+   null
+  ],
+  "P1": [
+   1,
+   "drop"
+  ],
+  "P1e": [
+   1,
+   "evidence"
+  ],
+  "P2": [
+   2,
+   "drop"
+  ],
+  "P2e": [
+   2,
+   "evidence"
+  ]
+ },
+ "P0": {
+  "TP": 40,
+  "FP": 167,
+  "recall": 0.494,
+  "attacks": 1,
+  "FP/day": 18.6,
+  "by_layer": {
+   "novelty": 100,
+   "rules": 104,
+   "corroborated": 3
+  },
+  "by_layer_tp": {
+   "novelty": 13,
+   "rules": 27
+  },
+  "attacks_found": [
+   "carbanakv2_edr"
+  ],
+  "rows": 210,
+  "ADP": 0.423,
+  "ADP_learned_only": 0.024,
+  "precision": 0.193,
+  "ADP_ties": {
+   "random_mean": 0.423,
+   "random_sd": 0.0,
+   "random_min": 0.423,
+   "random_max": 0.423,
+   "worst": 0.423
+  },
+  "ADP_learned_only_ties": {
+   "random_mean": 0.024,
+   "random_sd": 0.0,
+   "random_min": 0.024,
+   "random_max": 0.024,
+   "worst": 0.024
+  }
+ },
+ "P1": {
+  "TP": 35,
+  "FP": 119,
+  "recall": 0.432,
+  "attacks": 1,
+  "FP/day": 13.2,
+  "by_layer": {
+   "novelty": 47,
+   "rules": 105,
+   "corroborated": 2
+  },
+  "by_layer_tp": {
+   "novelty": 7,
+   "rules": 28
+  },
+  "attacks_found": [
+   "carbanakv2_edr"
+  ],
+  "rows": 157,
+  "ADP": 0.423,
+  "ADP_learned_only": 0.024,
+  "precision": 0.227
+ },
+ "P1e": {
+  "TP": 35,
+  "FP": 119,
+  "recall": 0.432,
+  "attacks": 1,
+  "FP/day": 13.2,
+  "by_layer": {
+   "novelty": 47,
+   "rules": 105,
+   "corroborated": 2
+  },
+  "by_layer_tp": {
+   "novelty": 7,
+   "rules": 28
+  },
+  "attacks_found": [
+   "carbanakv2_edr"
+  ],
+  "rows": 157,
+  "ADP": 0.423,
+  "ADP_learned_only": 0.024,
+  "precision": 0.227
+ },
+ "P2": {
+  "TP": 39,
+  "FP": 133,
+  "recall": 0.481,
+  "attacks": 1,
+  "FP/day": 14.8,
+  "by_layer": {
+   "novelty": 66,
+   "rules": 104,
+   "corroborated": 2
+  },
+  "by_layer_tp": {
+   "novelty": 12,
+   "rules": 27
+  },
+  "attacks_found": [
+   "carbanakv2_edr"
+  ],
+  "rows": 175,
+  "ADP": 0.423,
+  "ADP_learned_only": 0.024,
+  "precision": 0.227,
+  "ADP_triage_time_tiebreak": {
+   "mean": 0.316,
+   "min": 0.311,
+   "max": 0.333,
+   "seeds": 20
+  },
+  "layers12_only": {
+   "TP": 39,
+   "FP": 131,
+   "recall": 0.481,
+   "attacks": 1,
+   "precision": 0.229,
+   "attacks_found": [
+    "carbanakv2_edr"
+   ],
+   "ADP_time_tiebreak": {
+    "mean": 0.316,
+    "min": 0.311,
+    "max": 0.333,
+    "seeds": 20
+   }
+  },
+  "ADP_ties": {
+   "random_mean": 0.423,
+   "random_sd": 0.0,
+   "random_min": 0.423,
+   "random_max": 0.423,
+   "worst": 0.423
+  },
+  "ADP_learned_only_ties": {
+   "random_mean": 0.024,
+   "random_sd": 0.0,
+   "random_min": 0.024,
+   "random_max": 0.024,
+   "worst": 0.024
+  }
+ },
+ "P2e": {
+  "TP": 39,
+  "FP": 133,
+  "recall": 0.481,
+  "attacks": 1,
+  "FP/day": 14.8,
+  "by_layer": {
+   "novelty": 66,
+   "rules": 104,
+   "corroborated": 2
+  },
+  "by_layer_tp": {
+   "novelty": 12,
+   "rules": 27
+  },
+  "attacks_found": [
+   "carbanakv2_edr"
+  ],
+  "rows": 175,
+  "ADP": 0.423,
+  "ADP_learned_only": 0.024,
+  "precision": 0.227
+ },
+ "detector-1": {
+  "val_max": {
+   "TP": 0,
+   "FP": 62,
+   "recall": 0.0,
+   "attacks": 0,
+   "precision": 0.0,
+   "attacks_found": [],
+   "threshold": 0.6183080077171326
+  },
+  "ratio_1": {
+   "TP": 0,
+   "FP": 13,
+   "recall": 0.0,
+   "attacks": 0,
+   "precision": 0.0,
+   "attacks_found": [],
+   "threshold": 1.0
+  },
+  "ADP": 0.003,
+  "ADP_ties": {
+   "random_mean": 0.003,
+   "random_sd": 0.0,
+   "random_min": 0.003,
+   "random_max": 0.003
+  }
+ },
+ "detector-2": {
+  "val_max": {
+   "TP": 1,
+   "FP": 33,
+   "recall": 0.012,
+   "attacks": 1,
+   "precision": 0.029,
+   "attacks_found": [
+    "carbanakv2_edr"
+   ],
+   "threshold": 0.5875599086284637
+  },
+  "ratio_1": {
+   "TP": 0,
+   "FP": 0,
+   "recall": 0.0,
+   "attacks": 0,
+   "precision": 0.0,
+   "attacks_found": [],
+   "threshold": 1.0
+  },
+  "ADP": 1.0,
+  "ADP_ties": {
+   "random_mean": 1.0,
+   "random_sd": 0.0,
+   "random_min": 1.0,
+   "random_max": 1.0
+  }
+ }
+}

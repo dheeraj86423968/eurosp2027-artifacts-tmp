@@ -1,0 +1,421 @@
+{
+ "dataset": "ATLASV2_EDR",
+ "host": "h2",
+ "host_partition_key": "192.168.223.130",
+ "platform": "windows",
+ "database": "atlasv2_edr",
+ "source": "EdrPostgresReplay",
+ "registry_events_included": true,
+ "train_days": [
+  "2022-07-15",
+  "2022-07-16",
+  "2022-07-17"
+ ],
+ "val_day": "2022-07-18",
+ "test_days": [
+  "2022-07-19"
+ ],
+ "split_rule": "PIDSMaker lists (train 07-16,07-18; val 07-17; test 07-19,07-20) are not chronological -> fallback rule: test = PIDSMaker test days with data (07-20 has no events: the data ends 2022-07-19 21:04 US/Eastern, so PIDSMaker's own US/Eastern graph construction also puts every attack on 07-19); val = latest benign day before the first test day (07-18); train = all earlier benign days (07-15..07-17). 07-15 is PIDSMaker 'unused' and starts 09:09 US/Eastern (partial day); included as a benign day per the rule.",
+ "flags": [],
+ "day_boundaries": "US/Eastern calendar days, timestamp_rec strictly inside (PostgresReplay / PIDSMaker graph construction)",
+ "window": "15 min fused windows (WindowBuilder, chunks of 1024)",
+ "entity_uuid": "framework index_id (orthrus ground truth column 3); label formats 'subject <exe> <cmdline>', 'file <path>', 'netflow <ip> <port>'",
+ "eval_test_registry": "starts as a copy of the baseline registry (dense ids agree), extended by the test days",
+ "ground_truth_dir": "<PIDSMAKER>/Ground_Truth/orthrus (= /data/gt/orthrus in the pdp containers)",
+ "ground_truth": {
+  "atlasv2_edr_m1": {
+   "csv": "atlasv2_edr/atlasv2_edr_m1.csv",
+   "gt_nodes": 1,
+   "found_in_eval_test_registry": 0,
+   "not_found": 1,
+   "found_by_type": {},
+   "not_found_breakdown": {
+    "not_in_database": 0,
+    "on_other_hosts": {
+     "192.168.223.128": 1
+    },
+    "this_host_but_no_test_day_event": 0,
+    "unattributed_component": 0
+   }
+  },
+  "atlasv2_edr_m2": {
+   "csv": "atlasv2_edr/atlasv2_edr_m2.csv",
+   "gt_nodes": 1,
+   "found_in_eval_test_registry": 0,
+   "not_found": 1,
+   "found_by_type": {},
+   "not_found_breakdown": {
+    "not_in_database": 0,
+    "on_other_hosts": {
+     "192.168.223.128": 1
+    },
+    "this_host_but_no_test_day_event": 0,
+    "unattributed_component": 0
+   }
+  },
+  "atlasv2_edr_m3": {
+   "csv": "atlasv2_edr/atlasv2_edr_m3.csv",
+   "gt_nodes": 1,
+   "found_in_eval_test_registry": 0,
+   "not_found": 1,
+   "found_by_type": {},
+   "not_found_breakdown": {
+    "not_in_database": 0,
+    "on_other_hosts": {
+     "192.168.223.128": 1
+    },
+    "this_host_but_no_test_day_event": 0,
+    "unattributed_component": 0
+   }
+  },
+  "atlasv2_edr_m4": {
+   "csv": "atlasv2_edr/atlasv2_edr_m4.csv",
+   "gt_nodes": 4,
+   "found_in_eval_test_registry": 0,
+   "not_found": 4,
+   "found_by_type": {},
+   "not_found_breakdown": {
+    "not_in_database": 0,
+    "on_other_hosts": {
+     "192.168.223.128": 4
+    },
+    "this_host_but_no_test_day_event": 0,
+    "unattributed_component": 0
+   }
+  },
+  "atlasv2_edr_m5": {
+   "csv": "atlasv2_edr/atlasv2_edr_m5.csv",
+   "gt_nodes": 13,
+   "found_in_eval_test_registry": 0,
+   "not_found": 13,
+   "found_by_type": {},
+   "not_found_breakdown": {
+    "not_in_database": 0,
+    "on_other_hosts": {
+     "192.168.223.128": 13
+    },
+    "this_host_but_no_test_day_event": 0,
+    "unattributed_component": 0
+   }
+  },
+  "atlasv2_edr_m6": {
+   "csv": "atlasv2_edr/atlasv2_edr_m6.csv",
+   "gt_nodes": 7,
+   "found_in_eval_test_registry": 0,
+   "not_found": 7,
+   "found_by_type": {},
+   "not_found_breakdown": {
+    "not_in_database": 0,
+    "on_other_hosts": {
+     "192.168.223.128": 7
+    },
+    "this_host_but_no_test_day_event": 0,
+    "unattributed_component": 0
+   }
+  },
+  "atlasv2_edr_s1": {
+   "csv": "atlasv2_edr/atlasv2_edr_s1.csv",
+   "gt_nodes": 1,
+   "found_in_eval_test_registry": 0,
+   "not_found": 1,
+   "found_by_type": {},
+   "not_found_breakdown": {
+    "not_in_database": 0,
+    "on_other_hosts": {
+     "192.168.223.128": 1
+    },
+    "this_host_but_no_test_day_event": 0,
+    "unattributed_component": 0
+   }
+  },
+  "atlasv2_edr_s2": {
+   "csv": "atlasv2_edr/atlasv2_edr_s2.csv",
+   "gt_nodes": 1,
+   "found_in_eval_test_registry": 0,
+   "not_found": 1,
+   "found_by_type": {},
+   "not_found_breakdown": {
+    "not_in_database": 0,
+    "on_other_hosts": {
+     "192.168.223.128": 1
+    },
+    "this_host_but_no_test_day_event": 0,
+    "unattributed_component": 0
+   }
+  },
+  "atlasv2_edr_s3": {
+   "csv": "atlasv2_edr/atlasv2_edr_s3.csv",
+   "gt_nodes": 6,
+   "found_in_eval_test_registry": 0,
+   "not_found": 6,
+   "found_by_type": {},
+   "not_found_breakdown": {
+    "not_in_database": 0,
+    "on_other_hosts": {
+     "192.168.223.128": 6
+    },
+    "this_host_but_no_test_day_event": 0,
+    "unattributed_component": 0
+   }
+  },
+  "atlasv2_edr_s4": {
+   "csv": "atlasv2_edr/atlasv2_edr_s4.csv",
+   "gt_nodes": 13,
+   "found_in_eval_test_registry": 0,
+   "not_found": 13,
+   "found_by_type": {},
+   "not_found_breakdown": {
+    "not_in_database": 0,
+    "on_other_hosts": {
+     "192.168.223.128": 13
+    },
+    "this_host_but_no_test_day_event": 0,
+    "unattributed_component": 0
+   }
+  }
+ },
+ "days": {
+  "2022-07-15": {
+   "rows": 172871,
+   "rows_by_operation": {
+    "PROCESS_EXECUTED": 5684,
+    "MODULE_LOADED": 63604,
+    "REGISTRY_VALUE_WRITTEN": 7456,
+    "FILE_CREATED": 10309,
+    "FILE_OPENED": 24919,
+    "FILE_READ": 13534,
+    "FILE_WRITTEN": 17093,
+    "FILE_DELETED": 6007,
+    "FILE_TRUNCATED": 491,
+    "NETFLOW_CREATED": 1759,
+    "NETFLOW_PACKET_RECEIVED": 1759,
+    "NETFLOW_PACKET_SENT": 1759,
+    "FILE_CLOSED": 15963,
+    "NETFLOW_CONNECTED": 131,
+    "REGISTRY_KEY_DELETED": 163,
+    "REGISTRY_KEY_CREATED": 188,
+    "REGISTRY_KEY_OPENED": 178,
+    "REGISTRY_VALUE_DELETED": 189,
+    "NETFLOW_DISCONNECTED": 1670,
+    "REGISTRY_KEY_LOADED": 10,
+    "FILE_RESTORED": 5
+   },
+   "events": 155238,
+   "events_by_type": {
+    "READ": 77148,
+    "CLONE": 5684,
+    "WRITE": 41901,
+    "OPEN": 25097,
+    "CONNECT": 1890,
+    "RECVMSG": 1759,
+    "SENDMSG": 1759
+   },
+   "dropped_unknown_entity": 0,
+   "windows": 46,
+   "fused_edges": 134408,
+   "new_entities": 27936,
+   "registry_size": 27936
+  },
+  "2022-07-16": {
+   "rows": 162008,
+   "rows_by_operation": {
+    "PROCESS_EXECUTED": 7447,
+    "MODULE_LOADED": 79676,
+    "REGISTRY_VALUE_WRITTEN": 9484,
+    "FILE_OPENED": 16096,
+    "FILE_READ": 9678,
+    "FILE_WRITTEN": 12639,
+    "FILE_CREATED": 8259,
+    "FILE_DELETED": 2877,
+    "FILE_CLOSED": 8489,
+    "REGISTRY_KEY_CREATED": 719,
+    "REGISTRY_KEY_OPENED": 556,
+    "REGISTRY_KEY_DELETED": 206,
+    "FILE_TRUNCATED": 334,
+    "NETFLOW_CREATED": 1355,
+    "NETFLOW_PACKET_RECEIVED": 1355,
+    "NETFLOW_PACKET_SENT": 1355,
+    "NETFLOW_CONNECTED": 92,
+    "NETFLOW_DISCONNECTED": 1219,
+    "REGISTRY_VALUE_DELETED": 172
+   },
+   "events": 152300,
+   "events_by_type": {
+    "READ": 89354,
+    "CLONE": 7447,
+    "WRITE": 34690,
+    "OPEN": 16652,
+    "CONNECT": 1447,
+    "SENDMSG": 1355,
+    "RECVMSG": 1355
+   },
+   "dropped_unknown_entity": 0,
+   "windows": 76,
+   "fused_edges": 138011,
+   "new_entities": 22102,
+   "registry_size": 50038
+  },
+  "2022-07-17": {
+   "rows": 158135,
+   "rows_by_operation": {
+    "PROCESS_EXECUTED": 7085,
+    "MODULE_LOADED": 76599,
+    "REGISTRY_VALUE_WRITTEN": 10183,
+    "FILE_OPENED": 16582,
+    "FILE_READ": 9982,
+    "FILE_WRITTEN": 11508,
+    "FILE_CREATED": 6230,
+    "FILE_DELETED": 4563,
+    "FILE_CLOSED": 10058,
+    "REGISTRY_KEY_CREATED": 258,
+    "REGISTRY_KEY_OPENED": 253,
+    "REGISTRY_KEY_DELETED": 255,
+    "NETFLOW_CREATED": 950,
+    "NETFLOW_PACKET_RECEIVED": 950,
+    "NETFLOW_PACKET_SENT": 950,
+    "REGISTRY_KEY_LOADED": 10,
+    "REGISTRY_VALUE_DELETED": 429,
+    "FILE_TRUNCATED": 399,
+    "NETFLOW_CONNECTED": 68,
+    "NETFLOW_DISCONNECTED": 823
+   },
+   "events": 147254,
+   "events_by_type": {
+    "READ": 86591,
+    "CLONE": 7085,
+    "WRITE": 33825,
+    "OPEN": 16835,
+    "RECVMSG": 950,
+    "CONNECT": 1018,
+    "SENDMSG": 950
+   },
+   "dropped_unknown_entity": 0,
+   "windows": 75,
+   "fused_edges": 134686,
+   "new_entities": 20405,
+   "registry_size": 70443
+  },
+  "2022-07-18": {
+   "rows": 180904,
+   "rows_by_operation": {
+    "PROCESS_EXECUTED": 7209,
+    "MODULE_LOADED": 80552,
+    "REGISTRY_VALUE_WRITTEN": 9779,
+    "NETFLOW_CREATED": 798,
+    "NETFLOW_PACKET_RECEIVED": 798,
+    "NETFLOW_PACKET_SENT": 798,
+    "FILE_OPENED": 23351,
+    "FILE_READ": 9213,
+    "FILE_WRITTEN": 11098,
+    "REGISTRY_KEY_CREATED": 300,
+    "REGISTRY_KEY_OPENED": 285,
+    "REGISTRY_KEY_DELETED": 259,
+    "FILE_CLOSED": 16067,
+    "FILE_CREATED": 6587,
+    "FILE_DELETED": 12022,
+    "REGISTRY_KEY_LOADED": 20,
+    "REGISTRY_VALUE_DELETED": 390,
+    "FILE_TRUNCATED": 759,
+    "NETFLOW_CONNECTED": 89,
+    "NETFLOW_DISCONNECTED": 528,
+    "FILE_RESTORED": 2
+   },
+   "events": 164309,
+   "events_by_type": {
+    "CLONE": 7209,
+    "READ": 89785,
+    "WRITE": 41196,
+    "SENDMSG": 798,
+    "CONNECT": 887,
+    "RECVMSG": 798,
+    "OPEN": 23636
+   },
+   "dropped_unknown_entity": 0,
+   "windows": 70,
+   "fused_edges": 149298,
+   "new_entities": 27809,
+   "registry_size": 98252
+  },
+  "2022-07-19": {
+   "rows": 253968,
+   "rows_by_operation": {
+    "PROCESS_EXECUTED": 6374,
+    "MODULE_LOADED": 73824,
+    "REGISTRY_VALUE_WRITTEN": 11714,
+    "FILE_OPENED": 42228,
+    "FILE_READ": 23554,
+    "FILE_WRITTEN": 30879,
+    "FILE_CREATED": 18396,
+    "FILE_DELETED": 7791,
+    "FILE_CLOSED": 23714,
+    "NETFLOW_CREATED": 3194,
+    "NETFLOW_PACKET_RECEIVED": 3194,
+    "NETFLOW_PACKET_SENT": 3194,
+    "REGISTRY_KEY_CREATED": 743,
+    "REGISTRY_KEY_OPENED": 568,
+    "REGISTRY_KEY_DELETED": 318,
+    "FILE_TRUNCATED": 946,
+    "NETFLOW_CONNECTED": 225,
+    "NETFLOW_DISCONNECTED": 2754,
+    "REGISTRY_VALUE_DELETED": 356,
+    "FILE_RESTORED": 2
+   },
+   "events": 227500,
+   "events_by_type": {
+    "CLONE": 6374,
+    "READ": 97378,
+    "WRITE": 71145,
+    "OPEN": 42796,
+    "CONNECT": 3419,
+    "SENDMSG": 3194,
+    "RECVMSG": 3194
+   },
+   "dropped_unknown_entity": 0,
+   "windows": 57,
+   "fused_edges": 186795,
+   "new_entities": 37295,
+   "registry_size": 135547
+  }
+ },
+ "entities": {
+  "baseline_registry": 98252,
+  "eval_test_registry": 135547
+ },
+ "format_notes": {
+  "entities": {
+   "subject": 33657,
+   "file": 94017,
+   "netflow": 7873
+  },
+  "process_exe_present": 1.0,
+  "process_exe_absolute_path": 0.9996,
+  "process_cmdline_present": 0.9126,
+  "file_path_present": 1.0,
+  "file_registry_key_share": 0.1034,
+  "netflow_remote_addr_present": 0.9887,
+  "edge_types_after_mapping": {
+   "READ": 440256,
+   "CLONE": 33799,
+   "WRITE": 222757,
+   "OPEN": 125016,
+   "CONNECT": 8661,
+   "RECVMSG": 8056,
+   "SENDMSG": 8056
+  },
+  "exec_events_present": false,
+  "process_creation_events_present": true,
+  "notes": [
+   "Carbon Black EDR record: process exe = lower-cased image path (c:\\...), cmdline as recorded (some empty)",
+   "file nodes include registry keys/values (HKLM\\..., HKU\\...)",
+   "flows carry local and remote address/port",
+   "process creation = PROCESS_EXECUTED parent->child (mapped to CLONE), no EXECUTE edges (no executable file node)",
+   "MODULE_LOADED (DLL loads) mapped to READ",
+   "FILE_CLOSED, NETFLOW_DISCONNECTED, PROCESS_KILLED, REGISTRY_KEY_CLOSED/UNLOADED dropped",
+   "host attribution by graph component (no host column in the database)",
+   "the orthrus ground truth labels only h1 nodes (also for the multi-host m1-m6 attacks)",
+   "host h2 = graph component with local address 192.168.223.130"
+  ]
+ },
+ "created": "2026-11-07T05:47:16+0000",
+ "tool": "pdp_server.tools.heldout_prep"
+}

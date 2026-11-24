@@ -1,0 +1,74 @@
+{
+ "set": "ATLASV2_EDR-h2",
+ "bundle": "/data/lab08/heldout/ATLASV2_EDR/h2/v07rel",
+ "fleet": [
+  "ATLASV2_EDR-h1",
+  "ATLASV2_EDR-h2"
+ ],
+ "n_attacks": 10,
+ "gt_nodes": 0,
+ "days": 1,
+ "attacks_all": [
+  "atlasv2_edr_m1",
+  "atlasv2_edr_m2",
+  "atlasv2_edr_m3",
+  "atlasv2_edr_m4",
+  "atlasv2_edr_m5",
+  "atlasv2_edr_m6",
+  "atlasv2_edr_s1",
+  "atlasv2_edr_s2",
+  "atlasv2_edr_s3",
+  "atlasv2_edr_s4"
+ ],
+ "V10": {
+  "TP": 0,
+  "FP": 26,
+  "recall": 0.0,
+  "attacks": 0,
+  "FP/day": 26.0,
+  "by_layer": {
+   "novelty": 4,
+   "rules": 22
+  },
+  "by_layer_tp": {},
+  "attacks_found": [],
+  "attacks_det": [],
+  "rows": 26,
+  "ADP_stable": 0.0,
+  "precision": 0.0
+ },
+ "V19": {
+  "TP": 0,
+  "FP": 26,
+  "recall": 0.0,
+  "attacks": 0,
+  "FP/day": 26.0,
+  "by_layer": {
+   "novelty": 4,
+   "rules": 22
+  },
+  "by_layer_tp": {},
+  "attacks_found": [],
+  "attacks_det": [],
+  "rows": 26,
+  "ADP_stable": 0.0,
+  "precision": 0.0
+ },
+ "V19id": {
+  "TP": 0,
+  "FP": 26,
+  "recall": 0.0,
+  "attacks": 0,
+  "FP/day": 26.0,
+  "by_layer": {
+   "novelty": 4,
+   "rules": 22
+  },
+  "by_layer_tp": {},
+  "attacks_found": [],
+  "attacks_det": [],
+  "rows": 26,
+  "ADP_stable": 0.0,
+  "precision": 0.0
+ }
+}

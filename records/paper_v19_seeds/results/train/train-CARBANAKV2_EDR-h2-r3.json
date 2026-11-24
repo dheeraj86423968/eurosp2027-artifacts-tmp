@@ -1,0 +1,28 @@
+{
+ "set": "CARBANAKV2_EDR-h2",
+ "run": 3,
+ "seeds": {
+  "word2vec": 200,
+  "detector-1": [
+   200,
+   201,
+   202
+  ],
+  "detector-2": [
+   200,
+   201,
+   202,
+   203,
+   204
+  ]
+ },
+ "overrides": {},
+ "train_s": 1220,
+ "resumed_from_b06": false,
+ "layers_equal_run1": true,
+ "train_days": [
+  "2024-04-20",
+  "2024-04-23"
+ ],
+ "val_day": "2024-04-29"
+}

@@ -1,0 +1,13 @@
+08:36:36 validation replay 71s: ensemble thresholds {'detector-1': 0.9944148063659668, 'detector-2': 0.964792001247406} (113874 nodes)
+08:37:50 fleet ['ATLASV2_EDR-h1', 'ATLASV2_EDR-h2']: 67 program keys from 1 other endpoints
+08:37:59 scored 154s
+08:38:00 P0: attacks 8 TP 12 FP 49 rows 61 ADP 0.22 (learned only 0.51)
+08:38:00 P1: attacks 8 TP 12 FP 44 rows 56 ADP 0.237 (learned only 0.51)
+08:38:00 P1e: attacks 8 TP 12 FP 44 rows 56 ADP 0.237 (learned only 0.51)
+08:38:00 P2: attacks 8 TP 12 FP 49 rows 61 ADP 0.22 (learned only 0.51)
+08:38:00 P2e: attacks 8 TP 12 FP 49 rows 61 ADP 0.22 (learned only 0.51)
+08:38:11 amendment 2: P2 triage ADP ties {'random_mean': 0.22, 'random_sd': 0.002, 'random_min': 0.22, 'random_max': 0.226, 'worst': 0.22}; learned {'random_mean': 0.484, 'random_sd': 0.035, 'random_min': 0.421, 'random_max': 0.533, 'worst': 0.425}
+08:38:11 amendment 1: triage ADP time tie-break {'mean': 0.157, 'min': 0.156, 'max': 0.157, 'seeds': 20}; layers 1-2 only {'TP': 6, 'FP': 46, 'recall': 0.125, 'attacks': 4, 'precision': 0.115, 'attacks_found': ['atlasv2_edr_m5', 'atlasv2_edr_m6', 'atlasv2_edr_s3', 'atlasv2_edr_s4'], 'ADP_time_tiebreak': {'mean': 0.046, 'min': 0.046, 'max': 0.047, 'seeds': 20}}
+08:38:13 detector-1 alone: attacks 0 TP 0 FP 2 ADP 0.05
+08:38:15 detector-2 alone: attacks 0 TP 0 FP 0 ADP 0.049
+ATLASV2_EDR-h1       P2/G2: alerts    61 incidents    5 (FP    3, 3.0/day) attacks 8 buried 0

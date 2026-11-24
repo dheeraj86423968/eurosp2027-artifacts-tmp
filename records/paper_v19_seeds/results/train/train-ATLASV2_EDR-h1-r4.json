@@ -1,0 +1,29 @@
+{
+ "set": "ATLASV2_EDR-h1",
+ "run": 4,
+ "seeds": {
+  "word2vec": 300,
+  "detector-1": [
+   300,
+   301,
+   302
+  ],
+  "detector-2": [
+   300,
+   301,
+   302,
+   303,
+   304
+  ]
+ },
+ "overrides": {},
+ "train_s": 923,
+ "resumed_from_b06": false,
+ "layers_equal_run1": true,
+ "train_days": [
+  "2022-07-15",
+  "2022-07-16",
+  "2022-07-17"
+ ],
+ "val_day": "2022-07-18"
+}

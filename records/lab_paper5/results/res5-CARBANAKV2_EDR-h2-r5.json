@@ -1,0 +1,261 @@
+{
+ "set": "CARBANAKV2_EDR-h2",
+ "run": 5,
+ "bundle": "/data/paper5/CARBANAKV2_EDR-h2/r5/b07",
+ "detector_thresholds": {
+  "detector-1": 0.5247678160667419,
+  "detector-2": 0.6709397792816163
+ },
+ "validation_nodes": 547944,
+ "fleet": [
+  "CARBANAKV2_EDR-h1",
+  "CARBANAKV2_EDR-h2",
+  "CARBANAKV2_EDR-h3",
+  "CARBANAKV2_EDR-h4",
+  "CARBANAKV2_EDR-h5"
+ ],
+ "n_attacks": 1,
+ "gt_nodes": 81,
+ "days": 9,
+ "variants": {
+  "P0": [
+   0,
+   null
+  ],
+  "P1": [
+   1,
+   "drop"
+  ],
+  "P1e": [
+   1,
+   "evidence"
+  ],
+  "P2": [
+   2,
+   "drop"
+  ],
+  "P2e": [
+   2,
+   "evidence"
+  ]
+ },
+ "P0": {
+  "TP": 40,
+  "FP": 165,
+  "recall": 0.494,
+  "attacks": 1,
+  "FP/day": 18.3,
+  "by_layer": {
+   "novelty": 100,
+   "rules": 104,
+   "corroborated": 1
+  },
+  "by_layer_tp": {
+   "novelty": 13,
+   "rules": 27
+  },
+  "attacks_found": [
+   "carbanakv2_edr"
+  ],
+  "rows": 208,
+  "ADP": 0.437,
+  "ADP_learned_only": 0.004,
+  "precision": 0.195,
+  "ADP_ties": {
+   "random_mean": 0.437,
+   "random_sd": 0.0,
+   "random_min": 0.437,
+   "random_max": 0.437,
+   "worst": 0.437
+  },
+  "ADP_learned_only_ties": {
+   "random_mean": 0.004,
+   "random_sd": 0.0,
+   "random_min": 0.004,
+   "random_max": 0.004,
+   "worst": 0.004
+  }
+ },
+ "P1": {
+  "TP": 35,
+  "FP": 118,
+  "recall": 0.432,
+  "attacks": 1,
+  "FP/day": 13.1,
+  "by_layer": {
+   "novelty": 47,
+   "rules": 105,
+   "corroborated": 1
+  },
+  "by_layer_tp": {
+   "novelty": 7,
+   "rules": 28
+  },
+  "attacks_found": [
+   "carbanakv2_edr"
+  ],
+  "rows": 156,
+  "ADP": 0.437,
+  "ADP_learned_only": 0.004,
+  "precision": 0.229
+ },
+ "P1e": {
+  "TP": 35,
+  "FP": 118,
+  "recall": 0.432,
+  "attacks": 1,
+  "FP/day": 13.1,
+  "by_layer": {
+   "novelty": 47,
+   "rules": 105,
+   "corroborated": 1
+  },
+  "by_layer_tp": {
+   "novelty": 7,
+   "rules": 28
+  },
+  "attacks_found": [
+   "carbanakv2_edr"
+  ],
+  "rows": 156,
+  "ADP": 0.437,
+  "ADP_learned_only": 0.004,
+  "precision": 0.229
+ },
+ "P2": {
+  "TP": 39,
+  "FP": 132,
+  "recall": 0.481,
+  "attacks": 1,
+  "FP/day": 14.7,
+  "by_layer": {
+   "novelty": 66,
+   "rules": 104,
+   "corroborated": 1
+  },
+  "by_layer_tp": {
+   "novelty": 12,
+   "rules": 27
+  },
+  "attacks_found": [
+   "carbanakv2_edr"
+  ],
+  "rows": 174,
+  "ADP": 0.437,
+  "ADP_learned_only": 0.004,
+  "precision": 0.228,
+  "ADP_triage_time_tiebreak": {
+   "mean": 0.316,
+   "min": 0.311,
+   "max": 0.333,
+   "seeds": 20
+  },
+  "layers12_only": {
+   "TP": 39,
+   "FP": 131,
+   "recall": 0.481,
+   "attacks": 1,
+   "precision": 0.229,
+   "attacks_found": [
+    "carbanakv2_edr"
+   ],
+   "ADP_time_tiebreak": {
+    "mean": 0.316,
+    "min": 0.311,
+    "max": 0.333,
+    "seeds": 20
+   }
+  },
+  "ADP_ties": {
+   "random_mean": 0.437,
+   "random_sd": 0.0,
+   "random_min": 0.437,
+   "random_max": 0.437,
+   "worst": 0.437
+  },
+  "ADP_learned_only_ties": {
+   "random_mean": 0.004,
+   "random_sd": 0.0,
+   "random_min": 0.004,
+   "random_max": 0.004,
+   "worst": 0.004
+  }
+ },
+ "P2e": {
+  "TP": 39,
+  "FP": 132,
+  "recall": 0.481,
+  "attacks": 1,
+  "FP/day": 14.7,
+  "by_layer": {
+   "novelty": 66,
+   "rules": 104,
+   "corroborated": 1
+  },
+  "by_layer_tp": {
+   "novelty": 12,
+   "rules": 27
+  },
+  "attacks_found": [
+   "carbanakv2_edr"
+  ],
+  "rows": 174,
+  "ADP": 0.437,
+  "ADP_learned_only": 0.004,
+  "precision": 0.228
+ },
+ "detector-1": {
+  "val_max": {
+   "TP": 0,
+   "FP": 66,
+   "recall": 0.0,
+   "attacks": 0,
+   "precision": 0.0,
+   "attacks_found": [],
+   "threshold": 0.5247678160667419
+  },
+  "ratio_1": {
+   "TP": 0,
+   "FP": 12,
+   "recall": 0.0,
+   "attacks": 0,
+   "precision": 0.0,
+   "attacks_found": [],
+   "threshold": 1.0
+  },
+  "ADP": 0.005,
+  "ADP_ties": {
+   "random_mean": 0.005,
+   "random_sd": 0.0,
+   "random_min": 0.005,
+   "random_max": 0.005
+  }
+ },
+ "detector-2": {
+  "val_max": {
+   "TP": 0,
+   "FP": 17,
+   "recall": 0.0,
+   "attacks": 0,
+   "precision": 0.0,
+   "attacks_found": [],
+   "threshold": 0.6709397792816163
+  },
+  "ratio_1": {
+   "TP": 0,
+   "FP": 12,
+   "recall": 0.0,
+   "attacks": 0,
+   "precision": 0.0,
+   "attacks_found": [],
+   "threshold": 1.0
+  },
+  "ADP": 0.01,
+  "ADP_ties": {
+   "random_mean": 0.01,
+   "random_sd": 0.0,
+   "random_min": 0.01,
+   "random_max": 0.01
+  }
+ }
+}

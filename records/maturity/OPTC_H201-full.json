@@ -1,0 +1,64 @@
+{
+ "dataset": "OPTC_H201",
+ "baseline_days": [
+  "2019-09-19",
+  "2019-09-20",
+  "2019-09-21",
+  "2019-09-22"
+ ],
+ "baseline_windows": 304,
+ "levels": [
+  {
+   "level": "full",
+   "baseline_hours": 76.0,
+   "product": {
+    "TP": 6,
+    "FP": 19,
+    "FN": 2899,
+    "TN": 1434436,
+    "precision": 0.24,
+    "recall": 0.002,
+    "MCC": 0.022,
+    "attacks_detected": "1/1"
+   },
+   "rules_only": {
+    "TP": 6,
+    "FP": 4,
+    "FN": 2899,
+    "TN": 1434451,
+    "precision": 0.6,
+    "recall": 0.002,
+    "MCC": 0.035,
+    "attacks_detected": "1/1"
+   },
+   "by_layer": {
+    "novelty": {
+     "alerts": 14,
+     "TP": 0
+    },
+    "rules": {
+     "alerts": 10,
+     "TP": 6
+    },
+    "corroborated": {
+     "alerts": 1,
+     "TP": 0
+    },
+    "learned": {
+     "alerts": 0,
+     "TP": 0
+    }
+   },
+   "deterministic_only": {
+    "TP": 6,
+    "FP": 18,
+    "FN": 2899,
+    "TN": 1434437,
+    "precision": 0.25,
+    "recall": 0.002,
+    "MCC": 0.023,
+    "attacks_detected": "1/1"
+   }
+  }
+ ]
+}

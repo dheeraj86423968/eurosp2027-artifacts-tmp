@@ -1,0 +1,47 @@
+{
+ "FIVEDIRECTIONS_E3": {
+  "days": 3,
+  "V10/G0": {
+   "incidents": 6,
+   "fp_incidents": 2,
+   "tp_incidents": 4,
+   "fp_inc_per_day": 0.67,
+   "attacks": 2,
+   "attacks_found": [
+    "fivedirections_e3_excel_0409",
+    "fivedirections_e3_firefox_0411"
+   ],
+   "buried": [],
+   "max_alerts": 68,
+   "alerts": 218
+  },
+  "V19/G0": {
+   "incidents": 6,
+   "fp_incidents": 2,
+   "tp_incidents": 4,
+   "fp_inc_per_day": 0.67,
+   "attacks": 2,
+   "attacks_found": [
+    "fivedirections_e3_excel_0409",
+    "fivedirections_e3_firefox_0411"
+   ],
+   "buried": [],
+   "max_alerts": 68,
+   "alerts": 218
+  },
+  "V19id/G0": {
+   "incidents": 6,
+   "fp_incidents": 2,
+   "tp_incidents": 4,
+   "fp_inc_per_day": 0.67,
+   "attacks": 2,
+   "attacks_found": [
+    "fivedirections_e3_excel_0409",
+    "fivedirections_e3_firefox_0411"
+   ],
+   "buried": [],
+   "max_alerts": 68,
+   "alerts": 218
+  }
+ }
+}

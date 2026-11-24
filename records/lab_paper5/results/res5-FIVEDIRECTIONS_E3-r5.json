@@ -1,0 +1,270 @@
+{
+ "set": "FIVEDIRECTIONS_E3",
+ "run": 5,
+ "bundle": "/data/paper5/FIVEDIRECTIONS_E3/r5/b07",
+ "detector_thresholds": {
+  "detector-1": 0.9540593028068542,
+  "detector-2": 0.9614785790443421
+ },
+ "validation_nodes": 58841,
+ "fleet": [
+  "CADETS_E3",
+  "THEIA_E3",
+  "CLEARSCOPE_E3",
+  "FIVEDIRECTIONS_E3",
+  "TRACE_E3-trace"
+ ],
+ "n_attacks": 2,
+ "gt_nodes": 108,
+ "days": 3,
+ "variants": {
+  "P0": [
+   0,
+   null
+  ],
+  "P1": [
+   1,
+   "drop"
+  ],
+  "P1e": [
+   1,
+   "evidence"
+  ],
+  "P2": [
+   2,
+   "drop"
+  ],
+  "P2e": [
+   2,
+   "evidence"
+  ]
+ },
+ "P0": {
+  "TP": 11,
+  "FP": 165,
+  "recall": 0.102,
+  "attacks": 2,
+  "FP/day": 55.0,
+  "by_layer": {
+   "novelty": 48,
+   "corroborated": 128
+  },
+  "by_layer_tp": {
+   "corroborated": 10,
+   "novelty": 1
+  },
+  "attacks_found": [
+   "fivedirections_e3_excel_0409",
+   "fivedirections_e3_firefox_0411"
+  ],
+  "rows": 216,
+  "ADP": 1.0,
+  "ADP_learned_only": 0.067,
+  "precision": 0.062,
+  "ADP_ties": {
+   "random_mean": 0.222,
+   "random_sd": 0.23,
+   "random_min": 0.077,
+   "random_max": 1.0,
+   "worst": 0.077
+  },
+  "ADP_learned_only_ties": {
+   "random_mean": 0.031,
+   "random_sd": 0.004,
+   "random_min": 0.027,
+   "random_max": 0.041,
+   "worst": 0.027
+  }
+ },
+ "P1": {
+  "TP": 11,
+  "FP": 152,
+  "recall": 0.102,
+  "attacks": 2,
+  "FP/day": 50.7,
+  "by_layer": {
+   "novelty": 36,
+   "corroborated": 127
+  },
+  "by_layer_tp": {
+   "corroborated": 10,
+   "novelty": 1
+  },
+  "attacks_found": [
+   "fivedirections_e3_excel_0409",
+   "fivedirections_e3_firefox_0411"
+  ],
+  "rows": 203,
+  "ADP": 1.0,
+  "ADP_learned_only": 0.067,
+  "precision": 0.067
+ },
+ "P1e": {
+  "TP": 11,
+  "FP": 152,
+  "recall": 0.102,
+  "attacks": 2,
+  "FP/day": 50.7,
+  "by_layer": {
+   "novelty": 36,
+   "corroborated": 127
+  },
+  "by_layer_tp": {
+   "corroborated": 10,
+   "novelty": 1
+  },
+  "attacks_found": [
+   "fivedirections_e3_excel_0409",
+   "fivedirections_e3_firefox_0411"
+  ],
+  "rows": 203,
+  "ADP": 1.0,
+  "ADP_learned_only": 0.067,
+  "precision": 0.067
+ },
+ "P2": {
+  "TP": 11,
+  "FP": 165,
+  "recall": 0.102,
+  "attacks": 2,
+  "FP/day": 55.0,
+  "by_layer": {
+   "novelty": 48,
+   "corroborated": 128
+  },
+  "by_layer_tp": {
+   "corroborated": 10,
+   "novelty": 1
+  },
+  "attacks_found": [
+   "fivedirections_e3_excel_0409",
+   "fivedirections_e3_firefox_0411"
+  ],
+  "rows": 216,
+  "ADP": 1.0,
+  "ADP_learned_only": 0.067,
+  "precision": 0.062,
+  "ADP_triage_time_tiebreak": {
+   "mean": 0.158,
+   "min": 0.104,
+   "max": 0.333,
+   "seeds": 20
+  },
+  "layers12_only": {
+   "TP": 1,
+   "FP": 47,
+   "recall": 0.009,
+   "attacks": 1,
+   "precision": 0.021,
+   "attacks_found": [
+    "fivedirections_e3_excel_0409"
+   ],
+   "ADP_time_tiebreak": {
+    "mean": 0.02,
+    "min": 0.02,
+    "max": 0.025,
+    "seeds": 20
+   }
+  },
+  "ADP_ties": {
+   "random_mean": 0.222,
+   "random_sd": 0.23,
+   "random_min": 0.077,
+   "random_max": 1.0,
+   "worst": 0.077
+  },
+  "ADP_learned_only_ties": {
+   "random_mean": 0.031,
+   "random_sd": 0.004,
+   "random_min": 0.027,
+   "random_max": 0.041,
+   "worst": 0.027
+  }
+ },
+ "P2e": {
+  "TP": 11,
+  "FP": 165,
+  "recall": 0.102,
+  "attacks": 2,
+  "FP/day": 55.0,
+  "by_layer": {
+   "novelty": 48,
+   "corroborated": 128
+  },
+  "by_layer_tp": {
+   "corroborated": 10,
+   "novelty": 1
+  },
+  "attacks_found": [
+   "fivedirections_e3_excel_0409",
+   "fivedirections_e3_firefox_0411"
+  ],
+  "rows": 216,
+  "ADP": 1.0,
+  "ADP_learned_only": 0.067,
+  "precision": 0.062
+ },
+ "detector-1": {
+  "val_max": {
+   "TP": 4,
+   "FP": 34,
+   "recall": 0.037,
+   "attacks": 2,
+   "precision": 0.105,
+   "attacks_found": [
+    "fivedirections_e3_excel_0409",
+    "fivedirections_e3_firefox_0411"
+   ],
+   "threshold": 0.9540593028068542
+  },
+  "ratio_1": {
+   "TP": 0,
+   "FP": 12,
+   "recall": 0.0,
+   "attacks": 0,
+   "precision": 0.0,
+   "attacks_found": [],
+   "threshold": 1.0
+  },
+  "ADP": 0.105,
+  "ADP_ties": {
+   "random_mean": 0.105,
+   "random_sd": 0.0,
+   "random_min": 0.105,
+   "random_max": 0.105
+  }
+ },
+ "detector-2": {
+  "val_max": {
+   "TP": 2,
+   "FP": 19,
+   "recall": 0.019,
+   "attacks": 2,
+   "precision": 0.095,
+   "attacks_found": [
+    "fivedirections_e3_excel_0409",
+    "fivedirections_e3_firefox_0411"
+   ],
+   "threshold": 0.9614785790443421
+  },
+  "ratio_1": {
+   "TP": 1,
+   "FP": 4,
+   "recall": 0.009,
+   "attacks": 2,
+   "precision": 0.2,
+   "attacks_found": [
+    "fivedirections_e3_excel_0409",
+    "fivedirections_e3_firefox_0411"
+   ],
+   "threshold": 1.0
+  },
+  "ADP": 0.2,
+  "ADP_ties": {
+   "random_mean": 0.2,
+   "random_sd": 0.0,
+   "random_min": 0.2,
+   "random_max": 0.2
+  }
+ }
+}

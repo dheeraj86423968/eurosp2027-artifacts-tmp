@@ -1,0 +1,109 @@
+{
+ "set": "CADETS_E3",
+ "bundle": "/data/lab08/5eafc637-14c7-4074-b4d3-4e611dea925e/v07rel",
+ "fleet": [
+  "CADETS_E3",
+  "THEIA_E3",
+  "CLEARSCOPE_E3",
+  "FIVEDIRECTIONS_E3",
+  "TRACE_E3-trace"
+ ],
+ "n_attacks": 3,
+ "gt_nodes": 68,
+ "days": 4,
+ "attacks_all": [
+  "Nginx_Backdoor_06",
+  "Nginx_Backdoor_12",
+  "Nginx_Backdoor_13"
+ ],
+ "V10": {
+  "TP": 31,
+  "FP": 16,
+  "recall": 0.456,
+  "attacks": 3,
+  "FP/day": 4.0,
+  "by_layer": {
+   "novelty": 21,
+   "rules": 23,
+   "corroborated": 3
+  },
+  "by_layer_tp": {
+   "rules": 22,
+   "novelty": 7,
+   "corroborated": 2
+  },
+  "attacks_found": [
+   "Nginx_Backdoor_06",
+   "Nginx_Backdoor_12",
+   "Nginx_Backdoor_13"
+  ],
+  "attacks_det": [
+   "Nginx_Backdoor_06",
+   "Nginx_Backdoor_12",
+   "Nginx_Backdoor_13"
+  ],
+  "rows": 47,
+  "ADP_stable": 1.0,
+  "precision": 0.66
+ },
+ "V19": {
+  "TP": 30,
+  "FP": 16,
+  "recall": 0.441,
+  "attacks": 3,
+  "FP/day": 4.0,
+  "by_layer": {
+   "novelty": 21,
+   "rules": 18,
+   "corroborated": 7
+  },
+  "by_layer_tp": {
+   "rules": 17,
+   "novelty": 7,
+   "corroborated": 6
+  },
+  "attacks_found": [
+   "Nginx_Backdoor_06",
+   "Nginx_Backdoor_12",
+   "Nginx_Backdoor_13"
+  ],
+  "attacks_det": [
+   "Nginx_Backdoor_06",
+   "Nginx_Backdoor_12",
+   "Nginx_Backdoor_13"
+  ],
+  "rows": 46,
+  "ADP_stable": 1.0,
+  "precision": 0.652
+ },
+ "V19id": {
+  "TP": 30,
+  "FP": 16,
+  "recall": 0.441,
+  "attacks": 3,
+  "FP/day": 4.0,
+  "by_layer": {
+   "novelty": 21,
+   "rules": 18,
+   "corroborated": 7
+  },
+  "by_layer_tp": {
+   "rules": 17,
+   "novelty": 7,
+   "corroborated": 6
+  },
+  "attacks_found": [
+   "Nginx_Backdoor_06",
+   "Nginx_Backdoor_12",
+   "Nginx_Backdoor_13"
+  ],
+  "attacks_det": [
+   "Nginx_Backdoor_06",
+   "Nginx_Backdoor_12",
+   "Nginx_Backdoor_13"
+  ],
+  "rows": 46,
+  "ADP_stable": 1.0,
+  "precision": 0.652
+ }
+}

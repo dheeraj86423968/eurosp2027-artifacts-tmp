@@ -1,0 +1,64 @@
+{
+ "dataset": "THEIA_E3",
+ "baseline_days": [
+  "2018-04-03",
+  "2018-04-04",
+  "2018-04-05",
+  "2018-04-09"
+ ],
+ "baseline_windows": 202,
+ "levels": [
+  {
+   "level": "full",
+   "baseline_hours": 50.5,
+   "product": {
+    "TP": 108,
+    "FP": 86,
+    "FN": 10,
+    "TN": 700698,
+    "precision": 0.557,
+    "recall": 0.915,
+    "MCC": 0.714,
+    "attacks_detected": "2/2"
+   },
+   "rules_only": {
+    "TP": 96,
+    "FP": 76,
+    "FN": 22,
+    "TN": 700708,
+    "precision": 0.558,
+    "recall": 0.814,
+    "MCC": 0.674,
+    "attacks_detected": "2/2"
+   },
+   "by_layer": {
+    "novelty": {
+     "alerts": 12,
+     "TP": 5
+    },
+    "rules": {
+     "alerts": 172,
+     "TP": 96
+    },
+    "corroborated": {
+     "alerts": 17,
+     "TP": 12
+    },
+    "learned": {
+     "alerts": 0,
+     "TP": 0
+    }
+   },
+   "deterministic_only": {
+    "TP": 97,
+    "FP": 81,
+    "FN": 21,
+    "TN": 700703,
+    "precision": 0.545,
+    "recall": 0.822,
+    "MCC": 0.669,
+    "attacks_detected": "2/2"
+   }
+  }
+ ]
+}
