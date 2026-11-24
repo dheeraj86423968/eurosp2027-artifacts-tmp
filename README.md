@@ -1,23 +1,42 @@
-# Review artifact: "When Do Learned Provenance Detectors Help? Lessons from Building and Evaluating a Layered Intrusion Detector"
+# Review Artifact — *When Do Learned Provenance Detectors Help?*
+### Lessons from Building and Evaluating a Layered Intrusion Detector
 
-This is the anonymised artifact for the paper's Data Availability statement. The system is called STRATA in the paper. Here
-it is called "the engine", and some file and module names use the internal prefix `pdp`. The artifact contains the
-evaluation records of versions 0.1 to 0.10 (the versions the paper covers), the alert rows and per-node rankings behind
-the tables, and a standalone script that recomputes the paper's numbers from those rows and the public ground truth.
-**The detection engine is not included.**
+This is the anonymised artifact for the paper's **Data Availability** statement. Its purpose is narrow and checkable:
+it lets a reviewer **recompute every number in the paper** — every table, the held-out negatives included — from the
+system's own alert rows and the public ground truth, with one standalone script and **no access to our detection
+engine**.
 
-```
-README.md                         this file: a map from every table and figure to its files and command
-recompute/recompute.py            standalone recomputation (python3 + numpy; no engine)
-recompute/hosts.json              the 17 hosts: test days, ground-truth CSVs (PIDSMaker paths), attack counts
-recompute/recompute_output.txt    output of the last run (every check: recomputed value, paper value, MATCH/DIFF)
-recompute/recomputed.json         all recomputed values, machine-readable
-data/v0.10_nodes/nodes-*.npz      version 0.10 per-node ranking arrays for every test node of every host (for ADP)
-records/                          the evaluation records, one directory per experiment (see below)
-records/PREREGISTRATION_TIMELINE.tsv   version-control times at which each record file was added or changed
-docs/                             design and benchmark notes, written as each version was built (DETECTION_LAYERS.md, BENCHMARK_*.md)
-MANIFEST.sha256                   checksums of every file
-```
+The system is called **STRATA** in the paper; here it is "the engine", and some file and module names keep the
+internal prefix `pdp`. The artifact covers the evaluated versions (**0.2 through 0.10**) and the later-release
+appendix experiments: their protocols and decision records, the alert rows and per-node rankings behind the tables,
+the original-detector baselines, and the EDR-conversion manifests. **The detection engine itself is not included** —
+the paper specifies it in enough detail to re-implement.
+
+## At a glance
+
+- **Verify in ~1 minute** — `python3 recompute/recompute.py --gt <PIDSMaker GT> --perms 5` reproduces every
+  *deterministic* number: TP/FP, attacks found, incidents, analyst workload, and the five-run ranges.
+- **Verify fully (~1 hour)** — add `--perms 500` for the random-tie ADP expectations. Last run: **128 of 133 checks
+  match** the paper; the five differences are random-tie ADPs that agree within rounding (see *Result of the last run*).
+- **Included** — protocols + decision records, held-out preparation logs, per-host results, alert rows with their
+  one-hop provenance context, original-detector (ProvFusion / Velox / ORTHRUS) baselines, EDR-to-host conversion
+  manifests, a self-contained reference scorer, and the version-control timeline.
+- **Not included** — the detection engine/server and the EDR-to-host conversion *code* (see *Not included, or only
+  partly reproducible without the engine*).
+
+## Contents
+
+| path | what |
+|---|---|
+| `recompute/recompute.py` | standalone recomputation (python3 + numpy; no engine) |
+| `recompute/hosts.json` | the 17 hosts: test days, ground-truth CSVs (PIDSMaker paths), attack counts |
+| `recompute/recompute_output.txt` | output of the last run — every check: recomputed value, paper value, MATCH/DIFF |
+| `recompute/recomputed.json` | all recomputed values, machine-readable |
+| `records/` | the evaluation records, one directory per experiment (see *What is in `records/`*) |
+| `records/PREREGISTRATION_TIMELINE.tsv` | version-control times at which each record file was added or changed |
+| `data/v0.10_nodes/nodes-*.npz` | version 0.10 per-node ranking arrays, one per test node of every host (for ADP) |
+| `docs/` | design and benchmark notes written as each version was built (`DETECTION_LAYERS.md`, `BENCHMARK_*.md`) |
+| `MANIFEST.sha256` | SHA-256 of every file |
 
 ## Quick start
 
